@@ -1,8 +1,17 @@
+import { NavLink } from "react-router-dom";
+
 type HeaderProps = {
     logoName: string;
 }
 
 const Header = ({ logoName }: HeaderProps) => {
+
+    const navItems = [
+        { label: "Home", path: "/" },
+        { label: "I miei progetti", path: "/projects" },
+        { label: "About", path: "/about" },
+        { label: "Contatti", path: "/contacts" }
+    ]
 
     return (
 
@@ -10,10 +19,13 @@ const Header = ({ logoName }: HeaderProps) => {
             <h1 className="text-3xl font-bold">{logoName}</h1>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>I miei progetti</li>
-                    <li>About</li>
-                    <li>Contatti</li>
+                    {navItems.map(({ label, path }) => (
+                        <li key={path}>
+                            <NavLink to={path}>
+                                {label}
+                            </NavLink>
+                        </li>
+                    ))}
                 </ul>
             </nav>
             <div>Dark Mode Toggle</div>
