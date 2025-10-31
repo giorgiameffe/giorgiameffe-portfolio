@@ -1,33 +1,26 @@
-import { NavLink } from "react-router-dom";
+// import { useState } from "react";
+import Navbar from "./Navbar";
 
 type HeaderProps = {
     logoName: string;
 }
 
+const navItems = [
+    { label: "Home", path: "/" },
+    { label: "I miei progetti", path: "/projects" },
+    { label: "About", path: "/about" },
+    { label: "Contatti", path: "/contacts" }
+]
+
 const Header = ({ logoName }: HeaderProps) => {
 
-    const navItems = [
-        { label: "Home", path: "/" },
-        { label: "I miei progetti", path: "/projects" },
-        { label: "About", path: "/about" },
-        { label: "Contatti", path: "/contacts" }
-    ]
+    // const [isOpen, setIsOpen] = useState(false);
 
     return (
 
-        <header>
+        <header className="flex justify-between p-4">
             <h1 className="text-3xl font-bold">{logoName}</h1>
-            <nav>
-                <ul>
-                    {navItems.map(({ label, path }) => (
-                        <li key={path}>
-                            <NavLink to={path}>
-                                {label}
-                            </NavLink>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+            <Navbar navItems={navItems} />
             <div>Dark Mode Toggle</div>
         </header>
     )
