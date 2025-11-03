@@ -7,11 +7,11 @@ export type NavItem = {
 
 type NavbarProps = {
     navItems: NavItem[];
-    onToggle?: () => void;
+    onClick?: () => void;
     className?: string;
 };
 
-const Navbar = ({ navItems, onToggle, className = "" }: NavbarProps) => {
+const Navbar = ({ navItems, onClick, className = "" }: NavbarProps) => {
     return (
         <nav>
             <ul className={`flex flex-col md:flex-row gap-4 md:gap-6 ${className}`}>
@@ -19,7 +19,7 @@ const Navbar = ({ navItems, onToggle, className = "" }: NavbarProps) => {
                     <li key={item.path}>
                         <NavLink
                             to={item.path}
-                            onClick={onToggle}
+                            onClick={onClick}
                             className={({ isActive }) =>
                                 isActive
                                     ? "text-gray-1000 font-semibold"
