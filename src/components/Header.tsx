@@ -54,7 +54,7 @@ const Header = ({ logoName }: HeaderProps) => {
 
             {/* MENU MOBILE OVERLAY */}
             {isOpen && (
-                <div className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 flex flex-col items-center gap-4 py-6 shadow-md md:hidden">
+                <div className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 gap-4 py-6 shadow-md md:hidden">
                     <Navbar navItems={navItems} onClick={handleToggle} />
                 </div>
             )}

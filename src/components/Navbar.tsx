@@ -11,10 +11,12 @@ type NavbarProps = {
     className?: string;
 };
 
-const Navbar = ({ navItems, onClick, className = "" }: NavbarProps) => {
+const Navbar = ({ navItems, onClick }: NavbarProps) => {
+
     return (
+
         <nav>
-            <ul className={`flex flex-col md:flex-row gap-4 md:gap-6 ${className}`}>
+            <ul className={`flex flex-col items-center md:flex-row gap-4 md:gap-6`}>
                 {navItems.map((item) => (
                     <li key={item.path}>
                         <NavLink
