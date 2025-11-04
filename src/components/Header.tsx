@@ -48,9 +48,9 @@ const Header = ({ logoName }: HeaderProps) => {
             </div>
 
             {/* SEZIONE DESTRA: Dark Mode Toggle */}
-            <div className="cursor-pointer">
+            <button className="cursor-pointer" aria-label="Dark Mode Toggle">
                 Toggle
-            </div>
+            </button>
 
             {/* MENU MOBILE OVERLAY */}
             {isOpen && (
@@ -58,7 +58,7 @@ const Header = ({ logoName }: HeaderProps) => {
                     <Navbar navItems={navItems} onClick={handleToggle} />
                 </div>
             )}
-        </header>
+        </header >
     );
 };
 
