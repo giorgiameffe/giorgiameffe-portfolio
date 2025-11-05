@@ -1,9 +1,6 @@
 import { useState } from "react";
 import Navbar from "./Navbar";
-
-type HeaderProps = {
-    logoName: string;
-};
+import Logo from "./Logo";
 
 const navItems = [
     { label: "Home", path: "/" },
@@ -12,7 +9,7 @@ const navItems = [
     { label: "Contatti", path: "/contacts" },
 ];
 
-const Header = ({ logoName }: HeaderProps) => {
+const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -37,9 +34,7 @@ const Header = ({ logoName }: HeaderProps) => {
                 </button>
 
                 {/* Logo */}
-                <h1 className="text-2xl font-bold">
-                    {logoName}
-                </h1>
+                <Logo />
             </div>
 
             {/* NAVBAR visibile per tablet e desktop*/}
