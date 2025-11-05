@@ -74,7 +74,7 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                 <img
                     src="/img/giorgia-img.png"
                     alt="Foto personale"
-                    className="w-80 h-auto object-contain rounded-3"
+                    className="w-80 h-auto object-contain rounded-sm"
                 />
             </figure>
 
