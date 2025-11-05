@@ -7,7 +7,7 @@ const DefaultLayout: React.FC = () => {
 
     return (
         <>
-            <Header logoName="GM" />
+            <Header />
             <main>
                 <Outlet />
             </main>
