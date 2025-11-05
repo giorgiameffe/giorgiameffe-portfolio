@@ -6,8 +6,8 @@ const HomePage: React.FC = () => {
     return (
         <div>
             <HeroSection
-                title="Ciao, sono Giorgia"
-                subtitle="Junior Front-end developer con focus su Component Design e una forte passione per la UX/UI."
+                title="Ciao, sono Giorgia!"
+                subtitle="Junior Front-end developer con focus su Component Design e appassionata di UX/UI."
                 description="Amo trasformare idee in interfacce curate e funzionali, dove il design incontra il codice."
             />
         </div>
