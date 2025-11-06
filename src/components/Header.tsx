@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 import Logo from "./Logo";
 
-interface HeaderProps {
+type HeaderProps = {
     currentTheme: 'light' | 'dark';
     onToggleTheme: () => void;
 }
@@ -14,7 +14,7 @@ const navItems = [
     { label: "Contatti", path: "/contacts" },
 ];
 
-const Header: React.FC<HeaderProps> = ({ currentTheme, onToggleTheme }) => {
+const Header = ({ currentTheme, onToggleTheme }: HeaderProps) => {
 
     const [isOpen, setIsOpen] = useState(false);
 
