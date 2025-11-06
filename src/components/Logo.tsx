@@ -6,7 +6,6 @@ const Logo: React.FC = () => {
             <h1 className="text-4xl font-great-vibes">
                 GM
             </h1>
-            <p className="text-gray-900 mt-2">Giorgia Meffe</p>
         </div>
     );
 };
