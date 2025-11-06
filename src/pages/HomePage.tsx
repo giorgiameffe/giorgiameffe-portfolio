@@ -8,7 +8,10 @@ const HomePage: React.FC = () => {
             <HeroSection
                 title="Ciao, sono Giorgia!"
                 subtitle="Junior Front-end developer con focus su Component Design e appassionata di UX/UI."
-                description="Amo trasformare idee in interfacce curate e funzionali, dove il design incontra il codice."
+                description={<>
+                    Trasformo idee in interfacce funzionali e curate.<br />
+                    Scopri come unisco design e codice per dare vita ai tuoi progetti.
+                </>}
             />
         </div>
     )

@@ -24,8 +24,8 @@ const Navbar = ({ navItems, onClick }: NavbarProps) => {
                             onClick={onClick}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "text-gray-1000 font-semibold"
-                                    : "text-gray-800 hover:text-pink-500 transition"
+                                    ? "text-gray-1000 dark:text-white font-semibold"
+                                    : "text-gray-800 dark:text-white hover:text-pink-500 transition"
                             }
                         >
                             {item.label}

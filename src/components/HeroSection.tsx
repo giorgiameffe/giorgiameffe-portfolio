@@ -10,10 +10,12 @@ import { loadSlim } from "tsparticles-slim";
 // Contiene tutto ciò che serve per gestire canvas, animazioni, forme, colori ecc.
 import type { Engine } from "tsparticles-engine";
 
+import type { ReactNode } from "react";
+
 type HeroSectionProps = {
     title: string;
     subtitle: string;
-    description: string;
+    description: ReactNode;
     imageUrl?: string;
 };
 
@@ -28,7 +30,8 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
     };
 
     return (
-        <section className="relative bg-gradient-to-br from-[#80d0ff] via-[#c8a8ff] to-[#ffb5a7] min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-16 text-center md:text-left overflow-hidden">
+        <section className="relative bg-gradient-to-br from-[#80d0ff] via-[#c8a8ff] to-[#ffb5a7] dark:from-[#0d1b2a] 
+        dark:via-[#26315e] dark:to-[#50305a] min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-16 text-center md:text-left overflow-hidden">
 
             {/* Stelle animate */}
             <Particles
@@ -39,7 +42,7 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                     fullScreen: { enable: false }, // Non usare canvas a schermo intero, solo nella sezione
                     background: { color: "transparent" }, // Sfondo trasparente
                     particles: {
-                        number: { value: 150, density: { enable: true, area: 800 } }, // Numero di particelle
+                        number: { value: 180, density: { enable: true, area: 800 } }, // Numero di particelle
                         color: { value: ["#ffffff", "#ffe6ff", "#e0ffff"] }, // Colori delle stelle
                         shape: { type: "circle" }, // Forma: cerchio
                         opacity: {
@@ -50,7 +53,7 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                         size: { value: { min: 2, max: 4 }, random: true }, // Dimensione delle stelle (più grandi)
                         move: {
                             enable: true,
-                            speed: 0.15, // Velocità lenta
+                            speed: 0.5, // Velocità lenta
                             direction: "none", // Movimento casuale
                             random: true,
                             straight: false,

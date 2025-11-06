@@ -2,6 +2,11 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 import Logo from "./Logo";
 
+interface HeaderProps {
+    currentTheme: 'light' | 'dark';
+    onToggleTheme: () => void;
+}
+
 const navItems = [
     { label: "Home", path: "/" },
     { label: "I miei progetti", path: "/projects" },
@@ -9,51 +14,53 @@ const navItems = [
     { label: "Contatti", path: "/contacts" },
 ];
 
-const Header = () => {
+const Header: React.FC<HeaderProps> = ({ currentTheme, onToggleTheme }) => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    function handleToggle() {
-        setIsOpen((prev) => !prev);
+    const handleToggle = () => {
+
+        setIsOpen(prev => !prev);
     }
 
     return (
 
-        <header className="flex items-center justify-between p-6 bg-white relative">
+        <header className="flex items-center justify-between p-6 bg-white dark:bg-gray-950 text-gray-900 dark:text-white 
+        border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
 
             {/* SEZIONE SINISTRA: Hamburger + Logo */}
             <div className="flex items-center gap-3">
-
-                {/* Hamburger menu (solo su mobile) */}
                 <button
                     onClick={handleToggle}
                     aria-label={isOpen ? "Chiudi menu" : "Apri menu"}
-                    className="text-2xl md:hidden focus:outline-none"
+                    className="text-2xl md:hidden focus:outline-hidden text-gray-900 dark:text-white"
                 >
                     {isOpen ? "✕" : "☰"}
                 </button>
-
-                {/* Logo */}
                 <Logo />
             </div>
 
-            {/* NAVBAR visibile per tablet e desktop*/}
+            {/* Navbar desktop */}
             <div className="hidden md:flex">
                 <Navbar navItems={navItems} />
             </div>
 
-            {/* SEZIONE DESTRA: Dark Mode Toggle */}
-            <button className="cursor-pointer" aria-label="Dark Mode Toggle">
-                Toggle
+            {/* SEZIONE DESTRA: Toggle Dark Mode */}
+            <button
+                onClick={onToggleTheme}
+                className="cursor-pointer text-xl p-2 rounded-full transition-colors duration-300 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-yellow-400"
+                aria-label="Dark Mode Toggle"
+            >
+                {currentTheme === 'dark' ? "☀️" : "🌙"}
             </button>
 
-            {/* MENU MOBILE OVERLAY */}
+            {/* Menu mobile overlay */}
             {isOpen && (
-                <div className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 gap-4 py-6 shadow-md md:hidden">
+                <div className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 gap-4 py-6 shadow-md md:hidden z-20">
                     <Navbar navItems={navItems} onClick={handleToggle} />
                 </div>
             )}
-        </header >
+        </header>
     );
 };
 
