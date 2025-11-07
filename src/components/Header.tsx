@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./Navbar";
 import Logo from "./Logo";
+import { Sun, Moon } from "lucide-react";
 
 type HeaderProps = {
     currentTheme: 'light' | 'dark';
@@ -51,7 +52,7 @@ const Header = ({ currentTheme, onToggleTheme }: HeaderProps) => {
                 className="cursor-pointer text-xl p-2 rounded-full transition-colors duration-300 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-yellow-400"
                 aria-label="Dark Mode Toggle"
             >
-                {currentTheme === 'dark' ? "☀️" : "🌙"}
+                {currentTheme === 'dark' ? <Sun className="text-white" /> : <Moon className="text-black" />}
             </button>
 
             {/* Menu mobile overlay */}
