@@ -30,8 +30,8 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
     };
 
     return (
-        <section className="relative bg-gradient-to-br from-[#80d0ff] via-[#c8a8ff] to-[#ffb5a7] dark:from-[#0d1b2a] 
-        dark:via-[#26315e] dark:to-[#50305a] min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-16 text-center md:text-left overflow-hidden">
+        <section className="relative bg-gradient-to-br from-[#80d0ff] via-[#c8a8ff] to-[#ffb5a7] dark:from-[#050231] 
+        dark:via-[#240236] dark:to-[#450229] min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-16 text-center md:text-left overflow-hidden">
 
             {/* Stelle animate */}
             <Particles
@@ -42,15 +42,15 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                     fullScreen: { enable: false }, // Non usare canvas a schermo intero, solo nella sezione
                     background: { color: "transparent" }, // Sfondo trasparente
                     particles: {
-                        number: { value: 180, density: { enable: true, area: 800 } }, // Numero di particelle
+                        number: { value: 150, density: { enable: true, area: 800 } }, // Numero di particelle
                         color: { value: ["#ffffff", "#ffe6ff", "#e0ffff"] }, // Colori delle stelle
                         shape: { type: "circle" }, // Forma: cerchio
                         opacity: {
-                            value: 0.5,
+                            value: 0.7,
                             random: true,
                             animation: { enable: true, speed: 0.3, minimumValue: 0.2 }, // Stelle che tremolano
                         },
-                        size: { value: { min: 2, max: 4 }, random: true }, // Dimensione delle stelle (più grandi)
+                        size: { value: { min: 1, max: 4 }, random: true }, // Dimensione delle stelle (più grandi)
                         move: {
                             enable: true,
                             speed: 0.5, // Velocità lenta
@@ -62,8 +62,8 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                         twinkle: {
                             particles: {
                                 enable: true,
-                                color: { value: "#ffffff" },
-                                frequency: 0.03, // Frequenza dello scintillio
+                                color: { value: ["#ffffff", "#ffd6ff", "#c8ffff"] },
+                                frequency: 0.15, // Frequenza dello scintillio
                                 opacity: 0.5,
                             },
                         },
