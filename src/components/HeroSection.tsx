@@ -11,7 +11,9 @@ import { loadSlim } from "tsparticles-slim";
 import type { Engine } from "tsparticles-engine";
 
 import type { ReactNode } from "react";
+import { NavLink } from "react-router-dom";
 
+// type per HeroSection
 type HeroSectionProps = {
     title: string;
     subtitle: string;
@@ -30,8 +32,10 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
     };
 
     return (
+
         <section className="relative bg-gradient-to-br from-[#80d0ff] via-[#c8a8ff] to-[#ffb5a7] dark:from-[#050231] 
-        dark:via-[#240236] dark:to-[#450229] min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-16 text-center md:text-left overflow-hidden">
+        dark:via-[#240236] dark:to-[#450229] min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-3 px-6 py-4 
+        text-center md:text-left overflow-hidden">
 
             {/* Stelle animate */}
             <Particles
@@ -73,23 +77,30 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
             />
 
             {/* Immagine */}
-            <figure className="lg:mr-10 flex justify-center md:justify-end relative z-10">
+            <figure className="md:mr-6 flex justify-center md:justify-end relative z-10">
                 <img
                     src="/img/giorgia-img.png"
                     alt="Foto personale"
-                    className="w-80 h-auto object-contain rounded-sm"
+                    className="w-64 md:w-[30rem] lg:w-[18rem] h-auto object-contain rounded-sm"
                 />
             </figure>
 
+
             {/* Testo */}
             <div className="max-w-md relative z-10">
-                <h1 className="text-4xl font-bold">{title}</h1>
-                <h2 className="mt-3 text-xl">{subtitle}</h2>
-                <p className="mt-2">{description}</p>
-                <button className="mt-4 bg-rose-400 text-white px-6 py-2 rounded-3xl shadow-md transition cursor-pointer">
-                    Scopri di più su di me
-                </button>
+                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">{title}</h1>
+                <h2 className="mt-2 text-lg md:text-xl text-gray-800 dark:text-gray-200 font-medium">{subtitle}</h2>
+                <p className="mt-2 text-base text-gray-800 dark:text-gray-200">{description}</p>
+                <NavLink
+                    to="/projects"
+                    className="inline-block mt-4 bg-rose-400 dark:bg-rose-700 text-white px-6 py-2 rounded-full shadow-md hover:shadow-xl transition cursor-pointer" >
+                    Vedi i miei progetti
+                </NavLink>
             </div>
+
+            {/* <blockquote className="absolute bottom-6 right-8 text-600 text-gray-600 dark:text-gray-400 font-serif italic mt-4 text-sm">
+                La creatività è l'intelligenza che si diverte. - Albert Enstein
+            </blockquote> */}
         </section>
     );
 };
