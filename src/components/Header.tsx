@@ -56,7 +56,7 @@ const Header = ({ currentTheme, onToggleTheme }: HeaderProps) => {
 
             {/* Menu mobile overlay */}
             {isOpen && (
-                <div className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 gap-4 py-6 shadow-md md:hidden z-20">
+                <div className="absolute top-18 left-0 w-full bg-white dark:bg-gray-900 gap-4 py-6 shadow-md md:hidden z-20">
                     <Navbar navItems={navItems} onClick={handleToggle} />
                 </div>
             )}
