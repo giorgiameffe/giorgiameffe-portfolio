@@ -18,14 +18,14 @@ const projects: Project[] = [
         link: "Link del progetto"
     },
     {
-        slug: "Progetto uno",
+        slug: "Progetto due",
         title: "Titolo del progetto",
         description: "Descrizione del progetto",
         image: "Immagine del progetto",
         link: "Link del progetto"
     },
     {
-        slug: "Progetto uno",
+        slug: "Progetto tre",
         title: "Titolo del progetto",
         description: "Descrizione del progetto",
         image: "Immagine del progetto",
