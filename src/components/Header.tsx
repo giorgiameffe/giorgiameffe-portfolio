@@ -26,8 +26,8 @@ const Header = ({ currentTheme, onToggleTheme }: HeaderProps) => {
 
     return (
 
-        <header className="flex items-center justify-between p-6 bg-white dark:bg-gray-950 text-gray-900 dark:text-white 
-        border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
+        <header className="flex items-center justify-between p-6 bg-white dark:bg-black text-gray-900 dark:text-white 
+        shadow-sm transition-colors duration-300">
 
             {/* SEZIONE SINISTRA: Hamburger + Logo */}
             <div className="flex items-center gap-3">

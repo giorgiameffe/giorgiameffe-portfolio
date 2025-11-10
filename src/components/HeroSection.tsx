@@ -89,8 +89,8 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
             {/* Testo */}
             <div className="max-w-md relative z-10">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">{title}</h1>
-                <h2 className="mt-2 text-lg md:text-xl text-gray-800 dark:text-gray-200 font-medium">{subtitle}</h2>
-                <p className="mt-2 text-base text-gray-800 dark:text-gray-200">{description}</p>
+                <h2 className="mt-2 text-lg md:text-xl text-gray-900 dark:text-gray-200 font-medium">{subtitle}</h2>
+                <p className="mt-2 text-base text-gray-900 dark:text-gray-200">{description}</p>
                 <NavLink
                     to="/projects"
                     className="inline-block mt-4 bg-rose-400 dark:bg-rose-700 text-white px-6 py-2 rounded-full shadow-md hover:shadow-xl transition cursor-pointer" >
