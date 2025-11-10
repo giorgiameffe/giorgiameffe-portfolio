@@ -6,6 +6,7 @@ interface Project {
     description: string;
     image: string;
     link: string;
+    featured?: boolean;
 }
 
 const projects: Project[] = [
@@ -15,21 +16,24 @@ const projects: Project[] = [
         title: "Titolo del progetto",
         description: "Descrizione del progetto",
         image: "Immagine del progetto",
-        link: "Link del progetto"
+        link: "Link del progetto",
+        featured: true
     },
     {
         slug: "Progetto due",
         title: "Titolo del progetto",
         description: "Descrizione del progetto",
         image: "Immagine del progetto",
-        link: "Link del progetto"
+        link: "Link del progetto",
+        featured: true
     },
     {
         slug: "Progetto tre",
         title: "Titolo del progetto",
         description: "Descrizione del progetto",
         image: "Immagine del progetto",
-        link: "Link del progetto"
+        link: "Link del progetto",
+        featured: true
     }
 ]
 

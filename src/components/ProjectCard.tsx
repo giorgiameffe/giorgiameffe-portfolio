@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 type ProjectCardProps = {
+    key: string;
     title: string;
     image: string;
     description: string;
@@ -14,7 +15,7 @@ const ProjectCard = ({ image, title, description, link }: ProjectCardProps) => {
 
         <article>
             <figure>
-                <img src={image} alt={title}>Immagine progetto</img>
+                <img src={image} alt={title} />
             </figure>
 
             <div>

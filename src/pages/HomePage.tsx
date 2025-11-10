@@ -1,5 +1,6 @@
 import React from "react";
 import HeroSection from "../components/HeroSection";
+import ProjectCardList from "../components/ProjectCardList";
 
 const HomePage: React.FC = () => {
 
@@ -13,6 +14,7 @@ const HomePage: React.FC = () => {
                     Scopri come unisco design e codice per dare vita ai tuoi progetti.
                 </>}
             />
+            <ProjectCardList />
         </div>
     )
 }
