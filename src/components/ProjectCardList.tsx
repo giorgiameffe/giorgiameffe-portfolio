@@ -6,21 +6,15 @@ const ProjectCardList: React.FC = () => {
 
     return (
 
-        <section>
-            <h1 className="font-bold font-">I miei progetti</h1>
-
-            {projects.map(project => (
-                <ProjectCard
-                    key={project.slug}
-                    title={project.title}
-                    description={project.description}
-                    image={project.image}
-                    link={project.link}
-                />
-            ))}
+        <section className="max-w-6xl mx-auto md:px-18 mb-8">
+            <h1 className="font-bold text-xl mt-5 mb-5">Progetti in evidenza</h1>
+            <div className="flex justify-between">
+                {projects.map(project => (
+                    <ProjectCard key={project.slug} project={project} />
+                ))}
+            </div>
         </section>
     )
-
 }
 
 export default ProjectCardList;
