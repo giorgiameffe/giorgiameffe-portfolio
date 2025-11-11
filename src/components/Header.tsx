@@ -26,8 +26,8 @@ const Header = ({ currentTheme, onToggleTheme }: HeaderProps) => {
 
     return (
 
-        <header className="flex items-center justify-between p-6 bg-white dark:bg-black text-gray-900 dark:text-white 
-        shadow-sm transition-colors duration-300">
+        <header className="flex items-center justify-between p-6 bg-gray-100 dark:bg-black text-gray-900 dark:text-white 
+        shadow-sm dark:shadow-gray-900 transition-colors duration-300">
 
             {/* SEZIONE SINISTRA: Hamburger + Logo */}
             <div className="flex items-center gap-3">
@@ -57,7 +57,7 @@ const Header = ({ currentTheme, onToggleTheme }: HeaderProps) => {
 
             {/* Menu mobile overlay */}
             {isOpen && (
-                <div className="absolute top-18 left-0 w-full bg-white dark:bg-gray-950 gap-4 py-6 shadow-md md:hidden z-20">
+                <div className="absolute top-18 left-0 w-full bg-gray-100 dark:bg-black gap-4 py-6 shadow-md md:hidden z-20">
                     <Navbar navItems={navItems} onClick={handleToggle} />
                 </div>
             )}
