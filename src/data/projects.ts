@@ -1,38 +1,34 @@
 // Interfaccia per i progetti, da implementare per la card del dettaglio
 
-interface Project {
+export interface Project {
     slug: string;
     title: string;
     description: string;
     image: string;
-    link: string;
     featured?: boolean;
 }
 
 const projects: Project[] = [
 
     {
-        slug: "Progetto uno",
+        slug: "bool-shop",
         title: "Titolo del progetto",
         description: "Descrizione del progetto",
         image: "Immagine del progetto",
-        link: "Link del progetto",
         featured: true
     },
     {
-        slug: "Progetto due",
+        slug: "cine-circle",
         title: "Titolo del progetto",
         description: "Descrizione del progetto",
         image: "Immagine del progetto",
-        link: "Link del progetto",
         featured: true
     },
     {
-        slug: "Progetto tre",
+        slug: "header-ui-custom",
         title: "Titolo del progetto",
         description: "Descrizione del progetto",
         image: "Immagine del progetto",
-        link: "Link del progetto",
         featured: true
     }
 ]
