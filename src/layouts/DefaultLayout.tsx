@@ -39,7 +39,7 @@ const DefaultLayout: React.FC = () => {
 
         <div className="min-h-screen bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-white transition-colors duration-300">
             <Header currentTheme={theme} onToggleTheme={toggleTheme} />
-            <main>
+            <main className="pb-2">
                 <Outlet />
             </main>
         </div>
