@@ -93,14 +93,41 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                 <p className="mt-2 text-base text-gray-900 dark:text-gray-200">{description}</p>
                 <NavLink
                     to="/projects"
-                    className="inline-block mt-4 bg-rose-400 dark:bg-rose-700 text-white px-6 py-2 rounded-full shadow-md hover:shadow-xl transition cursor-pointer" >
+                    className="inline-block mt-4 bg-rose-400 dark:bg-rose-700 text-white px-6 py-2 font-semibold rounded-full shadow-md hover:shadow-xl transition cursor-pointer" >
                     Vedi i miei progetti
                 </NavLink>
-            </div>
+                <div className="flex flex-wrap justify-center md:justify-start items-center gap-2 mt-4">
+                    {/* React */}
+                    <span className="flex items-center space-x-1 px-3 py-1 rounded-full text-gray-900 dark:text-gray-200 text-xs font-semibold border border-gray-900 dark:border-gray-600">
+                        <span>React</span>
+                    </span>
 
-            {/* <blockquote className="absolute bottom-6 right-8 text-600 text-gray-600 dark:text-gray-400 font-serif italic mt-4 text-sm">
-                La creatività è l'intelligenza che si diverte. - Albert Enstein
-            </blockquote> */}
+                    {/* TypeScript (TS) */}
+                    <span className="flex items-center space-x-1 px-3 py-1 rounded-full text-gray-900 dark:text-gray-200 text-xs font-semibold border border-gray-900 dark:border-gray-600">
+                        <span>TS</span>
+                    </span>
+
+                    {/* JavaScript (JS) */}
+                    <span className="flex items-center space-x-1 px-3 py-1 rounded-full text-gray-900 dark:text-gray-200 text-xs font-semibold border border-gray-900 dark:border-gray-600">
+                        <span>JS</span>
+                    </span>
+
+                    {/* Storybook */}
+                    <span className="flex items-center space-x-1 px-3 py-1 rounded-full text-gray-900 dark:text-gray-200 text-xs font-semibold border border-gray-900 dark:border-gray-600">
+                        <span>Storybook</span>
+                    </span>
+
+                    {/* CSS*/}
+                    <span className="flex items-center space-x-1 px-3 py-1 rounded-full text-gray-900 dark:text-gray-200 text-xs font-semibold border border-gray-900 dark:border-gray-600">
+                        <span>CSS</span>
+                    </span>
+
+                    {/* LINK COMPLETO ALLA PAGINA ABOUT (Badge di Rinvio) */}
+                    <NavLink to="/about" className="flex items-center space-x-1 px-3 py-1 rounded-full bg-rose-500 dark:bg-rose-500 text-white text-xs font-semibold transition-colors mb-5 md:mb-0">
+                        <span>Stack Completo →</span>
+                    </NavLink>
+                </div>
+            </div>
         </section>
     );
 };
