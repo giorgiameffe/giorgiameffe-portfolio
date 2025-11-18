@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import type { Project } from "../data/projects";
 
 type ProjectCardProps = {
@@ -9,16 +10,25 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
     return (
 
-        <article className="p-4 border rounded-xl w-72 h-96 flex flex-col justify-between">
+        <motion.article
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            whileHover={{ scale: 1.03 }}
+            className="p-4 border border-gray-300 dark:border-gray-800 rounded-xl w-72 h-96 flex flex-col justify-between
+                       shadow-sm hover:shadow-xl transition-shadow mt-4 mb-4"
+        >
             <Link to={`/projects/${project.slug}`}>
                 <figure className="h-40 overflow-hidden mb-4">
-                    <img
+                    <motion.img
                         src={project.image}
                         alt={project.title}
                         className="w-full h-full object-cover rounded-md"
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.3 }}
                     />
                 </figure>
-
             </Link>
 
             <div className="flex flex-col flex-1 justify-between">
@@ -29,12 +39,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
                 <Link
                     to={`/projects/${project.slug}`}
-                    className="flex justify-center bg-rose-400 dark:bg-rose-700 text-white px-8 py-2 rounded-full shadow-md hover:shadow-xl transition mt-4"
+                    className="flex justify-center bg-rose-400 dark:bg-rose-700 font-semibold text-white px-8 py-2 rounded-full shadow-md hover:shadow-xl transition mt-4"
                 >
                     Scopri di più
                 </Link>
             </div>
-        </article>
+        </motion.article>
     );
 };
 
