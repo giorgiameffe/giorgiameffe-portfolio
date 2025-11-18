@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 import Logo from "./Logo";
 import { Sun, Moon } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 type HeaderProps = {
     currentTheme: 'light' | 'dark';
@@ -36,7 +37,7 @@ const Header = ({ currentTheme, onToggleTheme }: HeaderProps) => {
                     aria-label={isOpen ? "Chiudi menu" : "Apri menu"}
                     className="text-2xl md:hidden focus:outline-hidden text-gray-900 dark:text-white"
                 >
-                    {isOpen ? "✕" : "☰"}
+                    {isOpen ? <X /> : <Menu />}
                 </button>
                 <Logo />
             </div>

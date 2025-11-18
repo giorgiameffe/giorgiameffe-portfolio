@@ -13,7 +13,7 @@ const Logo: React.FC = () => {
                 <img
                     src={isDark ? "/img/logo-dark.png" : "/img/logo-light.png"}
                     alt="Logo"
-                    className="w-22 h-auto"
+                    className="w-15 md:w-18 lg:w-22 h-auto"
                 />
             </Link>
         </div>
