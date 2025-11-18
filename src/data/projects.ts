@@ -11,26 +11,26 @@ export interface Project {
 const projects: Project[] = [
 
     {
+        slug: "header-ui-custom",
+        title: "Header UI custom",
+        description: "Progetto individuale sulla creazione di un componente Header UI custom per un sito di cosmetici naturali.",
+        image: "Immagine del progetto",
+        featured: true
+    },
+    {
         slug: "bool-shop",
-        title: "Titolo del progetto",
-        description: "Descrizione del progetto",
+        title: "BoolShop",
+        description: "Progetto Full Stack di gruppo sulla creazione di un e-commerce di giochi da tavolo",
         image: "Immagine del progetto",
         featured: true
     },
     {
         slug: "cine-circle",
-        title: "Titolo del progetto",
-        description: "Descrizione del progetto",
+        title: "Cine Circle",
+        description: "Progetto Full Stack individuale sulla creazione e gestione di un blog di film.",
         image: "Immagine del progetto",
         featured: true
     },
-    {
-        slug: "header-ui-custom",
-        title: "Titolo del progetto",
-        description: "Descrizione del progetto",
-        image: "Immagine del progetto",
-        featured: true
-    }
 ]
 
 export default projects;
