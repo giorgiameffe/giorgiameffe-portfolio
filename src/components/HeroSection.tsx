@@ -79,9 +79,9 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
             {/* Immagine */}
             <figure className="md:mr-6 flex justify-center md:justify-end relative z-10">
                 <img
-                    src="/img/giorgia-img.png"
+                    src="/img/giorgia-hero.png"
                     alt="Foto personale"
-                    className="w-64 md:w-[30rem] lg:w-[18rem] h-auto object-contain rounded-sm"
+                    className="w-64 md:w-[30rem] lg:w-[22rem] h-auto object-contain rounded-sm"
                 />
             </figure>
 
