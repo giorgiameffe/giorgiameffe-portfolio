@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "../components/HeroSection";
 import ProjectCardList from "../components/ProjectCardList";
+import CTASection from "../components/CTASection";
 
 const HomePage: React.FC = () => {
 
@@ -9,13 +10,16 @@ const HomePage: React.FC = () => {
         <div>
             <HeroSection
                 title="Ciao, sono Giorgia!"
-                subtitle="Junior Front-End developer con focus su Component Design e appassionata di UX/UI."
-                description={<>
-                    Trasformo idee in interfacce funzionali e curate.<br />
-                    Scopri come unisco design e codice per dare vita ai tuoi progetti.
-                </>}
+                subtitle="Front-End Developer che crede nella bellezza delle cose semplici."
+                description={
+                    <>
+                        Creo UI e component design chiari, leggeri e piacevoli da usare.<br />
+                        Porto ordine, colore e attenzione al dettaglio in ogni progetto che realizzo.
+                    </>
+                }
             />
             <ProjectCardList />
+            <CTASection />
         </div>
     )
 }
