@@ -13,6 +13,11 @@ import type { Engine } from "tsparticles-engine";
 import type { ReactNode } from "react";
 import { NavLink } from "react-router-dom";
 
+import { useContext } from "react";
+import GlobalContext from "../contexts/GlobalContext";
+
+import { motion } from "framer-motion";
+
 // type per HeroSection
 type HeroSectionProps = {
     title: string;
@@ -31,11 +36,24 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
         return loadSlim(engine);
     };
 
+    const { isDark } = useContext(GlobalContext);
+
     return (
 
-        <section className="relative bg-gradient-to-br from-[#80d0ff] via-[#c8a8ff] to-[#ffb5a7] dark:from-[#050231] 
+        <motion.section // 1. Stato Iniziale: Solo opacità 0
+            initial={{ opacity: 0 }}
+
+            // 2. Stato Finale: Opacità 1 (appare)
+            animate={{ opacity: 1 }}
+
+            // 3. Transizione: Lenta e fluida
+            transition={{
+                duration: 1, // Aumentiamo la durata per renderlo più "calmo"
+                ease: "easeInOut"
+            }}
+            className="relative bg-gradient-to-br from-[#80d0ff] via-[#c8a8ff] to-[#ffb5a7] dark:from-[#050231] 
         dark:via-[#240236] dark:to-[#450229] min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-3 px-6 py-4 
-        text-center md:text-left overflow-hidden">
+        text-center md:text-left overflow-hidden opacity-0 animate-fadeIn">
 
             {/* Stelle animate */}
             <Particles
@@ -54,7 +72,7 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                             random: true,
                             animation: { enable: true, speed: 0.3, minimumValue: 0.2 }, // Stelle che tremolano
                         },
-                        size: { value: { min: 1, max: 4 }, random: true }, // Dimensione delle stelle (più grandi)
+                        size: { value: { min: 0.5, max: 4 }, random: true }, // Dimensione delle stelle (più grandi)
                         move: {
                             enable: true,
                             speed: 0.5, // Velocità lenta
@@ -79,7 +97,7 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
             {/* Immagine */}
             <figure className="md:mr-6 flex justify-center md:justify-end relative z-10">
                 <img
-                    src="/img/giorgia-hero.png"
+                    src={isDark ? "/img/giorgia-hero-dark.png" : "/img/giorgia-hero-light.png"}
                     alt="Foto personale"
                     className="w-64 md:w-[30rem] lg:w-[22rem] h-auto object-contain rounded-sm"
                 />
@@ -93,7 +111,8 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                 <p className="mt-2 text-base text-gray-900 dark:text-gray-200">{description}</p>
                 <NavLink
                     to="/projects"
-                    className="inline-block mt-4 bg-rose-400 dark:bg-rose-700 text-white px-6 py-2 font-semibold rounded-full shadow-md hover:shadow-xl transition cursor-pointer" >
+                    className="inline-block mt-4 bg-rose-400 dark:bg-rose-700 text-white px-8 py-2 font-semibold 
+                    rounded-full shadow-md hover:shadow-xl transition cursor-pointer" >
                     Vedi i miei progetti
                 </NavLink>
                 <div className="flex flex-wrap justify-center md:justify-start items-center gap-2 mt-4">
@@ -128,7 +147,7 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                     </NavLink>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 
