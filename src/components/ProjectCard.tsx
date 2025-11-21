@@ -15,7 +15,7 @@ const ProjectCard = ({ project, featured }: ProjectCardProps) => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            transition={{ duration: 1, ease: "easeOut", delay: 1 }}
             whileHover={{ scale: 1.03 }}
             className={`p-4 border border-gray-300 dark:border-gray-800 rounded-xl ${featured ? "w-72 h-96" : "w-full h-96"}
             flex flex-col justify-between shadow-sm hover:shadow-lg transition-shadow mt-4 mb-4`}
