@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
                     to="https://www.linkedin.com/in/giorgia-meffe-41b23b389"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-gray-700 dark:text-gray-300 text-rose-400 hover:text-rose-500 transition"
+                    className="text-gray-900 dark:text-gray-100 hover:text-rose-400 transition"
                 >
                     <FaLinkedin className="text-2xl" />
 
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
                     to="https://github.com/giorgiameffe"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-gray-700 dark:text-gray-300 text-rose-400 hover:text-rose-500 transition"
+                    className="text-gray-900 dark:text-gray-100 hover:text-rose-400 transition"
                 >
                     <FaGithub className="text-2xl" />
 
@@ -32,19 +32,21 @@ const Footer: React.FC = () => {
 
                 <Link
                     to="/"
-                    className="text-gray-700 dark:text-gray-300 text-rose-400 hover:text-rose-500 transition"
+                    className="text-gray-900 dark:text-gray-100 hover:text-rose-400 transition"
                 >
                     <FaEnvelope className="text-2xl" />
                 </Link>
             </div>
 
             {/* Frase */}
-            <p className="text-lg text-gray-700 dark:text-gray-500 mt-4">
-                Designed and Developed with <FaHeart className="inline text-md text-rose-500" />
+            <p className="text-lg text-gray-800 dark:text-gray-300 mt-4 flex justify-center items-center gap-1">
+                Designed and Developed with
+                <FaHeart className="text-md text-rose-400 dark:text-rose-500" />
             </p>
 
+
             {/* Copyright */}
-            <p className="text-md text-gray-600 dark:text-gray-600 mt-2">
+            <p className="text-md text-gray-700 dark:text-gray-500 mt-2">
                 © {new Date().getFullYear()} • Giorgia Meffe
             </p>
         </footer>
