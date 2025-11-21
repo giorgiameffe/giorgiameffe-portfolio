@@ -45,15 +45,15 @@ const ProjectCardList: React.FC = () => {
 
     return (
         <section className="max-w-6xl mx-auto md:px-18 mb-8 relative">
-            <h1 className="font-bold text-2xl mt-5 mb-6 mt-10 text-center lg:ms-10 ">
+            <h1 className="font-bold text-3xl mt-5 mb-6 mt-10 text-center lg:ms-10 ">
                 Progetti in evidenza
             </h1>
 
             <div className="overflow-hidden">
 
-                <div className="flex justify-center items-center gap-15 md:gap-8 w-full transition-transform duration-300 ease-in-out">
+                <div className="flex justify-center items-center gap-15 md:gap-10 w-full transition-transform duration-300 ease-in-out">
                     {visibleProjects.map((project) => (
-                        <ProjectCard key={project.slug} project={project} />
+                        <ProjectCard key={project.slug} project={project} featured />
                     ))}
                 </div>
 

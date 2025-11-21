@@ -4,9 +4,10 @@ import type { Project } from "../data/projects";
 
 type ProjectCardProps = {
     project: Project;
+    featured?: boolean;
 };
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ project, featured }: ProjectCardProps) => {
 
     return (
 
@@ -16,8 +17,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
             whileHover={{ scale: 1.03 }}
-            className="p-4 border border-gray-300 dark:border-gray-800 rounded-xl w-72 h-96 flex flex-col justify-between
-                       shadow-sm hover:shadow-xl transition-shadow mt-4 mb-4"
+            className={`p-4 border border-gray-300 dark:border-gray-800 rounded-xl ${featured ? "w-72 h-96" : "w-full h-96"}
+            flex flex-col justify-between shadow-sm hover:shadow-lg transition-shadow mt-4 mb-4`}
         >
             <Link to={`/projects/${project.slug}`}>
                 <figure className="h-40 overflow-hidden mb-4">
@@ -34,12 +35,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <div className="flex flex-col flex-1 justify-between">
                 <div>
                     <h1 className="font-bold mb-2">{project.title}</h1>
-                    <p className="text-sm overflow-hidden">{project.description}</p>
+                    <p className={`text-sm line-clamp-${featured ? 3 : 4}`}>{project.description}</p>
                 </div>
 
                 <Link
                     to={`/projects/${project.slug}`}
-                    className="flex justify-center bg-rose-400 dark:bg-rose-700 font-semibold text-white px-8 py-2 rounded-full shadow-md hover:shadow-xl transition mt-4"
+                    className="flex justify-center bg-rose-400 dark:bg-rose-700 font-semibold text-white text-md px-8 py-2 
+                    rounded-full shadow-md hover:shadow-xl transition mt-4"
                 >
                     Scopri di più
                 </Link>
