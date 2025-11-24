@@ -24,12 +24,8 @@ const Header = ({ currentTheme, onToggleTheme }: HeaderProps) => {
     return (
 
         <header
-            className="flex items-center justify-between p-3
-            bg-gray-100/70 dark:bg-black/70 text-gray-900 dark:text-white
-            shadow-sm dark:shadow-gray-900
-            backdrop-blur-md
-            transition-all duration-300
-            fixed top-0 left-0 w-full z-20"
+            className="flex items-center justify-between p-3 bg-gray-100/70 dark:bg-black/70 text-gray-900 dark:text-white 
+            shadow-sm dark:shadow-gray-900 backdrop-blur-md transition-all duration-300 fixed top-0 left-0 w-full z-20"
         >
 
             {/* SEZIONE SINISTRA */}
@@ -63,7 +59,8 @@ const Header = ({ currentTheme, onToggleTheme }: HeaderProps) => {
 
             {/* Menu mobile */}
             {isOpen && (
-                <div className="absolute top-18 left-0 w-full bg-gray-100 dark:bg-black gap-4 py-6 shadow-md md:hidden z-20">
+                <div className="absolute top-18 left-0 w-full bg-gray-100 dark:bg-black gap-4 py-6 shadow-md md:hidden z-20
+                backdrop-blur-md">
                     <Navbar navItems={navItems} onClick={handleToggle} />
                 </div>
             )}
