@@ -1,4 +1,6 @@
-// Interfaccia per i progetti, da implementare per la card del dettaglio
+// ==========================================================
+// 1.Interfaccia per i progetti, da implementare per la card del dettaglio
+// ==========================================================
 
 export interface Project {
     slug: string;
@@ -7,6 +9,10 @@ export interface Project {
     image: string;
     featured?: boolean;
 }
+
+// ==========================================================
+// 2. Dati Centralizzati
+// ==========================================================
 
 const projects: Project[] = [
 

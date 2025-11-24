@@ -44,6 +44,7 @@ const ProjectCardList: React.FC = () => {
     );
 
     return (
+
         <section className="max-w-6xl mx-auto md:px-18 mb-8 relative">
             <h1 className="font-extrabold text-4xl mt-5 mb-6 mt-10 text-center lg:ms-10 ">
                 Progetti in evidenza
