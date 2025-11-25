@@ -19,7 +19,7 @@ const ProjectsPage: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
                 >
-                    Tra Design e Sviluppo: il mio portfolio
+                    Dall’idea all’interfaccia: i miei progetti
                 </motion.h1>
 
                 <div className="max-w-2xl md:max-w-xl mx-auto text-center mb-12 md:flex md:justify-center md:items-center">
@@ -32,12 +32,12 @@ const ProjectsPage: React.FC = () => {
                         animate={{ opacity: 1, x: 0 }} // Finale visibile e posizione normale
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }} // Delay 0.3s rispetto all'immagine
                     >
-                        Dove il codice diventa <strong>interfaccia</strong> e il design diventa <strong>esperienza</strong>:
+                        Dove il codice prende <strong>vita</strong> e il design guida l'<strong>esperienza</strong>:
                         esplora i progetti in cui semplicità e cura dei dettagli incontrano la <strong>passione</strong> per la UX/UI.
                     </motion.p>
                 </div>
 
-                {/* ---------------- Griglia dei progetti ---------------- */}
+                {/* Griglia dei progetti */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-8">
                     {/* Itera su projects e mostra ogni ProjectCard */}
                     {projects.map((project) => (
