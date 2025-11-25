@@ -8,7 +8,8 @@ export interface NarrativeBlockData {
     id: number;
     title: string;
     content: ReactNode;
-    image: string;
+    imageLight: string;
+    imageDark: string;
 }
 
 // ==========================================================
@@ -36,7 +37,8 @@ const NarrativeBlocks: NarrativeBlockData[] = [
                 con background Full Stack, porto questa meticolosità artigianale nel mondo digitale.
             </>
         ),
-        image: "path/to/avatar1.jpg"
+        imageLight: "/img/giorgia-about-pc-light.png",
+        imageDark: "/img/giorgia-about-pc-dark.png"
     },
 
     {
@@ -72,7 +74,8 @@ const NarrativeBlocks: NarrativeBlockData[] = [
                 </p>
             </>
         ),
-        image: "path/to/avatar2.jpg"
+        imageLight: "",
+        imageDark: ""
     },
 
     {
@@ -85,7 +88,7 @@ const NarrativeBlocks: NarrativeBlockData[] = [
                 <ul>
                     <li>
                         Corso Full Stack Web Development (600h Boolean): Un bootcamp intensivo che ha
-                        gettato le basi del mio skill set, fornendo conoscenze solide di Front-End
+                        gettato le basi del mio skill set, fornendo conoscenze di Front-End
                         (...) e le fondamenta di Back-End (...).
                     </li>
 
@@ -102,7 +105,8 @@ const NarrativeBlocks: NarrativeBlockData[] = [
                 </p>
             </>
         ),
-        image: "path/to/avatar3.jpg"
+        imageLight: "",
+        imageDark: ""
     }
 ];
 
