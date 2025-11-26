@@ -23,7 +23,7 @@ const NarrativeBlocks: NarrativeBlockData[] = [
 
     {
         id: 1,
-        title: "Dalla Cura Estetica all'Attenzione Digitale",
+        title: "Il Mio Percorso dalla Cura Estetica al Codice",
         content: (
             <>
                 Il mio percorso è iniziato lontano dal codice, in un settore dove la perfezione visiva
@@ -45,34 +45,21 @@ const NarrativeBlocks: NarrativeBlockData[] = [
 
     {
         id: 2,
-        title: "La Mia Missione: L'Estetica al Servizio della Funzionalità",
+        title: "Codice e Creatività: Progettare Esperienze Digitali",
         content: (
             <>
-                Vedo il codice non solo come una serie di istruzioni, ma come lo strumento per dare
-                vita a esperienze utente di valore. Il mio approccio al design e allo sviluppo si basa
-                su questi tre pilastri:
-                <ul>
-                    <li>
-                        Design Intuitivo (UX/UI): Tradurre bisogni complessi in interfacce pulite,
-                        accessibili e facili da usare.
-                    </li>
-
-                    <li>
-                        Coerenza Visiva: Applicare rigorosamente i principi di design (Gestalt,
-                        Atomic Design) per garantire un look &amp; feel professionale in ogni
-                        componente.
-                    </li>
-
-                    <li>
-                        Qualità del codice: garantire componenti puliti, leggibili e ottimizzati,
-                        mantenendo un front-end fluido e curato, soprattutto in React.
-                    </li>
-                </ul>
-
                 <p>
-                    Il mio obiettivo è chiudere il divario tra il concetto artistico e
-                    l'implementazione tecnica, realizzando prodotti digitali che non solo funzionino
-                    bene, ma che siano un piacere da usare.
+                    Vedo il codice come uno strumento per creare esperienze digitali significative, dove
+                    design e funzionalità si incontrano.
+                </p>
+                <p>
+                    Mi concentro su interfacce pulite, coerenti e
+                    accessibili, curando ogni dettaglio per realizzare prodotti che siano efficienti e
+                    piacevoli da usare.
+                </p>
+                <p>
+                    Il mio obiettivo è unire estetica e tecnica, trasformando idee
+                    in esperienze digitali concrete.
                 </p>
             </>
         ),
@@ -83,28 +70,26 @@ const NarrativeBlocks: NarrativeBlockData[] = [
 
     {
         id: 3,
-        title: "Il Ponte: Dalle Basi Solide alla Specializzazione Component Design",
+        title: "Il Ponte: Dalle Basi al Component Design",
         content: (
             <>
                 La conversione professionale è stata formalizzata attraverso un percorso di studio
                 intensivo e mirato:
                 <ul>
                     <li>
-                        Corso Full Stack Web Development (600h Boolean): Un bootcamp intensivo che ha
-                        gettato le basi del mio skill set, fornendo conoscenze di Front-End
-                        (...) e le fondamenta di Back-End (...).
+                        <span className="font-bold">Corso Full Stack Web Development </span>(600h Boolean): Un bootcamp intensivo che ha
+                        gettato le basi del mio skill set, fornendo conoscenze di Front-End e le fondamenta di Back-End.
                     </li>
 
                     <li>
-                        Specializzazione in Web Design (UX/UI): Questa specializzazione ha affinato il
+                        <span className="font-bold">Specializzazione in Web Design </span>(UX/UI): Questa specializzazione ha affinato il
                         mio focus, permettendomi di trattare principi base di UX/UI, accessibilità e
                         la creazione di librerie di componenti riutilizzabili con Storybook.
                     </li>
                 </ul>
 
                 <p>
-                    Questa combinazione di competenze mi permette di trasformare un’idea in
-                    un’interfaccia solida, accessibile e rifinita in ogni dettaglio.
+                    Questa combinazione di competenze mi permette di trasformare un’idea in un’interfaccia solida, accessibile e rifinita in ogni dettaglio.
                 </p>
             </>
         ),
