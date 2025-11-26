@@ -1,6 +1,5 @@
 import React from "react";
-import NarrativeBlocks from "../data/aboutContent";
-import NarrativeBlock from "../components/NarrativeBlock";
+import NarrativeBlockList from "../components/NarrativeBlockList";
 
 const AboutPage: React.FC = () => {
 
@@ -8,11 +7,7 @@ const AboutPage: React.FC = () => {
 
         <div className="lg:mt-20">
             <h1 className="font-extrabold lg:text-4xl text-center">Dall’estetica al codice: la mia storia</h1>
-            {NarrativeBlocks.map(block => (
-                <NarrativeBlock
-                    key={block.id}
-                    {...block} />
-            ))}
+            <NarrativeBlockList />
         </div>
     )
 }
