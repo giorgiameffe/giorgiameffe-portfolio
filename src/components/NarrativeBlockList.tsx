@@ -14,7 +14,6 @@ const NarrativeBlockList: React.FC = () => {
                     {...block} />
             ))}
         </>
-
     )
 
 }

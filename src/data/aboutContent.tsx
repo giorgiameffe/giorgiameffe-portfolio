@@ -10,6 +10,7 @@ export interface NarrativeBlockData {
     content: ReactNode;
     imageLight: string;
     imageDark: string;
+    reverse: boolean;
 }
 
 // ==========================================================
@@ -38,7 +39,8 @@ const NarrativeBlocks: NarrativeBlockData[] = [
             </>
         ),
         imageLight: "/img/giorgia-about-pc-light.png",
-        imageDark: "/img/giorgia-about-pc-dark.png"
+        imageDark: "/img/giorgia-about-pc-dark.png",
+        reverse: true
     },
 
     {
@@ -74,8 +76,9 @@ const NarrativeBlocks: NarrativeBlockData[] = [
                 </p>
             </>
         ),
-        imageLight: "",
-        imageDark: ""
+        imageLight: "/img/giorgia-about-pc-light.png",
+        imageDark: "",
+        reverse: false
     },
 
     {
@@ -105,8 +108,9 @@ const NarrativeBlocks: NarrativeBlockData[] = [
                 </p>
             </>
         ),
-        imageLight: "",
-        imageDark: ""
+        imageLight: "/img/giorgia-about-pc-light.png",
+        imageDark: "",
+        reverse: true
     }
 ];
 
