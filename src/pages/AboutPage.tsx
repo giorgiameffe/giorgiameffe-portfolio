@@ -1,5 +1,6 @@
 import React from "react";
 import NarrativeBlockList from "../components/NarrativeBlockList";
+import SkillsSection from "../components/SkillsSection";
 
 const AboutPage: React.FC = () => {
 
@@ -8,6 +9,7 @@ const AboutPage: React.FC = () => {
         <div className="lg:mt-20">
             <h1 className="font-extrabold lg:text-4xl text-center">Dall’estetica al codice: la mia storia</h1>
             <NarrativeBlockList />
+            <SkillsSection />
         </div>
     )
 }
