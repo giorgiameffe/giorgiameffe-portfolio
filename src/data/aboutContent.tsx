@@ -17,13 +17,13 @@ export interface NarrativeBlockData {
 // 2. Dati Centralizzati
 // ==========================================================
 
-// 1.BLOCCHI NARRATIVI A ZIG-ZAG
+// BLOCCHI NARRATIVI A ZIG-ZAG
 
 const NarrativeBlocks: NarrativeBlockData[] = [
 
     {
         id: 1,
-        title: "Il Mio Percorso dalla Cura Estetica al Codice",
+        title: "Il mio percorso dall'estetica al codice",
         content: (
             <>
                 Il mio percorso è iniziato lontano dal codice, in un settore dove la perfezione visiva
@@ -45,21 +45,18 @@ const NarrativeBlocks: NarrativeBlockData[] = [
 
     {
         id: 2,
-        title: "Codice e Creatività: Progettare Esperienze Digitali",
+        title: "Codice e creatività: progettare esperienze digitali",
         content: (
             <>
                 <p>
-                    Vedo il codice come uno strumento per creare esperienze digitali significative, dove
-                    design e funzionalità si incontrano.
+                    Per me il codice non è solo uno strumento tecnico, ma un modo per esprimere idee e dare forma a esperienze digitali significative.
+                    È qui che design e funzionalità si incontrano, creando qualcosa di armonioso e vivo.
                 </p>
                 <p>
-                    Mi concentro su interfacce pulite, coerenti e
-                    accessibili, curando ogni dettaglio per realizzare prodotti che siano efficienti e
-                    piacevoli da usare.
+                    Amo lavorare su interfacce pulite, coerenti e accessibili, pensate per essere intuitive e piacevoli da usare. Ogni scelta progettuale riflette il mio approccio personale: funzionale ma con un tocco di creatività.
                 </p>
                 <p>
-                    Il mio obiettivo è unire estetica e tecnica, trasformando idee
-                    in esperienze digitali concrete.
+                    Il mio obiettivo è trasformare concetti astratti in esperienze digitali concrete, dove estetica e tecnica convivono e si completano.
                 </p>
             </>
         ),
@@ -70,7 +67,7 @@ const NarrativeBlocks: NarrativeBlockData[] = [
 
     {
         id: 3,
-        title: "Il Ponte: Dalle Basi al Component Design",
+        title: "Il ponte: dalle basi al Component Design",
         content: (
             <>
                 La conversione professionale è stata formalizzata attraverso un percorso di studio
@@ -89,8 +86,9 @@ const NarrativeBlocks: NarrativeBlockData[] = [
                 </ul>
 
                 <p>
-                    Questa combinazione di competenze mi permette di trasformare un’idea in un’interfaccia solida, accessibile e rifinita in ogni dettaglio.
+                    Questo percorso mi ha insegnato a unire tecnica e creatività, dando forma a interfacce che raccontano una storia.
                 </p>
+
             </>
         ),
         imageLight: "/img/giorgia-about-pc-light.png",

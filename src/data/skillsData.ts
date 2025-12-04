@@ -5,6 +5,7 @@
 export interface SkillsGroup {
     title: string;
     skills: string[];
+    color?: string;
 }
 
 export interface SkillsSectionData {
@@ -20,7 +21,8 @@ const skillsData: SkillsSectionData = {
     hardSkills: [
         {
             title: "Front-End",
-            skills: ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap", "TypeScript"]
+            skills: ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap", "TypeScript"],
+            color: "bg-blue-200"
         },
         {
             title: "Back-End",
