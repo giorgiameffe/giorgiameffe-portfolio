@@ -26,7 +26,8 @@ const skillsData: SkillsSectionData = {
         },
         {
             title: "Back-End",
-            skills: ["Node.js", "Express.js", "MySQL", "REST API"]
+            skills: ["Node.js", "Express.js", "MySQL", "REST API"],
+            color: "bg-green-200 text-green-950 dark:bg-green-950/50 dark:text-green-200"
         },
         {
             title: "UI & Component Design",
