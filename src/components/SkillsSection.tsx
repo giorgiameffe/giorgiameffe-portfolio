@@ -6,11 +6,12 @@ const SkillsSection: React.FC = () => {
     return (
 
         <section className="max-w-6xl mx-auto mt-20 px-4">
-            <h2 className="font-bold text-3xl mb-6">Competenze tecniche & Soft Skills</h2>
+            <h2 className="font-bold text-2xl lg:text-3xl text-center lg:text-start mb-6">Competenze tecniche & Soft Skills</h2>
 
-            <p className="mb-8">
-                Unisco competenze tecniche e abilità trasversali che mi permettono di lavorare in modo organizzato, preciso e orientato al miglioramento continuo.
+            <p className="mb-8 text-center lg:text-start">
+                Mi piace combinare competenze tecniche e soft skills per affrontare il lavoro in modo organizzato e collaborativo.
             </p>
+
 
             {/* Hard Skills */}
             <h3 className="font-bold text-xl mb-3">Hard Skills</h3>

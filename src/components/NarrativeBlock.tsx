@@ -17,7 +17,7 @@ const NarrativeBlock: React.FC<NarrativeBlockData> = ({
     return (
 
         <section
-            className={`mt-20 flex flex-col lg:flex-row items-start justify-center w-full max-w-6xl mx-auto
+            className={`mt-10 lg:mt-20 flex flex-col lg:flex-row items-start justify-center w-full max-w-6xl mx-auto
             ${reverse ? "lg:flex-row-reverse" : ""}`}
         >
             {/* Colonna Immagine */}
@@ -25,14 +25,19 @@ const NarrativeBlock: React.FC<NarrativeBlockData> = ({
                 <img
                     src={isDark ? imageDark : imageLight}
                     alt={`Immagine per la sezione ${title}`}
-                    className="w-3/4 sm:w-2/3 md:w-1/2 lg:w-110 h-auto rounded"
+                    className="w-3/4 md:w-1/2 lg:w-110 h-auto rounded"
                 />
             </div>
 
             {/* Colonna testo */}
             <div className="lg:w-1/2 px-4">
-                <h2 className="font-bold text-2xl mb-4">{title}</h2>
-                <div className="leading-8">{content}</div>
+                <h2 className="font-bold text-xl lg:text-2xl text-center lg:text-start mb-3 mt-4">
+                    {title}
+                </h2>
+
+                <div className="leading-7 lg:leading-8 text-center lg:text-start">
+                    {content}
+                </div>
             </div>
         </section>
 

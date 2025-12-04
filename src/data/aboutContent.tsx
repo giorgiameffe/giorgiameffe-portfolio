@@ -26,16 +26,20 @@ const NarrativeBlocks: NarrativeBlockData[] = [
         title: "Il mio percorso dall'estetica al codice",
         content: (
             <>
-                Il mio percorso è iniziato lontano dal codice, in un settore dove la perfezione visiva
-                e l'attenzione al dettaglio sono fondamentali: l'estetica.
-                <br />
-                Questa esperienza, unita alla formazione linguistica, mi ha dotato di una sensibilità
-                unica per l'armonia, la coerenza e l'esperienza visiva complessiva.
-                Ho imparato che ogni dettaglio, per quanto piccolo, contribuisce al risultato finale.
-                <br />
-                La scintilla per il mondo tech è arrivata da autodidatta, quando ho capito che potevo
-                fondere il mio lato logico con la creatività. Oggi, come Junior Front-End developer
-                con background Full Stack, porto questa meticolosità artigianale nel mondo digitale.
+                <p>
+                    Il mio percorso è iniziato lontano dal codice, in un settore dove la perfezione visiva
+                    e l'attenzione al dettaglio sono fondamentali: l'estetica.
+                    Questa esperienza, unita alla formazione linguistica, mi ha dotato di una sensibilità
+                    unica per l'armonia, la coerenza e l'esperienza visiva complessiva.
+                    <br></br>
+                    Ho imparato che ogni dettaglio, per quanto piccolo, contribuisce al risultato finale.
+                </p>
+                <p>
+                    La scintilla per il mondo tech è arrivata da autodidatta, quando ho capito che potevo
+                    fondere il mio lato logico con la creatività. Oggi, come Junior Front-End developer
+                    con background Full Stack, porto questa meticolosità artigianale nel mondo digitale.
+                </p>
+
             </>
         ),
         imageLight: "/img/giorgia-about-pc-light.png",
@@ -48,10 +52,7 @@ const NarrativeBlocks: NarrativeBlockData[] = [
         title: "Codice e creatività: progettare esperienze digitali",
         content: (
             <>
-                <p>
-                    Per me il codice non è solo uno strumento tecnico, ma un modo per esprimere idee e dare forma a esperienze digitali significative.
-                    È qui che design e funzionalità si incontrano, creando qualcosa di armonioso e vivo.
-                </p>
+                <p>Per me il codice non è solo uno strumento tecnico, ma un modo per dare forma a esperienze digitali significative, dove design e funzionalità si incontrano.</p>
                 <p>
                     Amo lavorare su interfacce pulite, coerenti e accessibili, pensate per essere intuitive e piacevoli da usare. Ogni scelta progettuale riflette il mio approccio personale: funzionale ma con un tocco di creatività.
                 </p>
