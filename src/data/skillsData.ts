@@ -22,7 +22,7 @@ const skillsData: SkillsSectionData = {
         {
             title: "Front-End",
             skills: ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap", "TypeScript"],
-            color: "bg-blue-200"
+            color: "bg-blue-200 text-blue-950 dark:bg-blue-950/50 dark:text-blue-200"
         },
         {
             title: "Back-End",

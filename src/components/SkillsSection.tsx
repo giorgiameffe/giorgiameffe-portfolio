@@ -16,7 +16,7 @@ const SkillsSection: React.FC = () => {
             <h3 className="font-bold text-xl mb-3">Hard Skills</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
                 {skillsData.hardSkills.map(group => (
-                    <div key={group.title} className={`p-4 rounded-lg dark:border-neutral-700 ${group.color}`}>
+                    <div key={group.title} className={`p-4 rounded-lg ${group.color}`}>
                         <h4 className="font-semibold mb-2">{group.title}</h4>
                         <ul className="space-y-1 text-sm">
                             {group.skills.map(skill => <li key={skill}>{skill}</li>)}
