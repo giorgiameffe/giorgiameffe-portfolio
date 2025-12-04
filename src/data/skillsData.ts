@@ -31,7 +31,8 @@ const skillsData: SkillsSectionData = {
         },
         {
             title: "UI & Component Design",
-            skills: ["UX/UI base", "Atomic Design", "Storybook", "Accessibilità (WCAG/ARIA)", "Componenti riutilizzabili"]
+            skills: ["UX/UI base", "Atomic Design", "Storybook", "Accessibilità (WCAG/ARIA)", "Componenti riutilizzabili"],
+            color: "bg-purple-200 text-purple-800 dark:bg-purple-950/50 dark:text-purple-200"
         },
         {
             title: "Tools",
