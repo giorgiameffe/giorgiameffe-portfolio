@@ -91,7 +91,7 @@ const NarrativeBlocks: NarrativeBlockData[] = [
             </>
         ),
         imageLight: "/img/about-training.png",
-        imageDark: "",
+        imageDark: "/img/about-training.png",
         reverse: true
     }
 ];
