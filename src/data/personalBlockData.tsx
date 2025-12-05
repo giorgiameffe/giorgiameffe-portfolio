@@ -22,7 +22,7 @@ const PersonalBlock: PersonalBlockData = {
         <>
             <p>
                 Ogni giorno condivido il mio spazio con <span className="font-bold">Margot</span> 🐱, la mia piccola assistente
-                felina e supervisore ufficiale dei progetti.
+                e supervisore ufficiale dei progetti.
                 Sempre pronta a guardare con occhi curiosi ciò che creo, dalle interfacce ai piccoli schizzi creativi, spesso
                 mi ricorda che anche la tastiera può diventare un comodo posticino per un pisolino.
             </p>
@@ -35,8 +35,8 @@ const PersonalBlock: PersonalBlockData = {
             </p>
         </>
     ),
-    imageLight: "",
-    imageDark: "",
+    imageLight: "/img/about-giorgia-margot-light.png",
+    imageDark: "/img/about-giorgia-margot-dark.png",
 }
 
 export default PersonalBlock;

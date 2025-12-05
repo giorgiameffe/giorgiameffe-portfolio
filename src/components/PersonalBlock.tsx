@@ -15,7 +15,7 @@ const PersonalBlock: React.FC<PersonalBlockData> = ({
     return (
 
         <section
-            className="mt-10 lg:mt-20 flex flex-col lg:flex-row items-start justify-center w-full max-w-6xl mx-auto"
+            className="mt-10 lg:mt-15 flex flex-col lg:flex-row items-start justify-center w-full max-w-6xl mx-auto"
         >
             {/* Colonna Immagine */}
             <div className="flex justify-center lg:w-1/2">

@@ -24,6 +24,12 @@ const AboutPage: React.FC = () => {
             <NarrativeBlockList />
             <SkillsSection />
 
+            <h2
+                className="mt-15 font-extrabold text-2xl md:text-3xl lg:text-4xl text-center"
+            >
+                Momenti quotidiani
+            </h2>
+
             <PersonalBlock
                 title={personalBlockData.title}
                 content={personalBlockData.content}
