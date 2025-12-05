@@ -43,7 +43,7 @@ const AboutPage: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="relative text-center py-16 px-4 overflow-hidden min-h-[300px]"
+                className="flex flex-col items-center justify-center py-20 px-4 min-h-[300px]"
             >
                 <motion.p
                     className="text-lg leading-relaxed mb-8 text-gray-800 dark:text-gray-200 relative z-10"
@@ -61,12 +61,11 @@ const AboutPage: React.FC = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.6 }}
                 >
-                    <Link to="/contacts" className="inline-flex items-center gap-2 font-semibold text-white bg-rose-400 dark:bg-rose-700 
+                    <Link to="/contacts" className="inline-flex items-center font-semibold text-white bg-rose-400 dark:bg-rose-700 
                 px-8 py-3 rounded-full transition-transform duration-300 hover:-translate-y-1 relative z-10">
                         📩 Contattami
                     </Link>
                 </motion.div>
-
             </motion.div>
 
         </div>
