@@ -71,28 +71,26 @@ const NarrativeBlocks: NarrativeBlockData[] = [
         title: "Il ponte: dalle basi al Component Design",
         content: (
             <>
-                La conversione professionale è stata formalizzata attraverso un percorso di studio
-                intensivo e mirato:
+                La conversione professionale è stata formalizzata attraverso un percorso di studio intensivo e mirato:
                 <ul>
                     <li>
-                        <span className="font-bold">Corso Full Stack Web Development </span>(600h Boolean): Un bootcamp intensivo che ha
+                        <span className="font-bold">Corso Full Stack Web Development </span>(600h Boolean): un bootcamp intensivo che ha
                         gettato le basi del mio skill set, fornendo conoscenze di Front-End e le fondamenta di Back-End.
                     </li>
 
                     <li>
-                        <span className="font-bold">Specializzazione in Web Design </span>(UX/UI): Questa specializzazione ha affinato il
-                        mio focus, permettendomi di trattare principi base di UX/UI, accessibilità e
-                        la creazione di librerie di componenti riutilizzabili con Storybook.
+                        <span className="font-bold">Specializzazione in Web Design </span>(UX/UI): questa specializzazione mi ha permesso di trattare principi base di UX/UI e utilizzare
+                        Storybook per la creazione di componenti riutilizzabili
                     </li>
                 </ul>
 
                 <p>
-                    Questo percorso mi ha insegnato a unire tecnica e creatività, dando forma a interfacce che raccontano una storia.
+                    Un percorso mi ha insegnato a unire tecnica e creatività, dando forma a interfacce che raccontano una storia.
                 </p>
 
             </>
         ),
-        imageLight: "/img/giorgia-about-pc-light.png",
+        imageLight: "/img/about-training.png",
         imageDark: "",
         reverse: true
     }
