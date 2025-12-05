@@ -1,8 +1,8 @@
+import type { ReactNode } from "react";
+
 // ==========================================================
 // 1. Interfaccia per i blocchi narrativi 
 // ==========================================================
-
-import type { ReactNode } from "react";
 
 export interface NarrativeBlockData {
     id: number;
