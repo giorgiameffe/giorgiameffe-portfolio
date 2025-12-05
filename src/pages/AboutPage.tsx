@@ -1,6 +1,7 @@
 import React from "react";
 import NarrativeBlockList from "../components/NarrativeBlockList";
 import SkillsSection from "../components/SkillsSection";
+import PersonalBlock from "../components/PersonalBlock";
 import { motion } from "framer-motion";
 
 const AboutPage: React.FC = () => {
@@ -20,6 +21,7 @@ const AboutPage: React.FC = () => {
             </motion.h1>
             <NarrativeBlockList />
             <SkillsSection />
+            <PersonalBlock />
         </div>
     )
 }
