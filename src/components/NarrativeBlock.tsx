@@ -40,9 +40,7 @@ const NarrativeBlock: React.FC<NarrativeBlockData> = ({
                 </div>
             </div>
         </section>
-
     )
-
 }
 
 export default NarrativeBlock;

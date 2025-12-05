@@ -2,6 +2,7 @@ import React from "react";
 import NarrativeBlockList from "../components/NarrativeBlockList";
 import SkillsSection from "../components/SkillsSection";
 import PersonalBlock from "../components/PersonalBlock";
+import personalBlockData from "../data/personalBlockData";
 import { motion } from "framer-motion";
 
 const AboutPage: React.FC = () => {
@@ -19,9 +20,16 @@ const AboutPage: React.FC = () => {
             >
                 Dall’estetica al codice: la mia storia
             </motion.h1>
+
             <NarrativeBlockList />
             <SkillsSection />
-            <PersonalBlock />
+
+            <PersonalBlock
+                title={personalBlockData.title}
+                content={personalBlockData.content}
+                imageDark={personalBlockData.imageDark}
+                imageLight={personalBlockData.imageLight}
+            />
         </div>
     )
 }
