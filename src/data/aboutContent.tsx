@@ -42,8 +42,8 @@ const NarrativeBlocks: NarrativeBlockData[] = [
 
             </>
         ),
-        imageLight: "/img/giorgia-about-pc-light.png",
-        imageDark: "/img/giorgia-about-pc-dark.png",
+        imageLight: "/img/about-giorgia-pc-light.png",
+        imageDark: "/img/about-giorgia-pc-dark.png",
         reverse: true
     },
 
@@ -61,8 +61,8 @@ const NarrativeBlocks: NarrativeBlockData[] = [
                 </p>
             </>
         ),
-        imageLight: "/img/giorgia-about-pc-light.png",
-        imageDark: "",
+        imageLight: "/img/about-pc.png",
+        imageDark: "/img/about-pc.png",
         reverse: false
     },
 
