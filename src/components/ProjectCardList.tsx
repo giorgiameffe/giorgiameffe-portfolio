@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import projects from "../data/projects";
+import { motion } from "framer-motion";
 
 const ProjectCardList: React.FC = () => {
 
@@ -46,9 +47,15 @@ const ProjectCardList: React.FC = () => {
     return (
 
         <section className="max-w-6xl mx-auto md:px-18 mb-8 relative">
-            <h1 className="font-extrabold text-4xl mt-5 mb-6 mt-10 text-center lg:ms-10 ">
+            <motion.h1
+                className="font-extrabold text-4xl mt-5 mb-6 mt-10 text-center lg:ms-10"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                viewport={{ once: true }}
+            >
                 Progetti in evidenza
-            </h1>
+            </motion.h1>
 
             <div className="overflow-hidden">
 

@@ -34,7 +34,7 @@ const NarrativeBlock: React.FC<NarrativeBlockData> = ({
             // Configurazione della transizione:
             // - duration 0.6s: durata dell’animazione
             // - ease "easeOut": velocità fluida che rallenta verso la fine
-            transition={{ duration: 1, ease: "easeOut" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
         >
             {/* Colonna Immagine */}
             <div className="flex justify-center lg:w-1/2">
@@ -45,7 +45,7 @@ const NarrativeBlock: React.FC<NarrativeBlockData> = ({
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
+                    transition={{ duration: 1, delay: 0.2 }}
                 />
             </div>
 
