@@ -17,7 +17,7 @@ const ProjectsPage: React.FC = () => {
                     className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 dark:text-gray-200 mb-6 text-center"
                     initial={{ opacity: 0, y: -30 }} // Inizio un po' più in alto
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    transition={{ duration: 1, ease: "easeOut" }}
                 >
                     Dall’idea all’interfaccia: i miei progetti
                 </motion.h1>

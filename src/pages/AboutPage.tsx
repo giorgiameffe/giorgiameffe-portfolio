@@ -17,7 +17,7 @@ const AboutPage: React.FC = () => {
                 className="font-extrabold text-2xl md:text-3xl lg:text-4xl text-center"
                 initial={{ opacity: 0, y: -30 }} // Inizio un po' più in alto
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
+                transition={{ duration: 1, ease: "easeOut" }}
             >
                 Dall’estetica al codice: la mia storia
             </motion.h1>
