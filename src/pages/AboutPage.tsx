@@ -10,7 +10,7 @@ const AboutPage: React.FC = () => {
 
     return (
 
-        <div className="mt-10 lg:mt-20">
+        <section className="mt-10 lg:mt-20">
 
             {/* Titolo animato con Framer Motion*/}
             <motion.h1
@@ -72,7 +72,7 @@ const AboutPage: React.FC = () => {
                 </motion.div>
             </motion.div>
 
-        </div>
+        </section>
     )
 }
 
