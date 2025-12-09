@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import type { FormEvent } from "react";
 
 interface FormData {
     name: string;
@@ -17,9 +18,19 @@ const ContactForm: React.FC = () => {
         message: ""
     })
 
+    function handleSubmit(e: FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+        console.log("Form inviato:", formData);
+    }
+
+
+
     return (
 
-        <div>Form contatti</div>
+        <form onSubmit={handleSubmit}>
+
+
+        </form>
     )
 
 }
