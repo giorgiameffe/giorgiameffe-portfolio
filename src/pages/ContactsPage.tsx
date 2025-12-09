@@ -11,7 +11,7 @@ const ContactsPage: React.FC = () => {
             {/* Contenitore principale */}
             <div className="max-w-6xl mx-auto">
 
-                {/* Titolo con animazione identica ai progetti */}
+                {/* Titolo con animazione */}
                 <motion.h1
                     className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 dark:text-gray-200 mb-6 text-center"
                     initial={{ opacity: 0, y: -30 }}
@@ -21,7 +21,7 @@ const ContactsPage: React.FC = () => {
                     Costruiamo qualcosa insieme
                 </motion.h1>
 
-                {/* Sottotitolo animato con stessa logica del ProjectsPage */}
+                {/* Sottotitolo animato */}
                 <div className="max-w-2xl md:max-w-xl mx-auto text-center mb-12 md:flex md:justify-center md:items-center">
                     <motion.p
                         className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed relative 
