@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import ContactForm from "../components/ContactForm";
 
 const ContactsPage: React.FC = () => {
 
@@ -35,6 +36,8 @@ const ContactsPage: React.FC = () => {
                         <strong> Sarò felice di ascoltarti.</strong>
                     </motion.p>
                 </div>
+
+                <ContactForm />
 
             </div>
         </section>
