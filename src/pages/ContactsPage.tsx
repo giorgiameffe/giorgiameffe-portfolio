@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ContactForm from "../components/ContactForm";
+import { Link } from "react-router-dom";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const ContactsPage: React.FC = () => {
 
@@ -22,7 +24,7 @@ const ContactsPage: React.FC = () => {
                 </motion.h1>
 
                 {/* Sottotitolo animato */}
-                <div className="max-w-2xl md:max-w-xl mx-auto text-center mb-12 md:flex md:justify-center md:items-center">
+                <div className="max-w-2xl md:max-w-xl mx-auto text-center mb-6 md:flex md:justify-center md:items-center">
                     <motion.p
                         className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed relative 
                        pt-4 pb-6 px-4 mb-2 md:mb-0"
@@ -31,10 +33,46 @@ const ContactsPage: React.FC = () => {
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
                     >
                         Hai un’idea, un progetto o semplicemente una domanda?
-                        Scrivimi tramite il form o contattami sui miei social.
+                        <br />
+                        Puoi contattarmi tramite i miei social oppure inviarmi un messaggio attraverso il form qui sotto.
                         <br />
                         <strong> Sarò felice di ascoltarti!🌸</strong>
                     </motion.p>
+                </div>
+
+                {/* Sezione Social + CV */}
+                <div
+                    className="flex flex-col items-center gap-2 mb-12"
+                >
+                    {/* Icone social */}
+                    <div className="flex gap-6 text-3xl">
+
+                        <Link
+                            to="https://www.linkedin.com/in/giorgia-meffe-41b23b389"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-gray-900 dark:text-gray-100 hover:text-rose-400 transition"
+                        >
+                            <FaLinkedin className="text-2xl" />
+                        </Link>
+
+                        <Link
+                            to="https://github.com/giorgiameffe"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-gray-900 dark:text-gray-100 hover:text-rose-400 transition"
+                        >
+                            <FaGithub className="text-2xl" />
+                        </Link>
+                    </div>
+
+                    {/* Bottone CV */}
+                    <Link
+                        to="/"
+                        className="inline-block mt-4 bg-rose-400 dark:bg-rose-700 text-white px-8 py-2 font-semibold 
+                    rounded-full shadow-md transition cursor-pointer" >
+                        Scarica il mio CV
+                    </Link>
                 </div>
 
                 <ContactForm />

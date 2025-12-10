@@ -112,7 +112,7 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                 <NavLink
                     to="/projects"
                     className="inline-block mt-4 bg-rose-400 dark:bg-rose-700 text-white px-8 py-2 font-semibold 
-                    rounded-full shadow-md hover:shadow-xl transition cursor-pointer" >
+                    rounded-full shadow-md transition cursor-pointer" >
                     Vedi i miei progetti
                 </NavLink>
                 <div className="flex flex-wrap justify-center md:justify-start items-center gap-2 mt-4">
