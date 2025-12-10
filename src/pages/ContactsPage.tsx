@@ -41,8 +41,11 @@ const ContactsPage: React.FC = () => {
                 </div>
 
                 {/* Sezione Social + CV */}
-                <div
+                <motion.div
                     className="flex flex-col items-center gap-2 mb-12"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
                 >
                     {/* Icone social */}
                     <div className="flex gap-6 text-3xl">
@@ -73,7 +76,7 @@ const ContactsPage: React.FC = () => {
                     rounded-full shadow-md transition cursor-pointer" >
                         Scarica il mio CV
                     </Link>
-                </div>
+                </motion.div>
 
                 <ContactForm />
 
