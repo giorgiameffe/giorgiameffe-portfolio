@@ -31,14 +31,13 @@ const ContactForm: React.FC = () => {
     }
 
 
-
     return (
 
         // Form contatti
         <form onSubmit={handleSubmit} className="md:max-w-2xl lg:max-w-3xl mx-auto">
 
             {/* Container Nome e Cognome */}
-            <div className="flex flex-col md:flex-row md:gap-6 lg:gap-4 mb-3">
+            <div className="flex flex-col md:flex-row md:gap-6 lg:gap-4 mb-4">
                 {/* Nome */}
                 <div className="flex-1">
                     <div className="flex items-center mb-1">
@@ -58,7 +57,7 @@ const ContactForm: React.FC = () => {
 
                 {/* Cognome */}
                 <div className="flex-1">
-                    <div className="flex items-center mb-1">
+                    <div className="flex items-center mb-1 mt-4 md:mt-0">
                         <label htmlFor="lastName" className="font-medium">Cognome:</label>
                     </div>
                     <input
@@ -86,7 +85,7 @@ const ContactForm: React.FC = () => {
                 value={formData.object}
                 onChange={handleChange}
                 required
-                className="w-full border rounded-lg px-3 py-2 mb-3"
+                className="w-full border rounded-lg px-3 py-2 mb-4"
             />
 
             {/* Oggetto del messaggio */}
@@ -101,7 +100,7 @@ const ContactForm: React.FC = () => {
                 value={formData.object}
                 onChange={handleChange}
                 required
-                className="w-full border rounded-lg px-3 py-2 mb-3"
+                className="w-full border rounded-lg px-3 py-2 mb-4"
             />
 
             {/* Messaggio */}
@@ -129,19 +128,28 @@ export default ContactForm;
 // Appunti su FormEvent e ChangeEvent in React + TypeScript
 // ---------------------------------------------------------
 
-{/*  
-    FormEvent:
-    - Rappresenta l'evento generato dall'invio di un form.
-    - Lo si usa di solito nella funzione handleSubmit.
-    - Contiene e.preventDefault(), dati del form, target, ecc.
-    - Esempio:
-     const handleSubmit = (e: FormEvent<HTMLFormElement>) => { ... }
+{/*
+  FormEvent:
+  - Rappresenta l'evento che si genera quando un form viene inviato.
+  - Si usa principalmente nella funzione handleSubmit.
+  - Permette di accedere a e.preventDefault() per evitare il comportamento di default del browser (come il reload della pagina),
+    ai dati del form e al target del form stesso.
+  - È utile per gestire l'invio dei dati in modo controllato con React.
+  - Esempio:
+      const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        // gestisci i dati del form qui
+      }
 */}
 
-{/*  ChangeEvent:
-    - Rappresenta l'evento generato quando un input cambia valore.
-    - Lo si usa nella funzione handleChange di input, textarea, select.
-    - ChangeEvent è generico: ChangeEvent<HTMLInputElement>, ChangeEvent<HTMLTextAreaElement>, ecc.
-    - Esempio:
-     const handleChange = (e: ChangeEvent<HTMLInputElement>) => { ... }
+{/*
+  ChangeEvent:
+  - Rappresenta l'evento che si genera quando un input, textarea o select cambia valore.
+  - Si usa nelle funzioni handleChange per aggiornare lo stato o reagire alle modifiche dell'utente.
+  - È un tipo generico: ChangeEvent<HTMLInputElement>, ChangeEvent<HTMLTextAreaElement>, ChangeEvent<HTMLSelectElement>, ecc.
+  - Permette di leggere il valore corrente del campo tramite e.target.value.
+  - Esempio:
+      const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setNome(e.target.value);
+      }
 */}
