@@ -132,15 +132,16 @@ export default ContactForm;
 {/*  
     FormEvent:
     - Rappresenta l'evento generato dall'invio di un form.
-    - Lo usi di solito nella funzione handleSubmit.
+    - Lo si usa di solito nella funzione handleSubmit.
     - Contiene e.preventDefault(), dati del form, target, ecc.
     - Esempio:
      const handleSubmit = (e: FormEvent<HTMLFormElement>) => { ... }
 */}
 
-// ChangeEvent:
-// - Rappresenta l'evento generato quando un input cambia valore.
-// - Lo usi nella funzione handleChange di input, textarea, select.
-// - ChangeEvent è generico: ChangeEvent<HTMLInputElement>, ChangeEvent<HTMLTextAreaElement>, ecc.
-// - Esempio:
-//   const handleChange = (e: ChangeEvent<HTMLInputElement>) => { ... }
+{/*  ChangeEvent:
+    - Rappresenta l'evento generato quando un input cambia valore.
+    - Lo si usa nella funzione handleChange di input, textarea, select.
+    - ChangeEvent è generico: ChangeEvent<HTMLInputElement>, ChangeEvent<HTMLTextAreaElement>, ecc.
+    - Esempio:
+     const handleChange = (e: ChangeEvent<HTMLInputElement>) => { ... }
+*/}
