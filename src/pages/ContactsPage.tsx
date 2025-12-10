@@ -18,7 +18,7 @@ const ContactsPage: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                 >
-                    Costruiamo qualcosa insieme
+                    Costruiamo qualcosa insieme!
                 </motion.h1>
 
                 {/* Sottotitolo animato */}
@@ -33,7 +33,7 @@ const ContactsPage: React.FC = () => {
                         Hai un’idea, un progetto o semplicemente una domanda?
                         Scrivimi tramite il form o contattami sui miei social.
                         <br />
-                        <strong> Sarò felice di ascoltarti.</strong>
+                        <strong> Sarò felice di ascoltarti!🌸</strong>
                     </motion.p>
                 </div>
 
