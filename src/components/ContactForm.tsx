@@ -38,9 +38,9 @@ const ContactForm: React.FC = () => {
         <form onSubmit={handleSubmit} className="md:max-w-2xl lg:max-w-4xl mx-auto">
 
             {/* Container Nome e Cognome */}
-            <div className="flex flex-col md:flex-row md:gap-6 lg:gap-4">
+            <div className="flex flex-col md:flex-row md:gap-6 lg:gap-4 mb-3">
                 {/* Nome */}
-                <div className="flex-1 mb-4 lg:mb-0">
+                <div className="flex-1">
                     <div className="flex items-center mb-1">
                         <label htmlFor="firstName" className="font-medium">Nome:</label>
                     </div>
@@ -57,7 +57,7 @@ const ContactForm: React.FC = () => {
                 </div>
 
                 {/* Cognome */}
-                <div className="flex-1 mb-4">
+                <div className="flex-1">
                     <div className="flex items-center mb-1">
                         <label htmlFor="lastName" className="font-medium">Cognome:</label>
                     </div>
@@ -74,9 +74,24 @@ const ContactForm: React.FC = () => {
                 </div>
             </div>
 
-            {/* Oggetto del messaggio */}
+            <div className="mb-1">
+                <label htmlFor="email" className="font-medium">Email:</label>
+            </div>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Inserisci la tua email"
+                value={formData.object}
+                onChange={handleChange}
+                required
+                className="w-full border rounded-lg px-3 py-2 mb-3"
+            />
 
-            <label htmlFor="object" className="font-medium">Oggetto:</label>
+            {/* Oggetto del messaggio */}
+            <div className="mb-1">
+                <label htmlFor="object" className="font-medium">Oggetto:</label>
+            </div>
             <input
                 type="text"
                 id="subject"
@@ -85,7 +100,7 @@ const ContactForm: React.FC = () => {
                 value={formData.object}
                 onChange={handleChange}
                 required
-                className="w-full border rounded-lg px-3 py-2 mt-1"
+                className="w-full border rounded-lg px-3 py-2"
             />
 
         </form>
