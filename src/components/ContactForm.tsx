@@ -51,7 +51,7 @@ const ContactForm: React.FC = () => {
                         value={formData.firstName}
                         onChange={handleChange}
                         required
-                        className="w-full border rounded-lg px-3 py-2"
+                        className="w-full border rounded-lg px-3 py-2  placeholder-gray-500 dark:placeholder-gray-400"
                     />
                 </div>
 
@@ -68,7 +68,7 @@ const ContactForm: React.FC = () => {
                         value={formData.lastName}
                         onChange={handleChange}
                         required
-                        className="w-full border rounded-lg px-3 py-2"
+                        className="w-full border rounded-lg px-3 py-2  placeholder-gray-500 dark:placeholder-gray-400"
                     />
                 </div>
             </div>
@@ -82,10 +82,10 @@ const ContactForm: React.FC = () => {
                 id="email"
                 name="email"
                 placeholder="Inserisci la tua email"
-                value={formData.object}
+                value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full border rounded-lg px-3 py-2 mb-4"
+                className="w-full border rounded-lg px-3 py-2 mb-4 placeholder-gray-500 dark:placeholder-gray-400"
             />
 
             {/* Oggetto del messaggio */}
@@ -100,7 +100,7 @@ const ContactForm: React.FC = () => {
                 value={formData.object}
                 onChange={handleChange}
                 required
-                className="w-full border rounded-lg px-3 py-2 mb-4"
+                className="w-full border rounded-lg px-3 py-2 mb-4  placeholder-gray-500 dark:placeholder-gray-400"
             />
 
             {/* Messaggio */}
@@ -114,7 +114,7 @@ const ContactForm: React.FC = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-full border rounded-lg px-3 py-2 h-32 resize-none"
+                className="w-full border rounded-lg px-3 py-2 h-32 placeholder-gray-500 dark:placeholder-gray-400"
             ></textarea>
 
         </form>
