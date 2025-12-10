@@ -74,6 +74,7 @@ const ContactForm: React.FC = () => {
                 </div>
             </div>
 
+            {/* Email */}
             <div className="mb-1">
                 <label htmlFor="email" className="font-medium">Email:</label>
             </div>
@@ -103,6 +104,7 @@ const ContactForm: React.FC = () => {
                 className="w-full border rounded-lg px-3 py-2 mb-3"
             />
 
+            {/* Messaggio */}
             <div className="mb-1">
                 <label htmlFor="textarea" className="font-medium">Messaggio:</label>
             </div>
@@ -122,3 +124,23 @@ const ContactForm: React.FC = () => {
 }
 
 export default ContactForm;
+
+// ---------------------------------------------------------
+// Appunti su FormEvent e ChangeEvent in React + TypeScript
+// ---------------------------------------------------------
+
+{/*  
+    FormEvent:
+    - Rappresenta l'evento generato dall'invio di un form.
+    - Lo usi di solito nella funzione handleSubmit.
+    - Contiene e.preventDefault(), dati del form, target, ecc.
+    - Esempio:
+     const handleSubmit = (e: FormEvent<HTMLFormElement>) => { ... }
+*/}
+
+// ChangeEvent:
+// - Rappresenta l'evento generato quando un input cambia valore.
+// - Lo usi nella funzione handleChange di input, textarea, select.
+// - ChangeEvent è generico: ChangeEvent<HTMLInputElement>, ChangeEvent<HTMLTextAreaElement>, ecc.
+// - Esempio:
+//   const handleChange = (e: ChangeEvent<HTMLInputElement>) => { ... }
