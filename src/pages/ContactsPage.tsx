@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ContactForm from "../components/ContactForm";
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, } from "react-icons/fa";
 
 const ContactsPage: React.FC = () => {
 
@@ -79,6 +79,36 @@ const ContactsPage: React.FC = () => {
                 </motion.div>
 
                 <ContactForm />
+
+                {/* Call-to-action finale */}
+                <motion.div
+                    className="text-center text-gray-800 dark:text-gray-200"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.5 }}
+                >
+                    <p className="mb-4 text-lg">
+                        Grazie per aver visitato la mia pagina!
+                        <br />
+                        Non vedo l’ora di collaborare con te e dare vita al tuo progetto.
+                    </p>
+
+                    {/* Link ad altre pagine */}
+                    <div className="flex justify-center gap-6">
+                        <Link
+                            to="/projects"
+                            className="text-gray-800 dark:text-gray-200 hover:text-rose-400 transition"
+                        >
+                            Vedi i miei progetti
+                        </Link>
+                        <Link
+                            to="/"
+                            className="text-gray-800 dark:text-gray-200 hover:text-rose-400 transition"
+                        >
+                            Torna alla home
+                        </Link>
+                    </div>
+                </motion.div>
 
             </div>
         </section>

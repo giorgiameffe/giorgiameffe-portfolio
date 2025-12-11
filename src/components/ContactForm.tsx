@@ -34,7 +34,9 @@ const ContactForm: React.FC = () => {
     return (
 
         // Form contatti
-        <form onSubmit={handleSubmit} className="md:max-w-2xl lg:max-w-3xl mx-auto">
+        <form
+            onSubmit={handleSubmit}
+            className="md:max-w-2xl lg:max-w-3xl mx-auto mb-15">
 
             {/* Container Nome e Cognome */}
             <div className="flex flex-col md:flex-row md:gap-6 lg:gap-4 mb-4">
