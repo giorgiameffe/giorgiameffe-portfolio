@@ -105,7 +105,7 @@ const ContactsPage: React.FC = () => {
                             className="inline-block bg-rose-200 text-gray-900 dark:bg-rose-900 dark:text-gray-200 px-8 py-2 font-semibold 
                     rounded-full transition cursor-pointer"
                         >
-                            Vedi i miei progetti
+                            Scopri i miei progetti
                         </Link>
                         <Link
                             to="/"

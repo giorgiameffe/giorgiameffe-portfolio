@@ -11,7 +11,7 @@ import { loadSlim } from "tsparticles-slim";
 import type { Engine } from "tsparticles-engine";
 
 import type { ReactNode } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { useContext } from "react";
 import GlobalContext from "../contexts/GlobalContext";
@@ -110,12 +110,12 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">{title}</h1>
                 <h2 className="mt-2 text-lg md:text-xl text-gray-900 dark:text-gray-200 font-medium">{subtitle}</h2>
                 <p className="mt-2 text-base text-gray-900 dark:text-gray-200">{description}</p>
-                <NavLink
+                <Link
                     to="/projects"
                     className="inline-block mt-4 bg-rose-400 dark:bg-rose-700 text-white px-8 py-2 font-semibold 
                     rounded-full shadow-md transition cursor-pointer" >
-                    Vedi i miei progetti
-                </NavLink>
+                    Scopri i miei progetti
+                </Link>
                 <div className="flex flex-wrap justify-center md:justify-start items-center gap-2 mt-4">
                     {/* React */}
                     <span className="flex items-center space-x-1 px-3 py-1 rounded-full text-gray-900 dark:text-gray-200 text-xs font-semibold border border-gray-900 dark:border-gray-600">
@@ -143,7 +143,7 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                     </span>
 
                     {/* LINK COMPLETO ALLA PAGINA ABOUT (Badge di Rinvio) */}
-                    <NavLink
+                    <Link
                         to="/about"
                         className="flex items-center gap-1 px-3 py-1 rounded-full bg-rose-200 text-gray-900 dark:bg-rose-900 dark:text-gray-200 
                         text-xs font-semibold mb-5 md:mb-0"
@@ -152,7 +152,7 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                         <span className="flex items-center">
                             <FaArrowRight className="text-sm" />
                         </span>
-                    </NavLink>
+                    </Link>
 
                 </div>
             </div>

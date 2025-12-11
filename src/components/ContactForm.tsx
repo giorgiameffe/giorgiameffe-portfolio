@@ -36,7 +36,7 @@ const ContactForm: React.FC = () => {
         // Form contatti
         <form
             onSubmit={handleSubmit}
-            className="md:max-w-2xl lg:max-w-3xl mx-auto mb-15">
+            className="md:max-w-2xl lg:max-w-3xl mx-auto mb-15 border border-gray-300 rounded-xl p-6">
 
             {/* Container Nome e Cognome */}
             <div className="flex flex-col md:flex-row md:gap-6 lg:gap-4 mb-4">
@@ -96,8 +96,8 @@ const ContactForm: React.FC = () => {
             </div>
             <input
                 type="text"
-                id="subject"
-                name="subject"
+                id="object"
+                name="object"
                 placeholder="Inserisci oggetto del messaggio"
                 value={formData.object}
                 onChange={handleChange}
@@ -118,6 +118,13 @@ const ContactForm: React.FC = () => {
                 required
                 className="w-full border rounded-lg px-3 py-2 h-32 placeholder-gray-500 dark:placeholder-gray-400"
             ></textarea>
+
+            <button
+                type="submit"
+                className="inline-block mt-4 bg-rose-400 dark:bg-rose-700 text-white px-8 py-2 font-semibold 
+                    rounded-full shadow-md transition cursor-pointer w-full text-center" >
+                Invia messaggio
+            </button>
 
         </form>
     )
