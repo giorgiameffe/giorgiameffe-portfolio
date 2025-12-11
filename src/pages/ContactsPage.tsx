@@ -94,20 +94,27 @@ const ContactsPage: React.FC = () => {
                     </p>
 
                     {/* Link ad altre pagine */}
-                    <div className="flex justify-center gap-6">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.6 }}
+                        className="flex justify-center gap-6">
                         <Link
                             to="/projects"
-                            className="text-gray-800 dark:text-gray-200 hover:text-rose-400 transition"
+                            className="inline-block bg-rose-200 text-gray-900 dark:bg-rose-900 dark:text-gray-200 px-8 py-2 font-semibold 
+                    rounded-full transition cursor-pointer"
                         >
                             Vedi i miei progetti
                         </Link>
                         <Link
                             to="/"
-                            className="text-gray-800 dark:text-gray-200 hover:text-rose-400 transition"
+                            className="inline-block bg-rose-200 text-gray-900 dark:bg-rose-900 dark:text-gray-200 px-8 py-2 font-semibold 
+                    rounded-full transition cursor-pointer"
                         >
                             Torna alla home
                         </Link>
-                    </div>
+                    </motion.div>
                 </motion.div>
 
             </div>
