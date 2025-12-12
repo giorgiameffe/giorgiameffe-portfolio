@@ -26,7 +26,8 @@ const ContactForm: React.FC = () => {
 
                         <button
                             onClick={() => window.location.reload()}
-                            className="bg-rose-400 dark:bg-rose-700 text-white font-semibold px-6 py-2 rounded-full w-full transition">
+                            className="bg-rose-400 dark:bg-rose-700 text-white font-semibold px-6 py-2 rounded-full w-full transition
+                            focus:outline-none focus:border-rose-400">
                             Chiudi
                         </button>
                     </div>
@@ -35,73 +36,118 @@ const ContactForm: React.FC = () => {
 
             <form
                 onSubmit={handleSubmit}
-                className="md:max-w-2xl lg:max-w-3xl mx-auto mb-15 border border-gray-300 rounded-xl p-6"
+                className="md:max-w-2xl lg:max-w-3xl mx-auto mb-15 border border-gray-300 dark:border-gray-900 rounded-xl p-6"
             >
                 {/* Nome */}
                 <div className="mb-4">
-                    <label htmlFor="firstName" className="font-medium">Nome:</label>
+                    <div className="mb-1">
+                        <label
+                            htmlFor="firstName"
+                            className="font-medium"
+                        >
+                            Nome:
+                        </label>
+                    </div>
+
                     <input
                         type="text"
                         id="firstName"
                         name="firstName"
                         placeholder="Inserisci il tuo nome"
                         required
-                        className="w-full border rounded-lg px-3 py-2 placeholder-gray-500 dark:placeholder-gray-400"
+                        className="w-full border border-gray-400 dark:border-gray-800 rounded-lg px-3 py-2 placeholder-gray-500 dark:placeholder-gray-400
+                        focus:outline-none focus:border-rose-400"
                     />
                     <ValidationError prefix="Nome" field="firstName" errors={state.errors} />
                 </div>
 
                 {/* Cognome */}
                 <div className="mb-4">
-                    <label htmlFor="lastName" className="font-medium">Cognome:</label>
+                    <div className="mb-1">
+                        <label
+                            htmlFor="lastName"
+                            className="font-medium"
+                        >
+                            Cognome:
+                        </label>
+                    </div>
+
                     <input
                         type="text"
                         id="lastName"
                         name="lastName"
                         placeholder="Inserisci il tuo cognome"
                         required
-                        className="w-full border rounded-lg px-3 py-2 placeholder-gray-500 dark:placeholder-gray-400"
+                        className="w-full border border-gray-400 dark:border-gray-800 rounded-lg px-3 py-2 placeholder-gray-500 dark:placeholder-gray-400
+                        focus:outline-none focus:border-gray-500"
                     />
                     <ValidationError prefix="Cognome" field="lastName" errors={state.errors} />
                 </div>
 
                 {/* Email */}
                 <div className="mb-4">
-                    <label htmlFor="email" className="font-medium">Email:</label>
+                    <div className="mb-1">
+                        <label
+                            htmlFor="email"
+                            className="font-medium"
+                        >
+                            Email:
+                        </label>
+                    </div>
+
                     <input
                         type="email"
                         id="email"
                         name="email"
                         placeholder="Inserisci la tua email"
                         required
-                        className="w-full border rounded-lg px-3 py-2 placeholder-gray-500 dark:placeholder-gray-400"
+                        className="w-full border border-gray-400 dark:border-gray-800 rounded-lg px-3 py-2 placeholder-gray-500 dark:placeholder-gray-400
+                        focus:outline-none focus:border-rose-400"
                     />
                     <ValidationError prefix="Email" field="email" errors={state.errors} />
                 </div>
 
                 {/* Oggetto */}
                 <div className="mb-4">
-                    <label htmlFor="object" className="font-medium">Oggetto:</label>
+                    <div className="mb-1">
+                        <label
+                            htmlFor="object"
+                            className="font-medium"
+                        >
+                            Oggetto:
+                        </label>
+                    </div>
+
                     <input
                         type="text"
                         id="object"
                         name="object"
                         placeholder="Inserisci oggetto del messaggio"
                         required
-                        className="w-full border rounded-lg px-3 py-2 placeholder-gray-500 dark:placeholder-gray-400"
+                        className="w-full border border-gray-400 dark:border-gray-800 rounded-lg px-3 py-2 placeholder-gray-500 dark:placeholder-gray-400
+                        focus:outline-none focus:border-rose-400"
                     />
                     <ValidationError prefix="Oggetto" field="object" errors={state.errors} />
                 </div>
 
                 {/* Messaggio */}
                 <div className="mb-4">
-                    <label htmlFor="message" className="font-medium">Messaggio:</label>
+                    <div className="mb-1">
+                        <label
+                            htmlFor="message"
+                            className="font-medium"
+                        >
+                            Messaggio:
+                        </label>
+                    </div>
+
                     <textarea
                         id="message"
                         name="message"
                         placeholder="Scrivi qui il tuo messaggio..."
                         required
-                        className="w-full border rounded-lg px-3 py-2 h-32 placeholder-gray-500 dark:placeholder-gray-400"
+                        className="w-full border border-gray-400 dark:border-gray-800 rounded-lg px-3 py-2 h-32 placeholder-gray-500 dark:placeholder-gray-400
+                        focus:outline-none focus:border-rose-400"
                     />
                     <ValidationError prefix="Messaggio" field="message" errors={state.errors} />
                 </div>
