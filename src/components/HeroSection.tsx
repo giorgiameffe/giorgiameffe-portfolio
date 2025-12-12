@@ -145,8 +145,8 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                     {/* LINK COMPLETO ALLA PAGINA ABOUT (Badge di Rinvio) */}
                     <Link
                         to="/about"
-                        className="flex items-center gap-1 px-3 py-1 rounded-full bg-rose-200 text-gray-900 dark:bg-rose-900 dark:text-gray-200 
-                        text-xs font-semibold mb-5 md:mb-0"
+                        className="flex items-center gap-1 px-3 py-0.5 rounded-full border-2 border-rose-400 text-rose-400 dark:border-rose-700 dark:text-rose-700 
+                        text-sm font-semibold mb-5 md:mb-0"
                     >
                         <span>Stack Completo</span>
                         <span className="flex items-center">

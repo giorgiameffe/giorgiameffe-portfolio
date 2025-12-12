@@ -102,14 +102,14 @@ const ContactsPage: React.FC = () => {
                         className="flex justify-center gap-6">
                         <Link
                             to="/projects"
-                            className="inline-block bg-rose-200 text-gray-900 dark:bg-rose-900 dark:text-gray-200 px-8 py-2 font-semibold 
+                            className="inline-block border-2 border-rose-400 text-rose-400 dark:border-rose-700 dark:text-rose-700 px-8 py-2 font-semibold 
                     rounded-full transition cursor-pointer"
                         >
                             Scopri i miei progetti
                         </Link>
                         <Link
                             to="/"
-                            className="inline-block bg-rose-200 text-gray-900 dark:bg-rose-900 dark:text-gray-200 px-8 py-2 font-semibold 
+                            className="inline-block border-2 border-rose-400 text-rose-400 dark:border-rose-700 dark:text-rose-700 px-8 py-2 font-semibold 
                     rounded-full transition cursor-pointer"
                         >
                             Torna alla home
