@@ -9,19 +9,26 @@ const ContactForm: React.FC = () => {
     return (
 
         <div className="relative md:max-w-2xl lg:max-w-3xl mx-auto mb-15">
-
             {/* SUCCESS OVERLAY */}
             {state.succeeded && (
-                <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
-                    <div className="bg-white p-4 rounded shadow text-center">
+                <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
+                    <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 max-w-sm w-full text-center shadow-xl animate-fadeIn">
 
-                        <h2>Messaggio inviato!</h2>
-                        <p>Grazie per avermi scritto.</p>
+                        <h2 className="text-2xl font-semibold text-green-800 dark:text-green-400 mb-3">
+                            Messaggio inviato!
+                        </h2>
 
-                        <button onClick={() => window.location.reload()}>
+                        <p className="text-gray-800 dark:text-gray-200 mb-6">
+                            Grazie per avermi scritto 🌸
+                            <br />
+                            Ti risponderò il prima possibile.
+                        </p>
+
+                        <button
+                            onClick={() => window.location.reload()}
+                            className="bg-rose-400 dark:bg-rose-700 text-white font-semibold px-6 py-2 rounded-full w-full transition">
                             Chiudi
                         </button>
-
                     </div>
                 </div>
             )}
