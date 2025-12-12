@@ -116,7 +116,7 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                     rounded-full shadow-md transition cursor-pointer" >
                     Scopri i miei progetti
                 </Link>
-                <div className="flex flex-wrap justify-center md:justify-start items-center gap-2 mt-4">
+                <div className="flex flex-wrap justify-center md:justify-start items-center gap-2 mt-4 hidden lg:flex">
                     {/* React */}
                     <span className="flex items-center space-x-1 px-3 py-1 rounded-full text-gray-900 dark:text-gray-200 text-xs font-semibold border border-gray-900 dark:border-gray-600">
                         <span>React</span>
