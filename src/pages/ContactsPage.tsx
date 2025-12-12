@@ -84,10 +84,11 @@ const ContactsPage: React.FC = () => {
                 <motion.div
                     className="text-center text-gray-800 dark:text-gray-200"
                     initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.5 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                    <p className="mb-4 text-lg">
+                    <p className="mb-6 text-lg">
                         Grazie per aver visitato la mia pagina!
                         <br />
                         Non vedo l’ora di collaborare con te e dare vita al tuo progetto.
@@ -98,19 +99,20 @@ const ContactsPage: React.FC = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.6 }}
-                        className="flex justify-center gap-6">
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                        className="block md:flex justify-center gap-6"
+                    >
                         <Link
                             to="/projects"
                             className="inline-block border-2 border-rose-400 text-rose-400 dark:border-rose-700 dark:text-rose-700 px-8 py-2 font-semibold 
-                    rounded-full transition cursor-pointer"
+                    rounded-full transition cursor-pointer w-60 md:w-auto mb-2 md:mb-0"
                         >
                             Scopri i miei progetti
                         </Link>
                         <Link
                             to="/"
                             className="inline-block border-2 border-rose-400 text-rose-400 dark:border-rose-700 dark:text-rose-700 px-8 py-2 font-semibold 
-                    rounded-full transition cursor-pointer"
+                    rounded-full transition cursor-pointer w-60 md:w-auto"
                         >
                             Torna alla home
                         </Link>
