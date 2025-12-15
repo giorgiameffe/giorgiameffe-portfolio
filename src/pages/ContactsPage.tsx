@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ContactForm from "../components/ContactForm";
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaGithub, } from "react-icons/fa";
+import SocialIcons from "../components/SocialIcons";
 
 const ContactsPage: React.FC = () => {
 
@@ -49,24 +49,7 @@ const ContactsPage: React.FC = () => {
                 >
                     {/* Icone social */}
                     <div className="flex gap-6 text-3xl">
-
-                        <Link
-                            to="https://www.linkedin.com/in/giorgia-meffe-41b23b389"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="text-gray-900 dark:text-gray-100 hover:text-rose-400 transition"
-                        >
-                            <FaLinkedin className="text-2xl" />
-                        </Link>
-
-                        <Link
-                            to="https://github.com/giorgiameffe"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="text-gray-900 dark:text-gray-100 hover:text-rose-400 transition"
-                        >
-                            <FaGithub className="text-2xl" />
-                        </Link>
+                        <SocialIcons />
                     </div>
 
                     {/* Bottone CV */}

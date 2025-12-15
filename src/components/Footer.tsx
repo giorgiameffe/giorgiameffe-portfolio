@@ -1,6 +1,7 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaEnvelope, FaHeart } from "react-icons/fa";
+import { FaEnvelope, FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import SocialIcons from "./SocialIcons";
 
 const Footer: React.FC = () => {
 
@@ -10,25 +11,8 @@ const Footer: React.FC = () => {
 
             {/* Social Icons */}
             <div className="flex justify-center gap-6">
-                <Link
-                    to="https://www.linkedin.com/in/giorgia-meffe-41b23b389"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-gray-900 dark:text-gray-100 hover:text-rose-400 transition"
-                >
-                    <FaLinkedin className="text-2xl" />
 
-                </Link>
-
-                <Link
-                    to="https://github.com/giorgiameffe"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-gray-900 dark:text-gray-100 hover:text-rose-400 transition"
-                >
-                    <FaGithub className="text-2xl" />
-
-                </Link>
+                <SocialIcons />
 
                 <Link
                     to="/"
