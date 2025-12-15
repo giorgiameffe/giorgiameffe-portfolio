@@ -17,27 +17,19 @@ const SkillsSection: React.FC = () => {
                 Competenze tecniche & Soft Skills
             </motion.h2>
 
-            <motion.p
+            <p
                 className="mb-8 text-center lg:text-start"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-                viewport={{ once: true }}
             >
                 Mi piace combinare competenze tecniche e soft skills per affrontare il lavoro in modo organizzato e collaborativo.
-            </motion.p>
+            </p>
 
 
             {/* Hard Skills */}
-            <motion.h3
+            <h3
                 className="font-bold text-xl mb-3"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                viewport={{ once: true }}
             >
                 Hard Skills
-            </motion.h3>
+            </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
                 {skillsData.hardSkills.map((group, i) => (
                     <motion.div
@@ -61,15 +53,11 @@ const SkillsSection: React.FC = () => {
             </div>
 
             {/* Soft Skills */}
-            <motion.h3
+            <h3
                 className="font-bold text-xl mb-3"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                viewport={{ once: true }}
             >
                 Soft Skills
-            </motion.h3>
+            </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {skillsData.softSkills.map((group, i) => (
                     <motion.div
