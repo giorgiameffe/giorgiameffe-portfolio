@@ -38,14 +38,10 @@ const NarrativeBlock: React.FC<NarrativeBlockData> = ({
         >
             {/* Colonna Immagine */}
             <div className="flex justify-center lg:w-1/2">
-                <motion.img
+                <img
                     src={isDark ? imageDark : imageLight}
                     alt={`Immagine per la sezione ${title}`}
                     className="w-3/4 md:w-1/2 lg:w-110 h-auto rounded"
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: 0.2 }}
                 />
             </div>
 
@@ -55,14 +51,11 @@ const NarrativeBlock: React.FC<NarrativeBlockData> = ({
                     {title}
                 </h2>
 
-                <motion.div
+                <div
                     className="leading-7 lg:leading-8 text-center lg:text-start"
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.3 }}>
+                >
                     {content}
-                </motion.div>
+                </div>
             </div>
         </motion.section>
     )
