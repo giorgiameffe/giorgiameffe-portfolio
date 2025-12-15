@@ -27,19 +27,16 @@ const NarrativeBlocks: NarrativeBlockData[] = [
         content: (
             <>
                 <p>
-                    Il mio percorso è iniziato lontano dal codice, in un settore dove la perfezione visiva
-                    e l'attenzione al dettaglio sono fondamentali: l'estetica.
-                    Questa esperienza, unita alla formazione linguistica, mi ha dotato di una sensibilità
-                    unica per l'armonia, la coerenza e l'esperienza visiva complessiva.
-                    <br></br>
-                    Ho imparato che ogni dettaglio, per quanto piccolo, contribuisce al risultato finale.
+                    Il mio viaggio è iniziato lontano dal codice, in un mondo dove la precisione visiva e l’attenzione al dettaglio sono fondamentali: l’estetica.
+                    Questa esperienza, unita alla formazione linguistica, mi ha donato una sensibilità unica per armonia, coerenza e percezione visiva complessiva.
                 </p>
                 <p>
-                    La scintilla per il mondo tech è arrivata da autodidatta, quando ho capito che potevo
-                    fondere il mio lato logico con la creatività. Oggi, come Junior Front-End developer
-                    con background Full Stack, porto questa meticolosità artigianale nel mondo digitale.
+                    Ho scoperto che ogni dettaglio, per quanto piccolo, contribuisce al risultato finale.
+                    La scintilla per la tecnologia è nata da autodidatta, quando ho capito che potevo unire logica e creatività.
                 </p>
-
+                <p>
+                    Oggi, come Junior Front-End Developer con background Full Stack, porto questa meticolosità artigianale nel mondo digitale.
+                </p>
             </>
         ),
         imageLight: "/img/about-giorgia-pc-light.png",
@@ -52,7 +49,7 @@ const NarrativeBlocks: NarrativeBlockData[] = [
         title: "Codice e creatività: progettare esperienze digitali",
         content: (
             <>
-                <p>Per me il codice non è solo uno strumento tecnico, ma un modo per dare forma a esperienze digitali significative, dove design e funzionalità si incontrano.</p>
+                <p>Per me il codice non è solo uno strumento tecnico, ma un mezzo attraverso cui dare forma a soluzioni significative, dove design e funzionalità si incontrano.</p>
                 <p>
                     Amo lavorare su interfacce pulite, coerenti e accessibili, pensate per essere intuitive e piacevoli da usare.
                 </p>
@@ -71,7 +68,7 @@ const NarrativeBlocks: NarrativeBlockData[] = [
         title: "Il ponte: dalle basi al Component Design",
         content: (
             <>
-                La conversione professionale è stata formalizzata attraverso un percorso di studio intensivo e mirato:
+                La conversione professionale è stata formalizzata attraverso un percorso strutturato e mirato:
                 <ul>
                     <li>
                         <span className="font-bold">Corso Full Stack Web Development </span>(600h Boolean): un bootcamp intensivo che ha
@@ -85,7 +82,7 @@ const NarrativeBlocks: NarrativeBlockData[] = [
                 </ul>
 
                 <p>
-                    Un percorso mi ha insegnato a unire tecnica e creatività, dando forma a interfacce che raccontano una storia.
+                    Questo percorso mi ha insegnato a unire tecnica e creatività, dando forma a interfacce che raccontano una storia.
                 </p>
 
             </>
