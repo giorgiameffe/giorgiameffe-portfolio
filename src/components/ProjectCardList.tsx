@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
-import projects from "../data/projects";
+import projects from "../data/projectsData";
 import { motion } from "framer-motion";
 
 const ProjectCardList: React.FC = () => {

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import type { Project } from "../data/projects";
+import type { Project } from "../data/projectsData";
 
 type ProjectCardProps = {
     project: Project;

@@ -1,7 +1,7 @@
 import React from "react";
 import NarrativeBlock from "./NarrativeBlock";
-import NarrativeBlocks from "../data/aboutContent";
-import type { NarrativeBlockData } from "../data/aboutContent";
+import NarrativeBlocks from "../data/aboutContentData";
+import type { NarrativeBlockData } from "../data/aboutContentData";
 
 const NarrativeBlockList: React.FC = () => {
 
