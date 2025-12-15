@@ -119,27 +119,27 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                 <div className="flex flex-wrap justify-center md:justify-start items-center gap-2 mt-4 hidden lg:flex">
                     {/* React */}
                     <span className="flex items-center space-x-1 px-3 py-1 rounded-full text-gray-900 dark:text-gray-200 text-xs font-semibold border border-gray-900 dark:border-gray-600">
-                        <span>React</span>
+                        <span>CSS</span>
                     </span>
 
                     {/* TypeScript (TS) */}
                     <span className="flex items-center space-x-1 px-3 py-1 rounded-full text-gray-900 dark:text-gray-200 text-xs font-semibold border border-gray-900 dark:border-gray-600">
-                        <span>TS</span>
+                        <span>JS</span>
                     </span>
 
                     {/* JavaScript (JS) */}
                     <span className="flex items-center space-x-1 px-3 py-1 rounded-full text-gray-900 dark:text-gray-200 text-xs font-semibold border border-gray-900 dark:border-gray-600">
-                        <span>JS</span>
+                        <span>TS</span>
                     </span>
 
                     {/* Storybook */}
                     <span className="flex items-center space-x-1 px-3 py-1 rounded-full text-gray-900 dark:text-gray-200 text-xs font-semibold border border-gray-900 dark:border-gray-600">
-                        <span>Storybook</span>
+                        <span>React</span>
                     </span>
 
                     {/* CSS*/}
                     <span className="flex items-center space-x-1 px-3 py-1 rounded-full text-gray-900 dark:text-gray-200 text-xs font-semibold border border-gray-900 dark:border-gray-600">
-                        <span>CSS</span>
+                        <span>Storybook</span>
                     </span>
 
                     {/* LINK COMPLETO ALLA PAGINA ABOUT (Badge di Rinvio) */}
