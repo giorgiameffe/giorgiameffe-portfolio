@@ -54,7 +54,7 @@ const NarrativeBlocks: NarrativeBlockData[] = [
             <>
                 <p>Per me il codice non è solo uno strumento tecnico, ma un modo per dare forma a esperienze digitali significative, dove design e funzionalità si incontrano.</p>
                 <p>
-                    Amo lavorare su interfacce pulite, coerenti e accessibili, pensate per essere intuitive e piacevoli da usare. Ogni scelta progettuale riflette il mio approccio personale: funzionale ma con un tocco di creatività.
+                    Amo lavorare su interfacce pulite, coerenti e accessibili, pensate per essere intuitive e piacevoli da usare.
                 </p>
                 <p>
                     Il mio obiettivo è trasformare concetti astratti in esperienze digitali concrete, dove estetica e tecnica convivono e si completano.
