@@ -7,4 +7,16 @@
 export interface ProjectsDetail {
     slug: string;
     title: string;
+    briefDescription: string;
+
+    // Dettagli contesto: ruolo, durata, team
+    details: {
+        role: string;
+        duration: string;
+        status: 'Completato' | 'In Corso' | 'In Manutenzione';
+        team: string;
+    };
+
+    // Tecnologie utilizzate (per i badge)
+    technologies: string[];
 }
