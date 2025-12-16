@@ -13,9 +13,8 @@ const HomePage: React.FC = () => {
                 subtitle="Junior Front-End Developer che crede nella bellezza delle cose semplici."
                 description={
                     <>
-                        Creo interfacce eleganti e funzionali, dove la logica del codice incontra la bellezza del design.
+                        Creo interfacce eleganti e funzionali, dove la logica del codice abbraccia la bellezza del design.
                     </>
-
                 }
             />
             <ProjectCardList />

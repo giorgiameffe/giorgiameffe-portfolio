@@ -28,7 +28,6 @@ const Footer: React.FC = () => {
                 <FaHeart className="text-md text-rose-400 dark:text-rose-500" />
             </p>
 
-
             {/* Copyright */}
             <p className="text-md text-gray-700 dark:text-gray-500 mt-2">
                 © {new Date().getFullYear()} • Giorgia Meffe

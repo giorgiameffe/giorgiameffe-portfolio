@@ -82,7 +82,7 @@ const NarrativeBlocks: NarrativeBlockData[] = [
                 </ul>
 
                 <p>
-                    Questo percorso mi ha insegnato a unire tecnica e creatività, dando forma a interfacce che raccontano una storia.
+                    Un percorso che mi ha insegnato a unire tecnica e creatività, dando forma a interfacce che raccontano una storia.
                 </p>
 
             </>
