@@ -1,5 +1,5 @@
 // ==========================================================
-// 1.Interfaccia per i progetti, da implementare per la card del dettaglio
+// 1.Interfaccia per i progetti
 // ==========================================================
 
 export interface Project {
