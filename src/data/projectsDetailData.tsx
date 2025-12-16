@@ -19,4 +19,23 @@ export interface ProjectsDetail {
 
     // Tecnologie utilizzate (per i badge)
     technologies: string[];
+
+    // Descrizione approfondita
+    description: {
+        scopeAndGoal: string; // Lo scopo e l'obiettivo del progetto
+        personalTechnicalChallenges: string[]; // Le sfide tecniche personali superate
+        keyLearnings: string; // Risultati o lezioni apprese
+    };
+
+    // Elementi multimediali per la galleria
+    gallery: {
+        mediaUrl: string;
+        type: 'image' | 'video';
+        caption: string;
+    }[];
+
+    // Link esterni
+    links: {
+        github: string;
+    };
 }
