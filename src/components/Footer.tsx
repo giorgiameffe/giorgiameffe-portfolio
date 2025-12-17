@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
 
     return (
 
-        <footer className="w-full py-7 text-center shadow-inner shadow-gray-300 dark:shadow-gray-900">
+        <footer className="w-full py-7 text-center shadow-inner shadow-gray-300 dark:shadow-gray-900 dark:bg-black">
 
             {/* Social Icons */}
             <div className="flex justify-center gap-6">
