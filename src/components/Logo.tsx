@@ -2,6 +2,8 @@ import React from "react";
 import { useContext } from "react";
 import GlobalContext from "../contexts/GlobalContext";
 import { Link } from "react-router-dom";
+import logoLight from "../assets/logo-light.png";
+import logoDark from "../assets/logo-dark.png";
 
 const Logo: React.FC = () => {
 
@@ -11,7 +13,7 @@ const Logo: React.FC = () => {
         <div className="flex flex-col items-center w-full">
             <Link to="/">
                 <img
-                    src={isDark ? "/img/logo-dark.png" : "/img/logo-light.png"}
+                    src={isDark ? logoDark : logoLight}
                     alt="Logo"
                     className="w-15 md:w-18 lg:w-22 h-auto"
                 />
