@@ -12,12 +12,12 @@ import type { Engine } from "tsparticles-engine";
 
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
-
 import { useContext } from "react";
 import GlobalContext from "../contexts/GlobalContext";
-
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
+import heroImgLight from "../assets/giorgia-hero-light.png";
+import heroImgDark from "../assets/giorgia-hero-dark.png";
 
 // type per HeroSection
 type HeroSectionProps = {
@@ -98,7 +98,7 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
             {/* Immagine */}
             <figure className="md:mr-6 flex justify-center md:justify-end relative z-10">
                 <img
-                    src={isDark ? "/img/giorgia-hero-dark.png" : "/img/giorgia-hero-light.png"}
+                    src={isDark ? heroImgDark : heroImgLight}
                     alt="Foto personale"
                     className="w-64 md:w-[30rem] lg:w-[22rem] h-auto object-contain rounded-sm"
                 />
