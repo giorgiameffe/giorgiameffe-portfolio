@@ -1,5 +1,5 @@
 import React from "react";
-import type { NarrativeBlockData } from "../data/aboutContentData";
+import type { NarrativeBlockData } from "../data/narrativeBlockData";
 import { useContext } from "react";
 import GlobalContext from "../contexts/GlobalContext";
 import { motion } from "framer-motion";

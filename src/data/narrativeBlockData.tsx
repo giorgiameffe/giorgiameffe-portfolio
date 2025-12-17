@@ -39,8 +39,8 @@ const NarrativeBlocks: NarrativeBlockData[] = [
                 </p>
             </>
         ),
-        imageLight: "/img/about-giorgia-pc-light.png",
-        imageDark: "/img/about-giorgia-pc-dark.png",
+        imageLight: "/images/about/about-giorgia-pc-light.png",
+        imageDark: "/imges/about/about-giorgia-pc-dark.png",
         reverse: true
     },
 
@@ -58,8 +58,8 @@ const NarrativeBlocks: NarrativeBlockData[] = [
                 </p>
             </>
         ),
-        imageLight: "/img/about-pc.png",
-        imageDark: "/img/about-pc.png",
+        imageLight: "/images/about/about-pc.png",
+        imageDark: "/images/about/about-pc.png",
         reverse: false
     },
 
@@ -87,8 +87,8 @@ const NarrativeBlocks: NarrativeBlockData[] = [
 
             </>
         ),
-        imageLight: "/img/about-training.png",
-        imageDark: "/img/about-training.png",
+        imageLight: "/images/about/about-training.png",
+        imageDark: "/images/about/about-training.png",
         reverse: true
     }
 ];

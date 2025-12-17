@@ -35,8 +35,8 @@ const PersonalBlock: PersonalBlockData = {
             </p>
         </>
     ),
-    imageLight: "/img/about-giorgia-margot-light.png",
-    imageDark: "/img/about-giorgia-margot-dark.png",
+    imageLight: "/images/about/about-giorgia-margot-light.png",
+    imageDark: "/images/about/about-giorgia-margot-dark.png",
 }
 
 export default PersonalBlock;
