@@ -21,7 +21,7 @@ const skillsData: SkillsSectionData = {
     hardSkills: [
         {
             title: "Front-End",
-            skills: ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap", "TypeScript"],
+            skills: ["HTML5", "CSS3", "JavaScript", "Typescript", "React", "Bootstrap"],
             color: "bg-indigo-200 text-indigo-950 dark:bg-indigo-950 dark:text-indigo-200"
         },
         {
@@ -36,7 +36,7 @@ const skillsData: SkillsSectionData = {
         },
         {
             title: "Tools",
-            skills: ["Git / GitHub", "VS Code", "Postman"],
+            skills: ["Git / GitHub", "NPM", "Vite", "VS Code", "Postman"],
             color: "bg-pink-200 text-pink-950 dark:bg-pink-950 dark:text-pink-200"
         }
     ],
