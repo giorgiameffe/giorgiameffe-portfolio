@@ -37,6 +37,7 @@ export interface ProjectsDetailData {
     // Link esterni
     links: {
         github: string;
+        githubBackend?: string;
     };
 }
 
@@ -82,19 +83,74 @@ const ProjectsDetail: ProjectsDetailData[] = [
 
         gallery: [
             {
-                mediaUrl: "URL del video/immagine della homepage",
+                mediaUrl: "URL dell'immagine",
                 type: "image",
                 caption: "Screenshot della homepage con design a tema fantasy.",
             },
             {
-                mediaUrl: "URL del video/immagine della pagina prodotto",
+                mediaUrl: "URL del video",
                 type: "video",
-                caption: "Demo della responsività e dell'interazione con le card prodotto.",
+                caption: "Demo di BoolShop: panoramica dell'interfaccia fantasy, navigazione tra i prodotti e visualizzazione delle sezioni wishlist, carrello e checkout.",
             },
         ],
 
         links: {
             github: "https://github.com/giorgiameffe/bool-shop"
+        }
+    },
+
+    {
+        slug: "cine-circle",
+        title: "Cine Circle - Blog di Film",
+        briefDescription: "Web app Full Stack con architettura disaccoppiata (Frontend e Backend separati). Un blog cinematografico dinamico con estetica vintage che permette l'inserimento di film e recensioni in tempo reale.",
+
+        details: {
+            role: "Full Stack Developer (Individuale)",
+            duration: "Maggio 2025",
+            status: "Completato",
+            team: "Progetto individuale (Corso Boolean)"
+        },
+
+        technologies: [
+            "React",
+            "Express.js",
+            "Node.js",
+            "MySQL",
+            "Bootstrap",
+            "CSS"
+        ],
+
+        description: {
+            scopeAndGoal: "L'obiettivo del progetto era creare una piattaforma interattiva per appassionati di cinema, strutturando l'applicazione in due ecosistemi indipendenti per garantire una netta separazione delle responsabilità tra l'interfaccia utente e la logica del server.",
+            personalTechnicalChallenges: [
+                "Sviluppo dell'architettura Full Stack completa, integrando un frontend dinamico in React con un sistema backend strutturato in Express e Node.js.",
+                "Gestione del database relazionale MySQL, implementando query e middleware per la manipolazione e il recupero efficiente dei dati relativi ai film.",
+                "Gestione della comunicazione tra client e server tramite API RESTful, configurando le policy di CORS per garantire uno scambio dati sicuro ed efficiente.",
+                "Implementazione di form interattivi per l'aggiunta di film e recensioni, gestendo i dati e l'invio al database MySQL tramite query.",
+                "Logica di aggiornamento dinamico del frontend per visualizzare i nuovi contenuti (film/recensioni) immediatamente dopo l'invio al database.",
+                "Creazione di un'interfaccia utente con estetica vintage, curando meticolosamente palette cromatica e tipografia per riflettere l'identità visiva del cinema classico.",
+                "Ottimizzazione della responsività tramite Bootstrap e CSS personalizzato per mantenere la leggibilità e lo stile vintage su ogni risoluzione."
+            ],
+
+            keyLearnings: "Questo progetto mi ha permesso di approfondire lo sviluppo Full-Stack, dandomi l'opportunità di unire un frontend dinamico in React a un backend strutturato in Express e MySQL in un’unica esperienza coerente. La sfida principale, che ha rappresentato il mio più grande apprendimento, è stata bilanciare perfettamente la complessità tecnica delle operazioni lato server con una cura estetica meticolosa: ho imparato a costruire un prodotto dove la logica del codice e il design vintage convivono, garantendo un'interfaccia che non è solo funzionale e responsiva, ma capace di trasmettere un'identità visiva chiara e coinvolgente."
+        },
+
+        gallery: [
+            {
+                mediaUrl: "URL dell'immagine",
+                type: "image",
+                caption: "Homepage del blog con layout vintage.",
+            },
+            {
+                mediaUrl: "URL del video",
+                type: "video",
+                caption: "Demo di Cine Circle: tour dell'interfaccia vintage, navigazione tra i post e dimostrazione pratica dell'inserimento di nuovi film e recensioni.",
+            }
+        ],
+
+        links: {
+            github: "https://github.com/giorgiameffe/webapp-react",
+            githubBackend: "https://github.com/giorgiameffe/webapp-express"
         }
     }
 ]
