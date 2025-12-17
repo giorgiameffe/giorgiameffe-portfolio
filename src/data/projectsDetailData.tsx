@@ -54,7 +54,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
 
         details: {
             role: "Frontend Developer (Individuale)",
-            duration: "2 settimane (Giugno 2025 - Luglio 2025)",
+            duration: "2 settimane (Agosto 2025 - Settembre 2025) con ritocchi successivi",
             status: "Completato",
             team: "Progetto individuale"
         },
