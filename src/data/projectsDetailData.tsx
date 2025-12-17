@@ -46,9 +46,59 @@ export interface ProjectsDetailData {
 // ==========================================================
 
 const ProjectsDetail: ProjectsDetailData[] = [
+
+    {
+        slug: "header-ui-custom",
+        title: "Header UI Component - E-commerce di cosmesi naturale",
+        briefDescription: "Componente Header personalizzato sviluppato in React + Storybook, pensato per un e-commerce di cosmetici naturali con focus su UX, accessibilità, design responsivo e componenti riutilizzabili secondo l'Atomic Design.",
+
+        details: {
+            role: "Frontend Developer (Individuale)",
+            duration: "2 settimane (Giugno 2025 - Luglio 2025)",
+            status: "Completato",
+            team: "Progetto individuale"
+        },
+
+        technologies: [
+            "React",
+            "TypeScript",
+            "Storybook",
+            "CSS"
+        ],
+
+        description: {
+            scopeAndGoal: "L'obiettivo del progetto è stato quello di creare un header personalizzato per un e-commerce di cosmetici naturali, sviluppato con React e documentato tramite Storybook, per garantire componenti riutilizzabili, scalabili e accessibili. L'header doveva rispecchiare l'identità visiva del brand, comunicando calma e naturalezza, e includere una navigazione ottimale sia su desktop che su dispositivi mobili.",
+            personalTechnicalChallenges: [
+                "Creazione di un sistema di navigazione reattivo che si adattasse facilmente a dispositivi di diverse dimensioni, passando da un menu orizzontale su desktop a un overlay verticale su mobile.",
+                "Implementazione della gestione della modalità light/dark utilizzando variabili CSS e media queries, per migliorare l'accessibilità visiva su diverse condizioni di illuminazione.",
+                "Sviluppo di componenti modulari seguendo il principio di Atomic Design, garantendo la riutilizzabilità e la manutenibilità del codice.",
+                "Integrazione con Storybook per documentare i componenti e garantire un'esperienza interattiva nella modifica e test dei componenti.",
+                "Assicurazione della compatibilità e accessibilità tramite l'uso di ARIA-labels e la gestione di focus-visible per una navigazione da tastiera ottimizzata."
+            ],
+            keyLearnings: "Questo progetto mi ha permesso di approfondire le tecniche di progettazione UI seguendo il modello Atomic Design, migliorando la gestione della responsività, dell'accessibilità e dell'interazione utente. Ho imparato a lavorare con Storybook per creare una documentazione interattiva e ho perfezionato la mia capacità di sviluppare componenti riutilizzabili e scalabili, concentrandomi su un design che fosse al tempo stesso funzionale ed esteticamente coerente."
+        },
+
+        gallery: [
+            {
+                mediaUrl: "URL dell'immagine",
+                type: "image",
+                caption: "Screenshot dell'header con design naturale e modalità light.",
+            },
+            {
+                mediaUrl: "URL del video",
+                type: "video",
+                caption: "Demo dell'header: mostra il passaggio dalla modalità light a dark e la transizione del menu mobile.",
+            }
+        ],
+
+        links: {
+            github: "https://github.com/giorgiameffe/webdesign-custom-header-storybook"
+        }
+    },
+
     {
         slug: "bool-shop",
-        title: "BoolShop - E-commerce di Giochi da Tavolo",
+        title: "BoolShop - E-commerce di giochi da tavolo",
         briefDescription: "E-commerce full-stack a tema fantasy per la vendita di giochi da tavolo, sviluppato in team di 5 persone con un focus specifico sulla user experience e l'identità visiva.",
 
         details: {
@@ -60,7 +110,6 @@ const ProjectsDetail: ProjectsDetailData[] = [
 
         technologies: [
             "React",
-            "React Router",
             "Bootstrap",
             "CSS",
             "Express.js",
@@ -101,12 +150,12 @@ const ProjectsDetail: ProjectsDetailData[] = [
 
     {
         slug: "cine-circle",
-        title: "Cine Circle - Blog di Film",
+        title: "Cine Circle - Blog di film",
         briefDescription: "Web app Full Stack con architettura disaccoppiata (Frontend e Backend separati). Un blog cinematografico dinamico con estetica vintage che permette l'inserimento di film e recensioni in tempo reale.",
 
         details: {
             role: "Full Stack Developer (Individuale)",
-            duration: "Maggio 2025",
+            duration: "4 giorni (Maggio 2025)",
             status: "Completato",
             team: "Progetto individuale (Corso Boolean)"
         },
