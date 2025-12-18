@@ -8,6 +8,7 @@ export interface ProjectsDetailData {
     slug: string;
     title: string;
     briefDescription: string;
+    heroImage: string;
 
     // Dettagli contesto: ruolo, durata, team
     details: {
@@ -51,6 +52,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         slug: "header-ui-custom",
         title: "Header UI Component - E-commerce di cosmesi naturale",
         briefDescription: "Componente Header personalizzato sviluppato in React + Storybook, pensato per un e-commerce di cosmetici naturali con focus su UX, accessibilità, design responsivo e componenti riutilizzabili secondo l'Atomic Design.",
+        heroImage: "",
 
         details: {
             role: "Frontend Developer (Individuale)",
@@ -100,6 +102,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         slug: "bool-shop",
         title: "BoolShop - E-commerce di giochi da tavolo",
         briefDescription: "E-commerce full-stack a tema fantasy per la vendita di giochi da tavolo, sviluppato in team di 5 persone con un focus specifico sulla user experience e l'identità visiva.",
+        heroImage: "",
 
         details: {
             role: "Frontend Developer & UI/UX Contributor",
@@ -152,6 +155,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         slug: "cine-circle",
         title: "Cine Circle - Blog di film",
         briefDescription: "Web app Full Stack con architettura disaccoppiata (Frontend e Backend separati). Un blog cinematografico dinamico con estetica vintage che permette l'inserimento di film e recensioni in tempo reale.",
+        heroImage: "",
 
         details: {
             role: "Full Stack Developer (Individuale)",
