@@ -2,6 +2,7 @@ import React from "react";
 import ProjectDetailHero from "../components/ProjectDetailHero";
 import ProjectDetailInfoBar from "../components/ProjectDetailInfoBar";
 import ProjectDetailContent from "../components/ProjectDetailContent";
+import ProjectDetailGallery from "../components/ProjectDetailGallery";
 
 const ProjectDetailsPage: React.FC = () => {
 
@@ -12,6 +13,7 @@ const ProjectDetailsPage: React.FC = () => {
             <ProjectDetailHero />
             <ProjectDetailInfoBar />
             <ProjectDetailContent />
+            <ProjectDetailGallery />
         </section>
     )
 }
