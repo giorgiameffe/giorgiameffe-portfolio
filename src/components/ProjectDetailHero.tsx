@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProjectsDetailHero: React.FC = () => {
+const ProjectDetailHero: React.FC = () => {
 
     return (
 
@@ -8,4 +8,4 @@ const ProjectsDetailHero: React.FC = () => {
     )
 }
 
-export default ProjectsDetailHero;
+export default ProjectDetailHero;
