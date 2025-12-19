@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectDetailHero from "../components/ProjectDetailHero";
 import ProjectDetailInfoBar from "../components/ProjectDetailInfoBar";
+import ProjectDetailContent from "../components/ProjectDetailContent";
 
 const ProjectDetailsPage: React.FC = () => {
 
@@ -10,6 +11,7 @@ const ProjectDetailsPage: React.FC = () => {
             <h1 className="font-bold">Sono nella pagina Dettagli Progetto</h1>
             <ProjectDetailHero />
             <ProjectDetailInfoBar />
+            <ProjectDetailContent />
         </section>
     )
 }
