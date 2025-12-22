@@ -29,7 +29,10 @@ const ProjectDetailsPage: React.FC = () => {
                 heroImage={project.heroImage}
             />
 
-            <ProjectDetailInfoBar />
+            <ProjectDetailInfoBar
+                details={project.details}
+                technologies={project.technologies}
+                links={project.links} />
             <ProjectDetailContent />
             <ProjectDetailGallery />
         </section>
