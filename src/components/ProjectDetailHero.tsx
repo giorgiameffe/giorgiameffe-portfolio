@@ -20,13 +20,14 @@ const ProjectDetailHero: React.FC<ProjectDetailHeroProps> = ({
             </h1>
 
             <p className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed 
-                pt-4 pb-6 px-4 mb-2 md:mb-4 max-w-3xl">
+                mb-2 md:mb-12 max-w-3xl">
                 {briefDescription}
             </p>
 
             <img
                 src={heroImage}
                 alt={title}
+                className="mb-8"
             />
         </div>
     );
