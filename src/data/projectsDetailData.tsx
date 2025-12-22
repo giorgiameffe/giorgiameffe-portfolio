@@ -108,7 +108,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
             role: "Frontend Developer & UI/UX Contributor",
             duration: "2 settimane (Maggio 2025 - Giugno 2025)",
             status: "Completato",
-            team: "Team di 5 persone (Progetto di gruppo finale di Boolean)"
+            team: "Progetto di gruppo finale di Boolean"
         },
 
         technologies: [
