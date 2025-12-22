@@ -11,12 +11,24 @@ const ProjectDetailHero: React.FC<ProjectDetailHeroProps> = ({
     briefDescription,
     heroImage,
 }) => {
+
     return (
-        <>
-            <h1>{title}</h1>
-            <p>{briefDescription}</p>
-            <img src={heroImage} alt={title} />
-        </>
+
+        <div className="flex flex-col items-center text-center">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 dark:text-gray-200 mb-6">
+                {title}
+            </h1>
+
+            <p className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed 
+                pt-4 pb-6 px-4 mb-2 md:mb-4 max-w-3xl">
+                {briefDescription}
+            </p>
+
+            <img
+                src={heroImage}
+                alt={title}
+            />
+        </div>
     );
 };
 

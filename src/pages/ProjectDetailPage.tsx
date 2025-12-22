@@ -19,6 +19,7 @@ const ProjectDetailsPage: React.FC = () => {
     }
 
     return (
+
         <section className="mt-12 md:mt-16 lg:mt-20 max-w-6xl mx-auto">
 
             {/* Hero della pagina di dettaglio */}
