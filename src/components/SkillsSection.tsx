@@ -26,7 +26,7 @@ const SkillsSection: React.FC = () => {
 
             {/* Hard Skills */}
             <h3
-                className="font-bold text-xl mb-3"
+                className="font-bold text-xl mb-3 text-center lg:text-start"
             >
                 Hard Skills
             </h3>
@@ -54,7 +54,7 @@ const SkillsSection: React.FC = () => {
 
             {/* Soft Skills */}
             <h3
-                className="font-bold text-xl mb-3"
+                className="font-bold text-xl mb-3 text-center lg:text-start"
             >
                 Soft Skills
             </h3>

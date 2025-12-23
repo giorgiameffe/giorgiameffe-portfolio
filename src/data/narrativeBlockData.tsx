@@ -40,7 +40,7 @@ const NarrativeBlocks: NarrativeBlockData[] = [
             </>
         ),
         imageLight: "/images/about/about-giorgia-pc-light.png",
-        imageDark: "/imges/about/about-giorgia-pc-dark.png",
+        imageDark: "/images/about/about-giorgia-pc-dark.png",
         reverse: true
     },
 
