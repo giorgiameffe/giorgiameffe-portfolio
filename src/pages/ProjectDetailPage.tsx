@@ -34,7 +34,8 @@ const ProjectDetailsPage: React.FC = () => {
                 technologies={project.technologies}
             />
 
-            <ProjectDetailContent />
+            <ProjectDetailContent
+                description={project.description} />
             <ProjectDetailGallery />
         </section>
     );
