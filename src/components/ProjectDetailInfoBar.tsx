@@ -17,38 +17,48 @@ const ProjectDetailInfoBar: React.FC<InfoBarProps> = ({
 
     return (
 
-        <div className="flex justify-between">
-            <section className="mb-4">
-                <h2 className="text-xl font-semibold mb-1">Dettagli rapidi</h2>
-                <ul className="leading-relaxed">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+            {/* Sezione dettagli del progetto */}
+            <section>
+                <h2 className="text-lg font-semibold mb-3">Dettagli progetto</h2>
+                <ul className="space-y-2 text-sm">
                     <li>
-                        <span className="font-semibold mr-1">Ruolo:</span>
+                        <span className="font-medium mr-1">Ruolo:</span>
                         {details.role}
                     </li>
                     <li>
-                        <span className="font-semibold mr-1">Durata:</span>
+                        <span className="font-medium mr-1">Durata:</span>
                         {details.duration}
                     </li>
                     <li>
-                        <span className="font-semibold mr-1">Stato:</span>
+                        <span className="font-medium mr-1">Stato:</span>
                         {details.status}
                     </li>
                     <li>
-                        <span className="font-semibold mr-1">Tipo di progetto:</span>
+                        <span className="font-medium mr-1">Tipo:</span>
                         {details.team}
                     </li>
                 </ul>
             </section>
 
-            <section className="mb-4">
-                <h2 className="text-xl font-semibold mb-1">Tecnologie usate:</h2>
-                <ul className="leading-relaxed">
-                    {technologies.map(t =>
-                        <li>{t}</li>
-                    )}
+            {/* Stack tecnologico */}
+            <section>
+                <h2 className="text-lg font-semibold mb-3">Stack tecnologico</h2>
+                <ul className="grid grid-cols-2 gap-2">
+                    {technologies.map(t => (
+                        <li
+                            key={t}
+                            className="px-2 py-1.5 border rounded-full text-sm text-center"
+                        >
+                            {t}
+                        </li>
+                    ))}
                 </ul>
             </section>
+
         </div>
+
     )
 }
 
