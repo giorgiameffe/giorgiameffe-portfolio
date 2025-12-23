@@ -1,4 +1,5 @@
 import React from "react";
+import skillsData from "../data/skillsData";
 
 interface InfoBarProps {
     details: {
@@ -9,6 +10,19 @@ interface InfoBarProps {
     };
     technologies: string[];
 }
+
+// Creiamo una mappa vuota che assocerà ogni tecnologia al suo colore.
+// La chiave è il nome della tecnologia (string), il valore è la classe Tailwind (string)
+const techColors: Record<string, string> = {};
+
+// Cicliamo su tutti i gruppi di hardSkills definiti in skillsData
+skillsData.hardSkills.forEach(group => {
+    // Cicliamo tutte le singole tecnologie dentro il gruppo corrente
+    group.skills.forEach(skill => {
+        // Assegniamo alla tecnologia corrente il colore del gruppo
+        techColors[skill] = group.color ?? "border-gray-400 text-gray-600";
+    });
+});
 
 const ProjectDetailInfoBar: React.FC<InfoBarProps> = ({
     details,
@@ -49,7 +63,7 @@ const ProjectDetailInfoBar: React.FC<InfoBarProps> = ({
                     {technologies.map(t => (
                         <li
                             key={t}
-                            className="px-2 py-1.5 border rounded-full text-sm text-center"
+                            className={`${techColors[t] ?? "border-gray-400 text-gray-600"} px-2 py-1.5 border rounded-full text-sm text-center`}
                         >
                             {t}
                         </li>

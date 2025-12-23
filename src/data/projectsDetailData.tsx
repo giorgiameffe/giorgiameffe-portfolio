@@ -63,9 +63,9 @@ const ProjectsDetail: ProjectsDetailData[] = [
 
         technologies: [
             "React",
-            "TypeScript",
+            "Typescript",
             "Storybook",
-            "CSS"
+            "CSS3"
         ],
 
         description: {
@@ -114,7 +114,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         technologies: [
             "React",
             "Bootstrap",
-            "CSS",
+            "CSS3",
             "Express.js",
             "Node.js",
             "MySQL"
@@ -170,7 +170,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
             "Node.js",
             "MySQL",
             "Bootstrap",
-            "CSS"
+            "CSS3"
         ],
 
         description: {
