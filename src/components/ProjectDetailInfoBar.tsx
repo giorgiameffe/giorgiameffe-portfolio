@@ -31,11 +31,11 @@ const ProjectDetailInfoBar: React.FC<InfoBarProps> = ({
 
     return (
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
 
             {/* Sezione dettagli del progetto */}
             <section>
-                <h2 className="text-lg font-semibold mb-3">Dettagli progetto</h2>
+                <h2 className="text-lg font-semibold mb-3 text-center md:text-start">Dettagli progetto</h2>
                 <ul className="space-y-2 text-sm">
                     <li>
                         <span className="font-medium mr-1">Ruolo:</span>
@@ -58,7 +58,7 @@ const ProjectDetailInfoBar: React.FC<InfoBarProps> = ({
 
             {/* Stack tecnologico */}
             <section>
-                <h2 className="text-lg font-semibold mb-3">Stack tecnologico</h2>
+                <h2 className="text-lg font-semibold mb-3 text-center md:text-start">Stack tecnologico</h2>
                 <ul className="grid grid-cols-2 gap-2">
                     {technologies.map(t => (
                         <li
