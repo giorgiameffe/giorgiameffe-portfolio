@@ -8,19 +8,16 @@ interface InfoBarProps {
         team: string;
     };
     technologies: string[];
-    links: {
-        github: string;
-        githubBackend?: string;
-    };
 }
 
 const ProjectDetailInfoBar: React.FC<InfoBarProps> = ({
-    details
+    details,
+    technologies
 }) => {
 
     return (
 
-        <div>
+        <div className="flex justify-between">
             <section className="mb-4">
                 <h2 className="text-xl font-semibold mb-1">Dettagli rapidi</h2>
                 <ul className="leading-relaxed">
@@ -40,6 +37,15 @@ const ProjectDetailInfoBar: React.FC<InfoBarProps> = ({
                         <span className="font-semibold mr-1">Tipo di progetto:</span>
                         {details.team}
                     </li>
+                </ul>
+            </section>
+
+            <section className="mb-4">
+                <h2 className="text-xl font-semibold mb-1">Tecnologie usate:</h2>
+                <ul className="leading-relaxed">
+                    {technologies.map(t =>
+                        <li>{t}</li>
+                    )}
                 </ul>
             </section>
         </div>

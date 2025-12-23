@@ -20,7 +20,7 @@ const ProjectDetailsPage: React.FC = () => {
 
     return (
 
-        <section className="mt-12 md:mt-16 lg:mt-20 max-w-6xl mx-auto">
+        <section className="mt-12 md:mt-16 lg:mt-20 max-w-6xl mx-auto px-4">
 
             {/* Hero della pagina di dettaglio */}
             <ProjectDetailHero
@@ -32,7 +32,8 @@ const ProjectDetailsPage: React.FC = () => {
             <ProjectDetailInfoBar
                 details={project.details}
                 technologies={project.technologies}
-                links={project.links} />
+            />
+
             <ProjectDetailContent />
             <ProjectDetailGallery />
         </section>
