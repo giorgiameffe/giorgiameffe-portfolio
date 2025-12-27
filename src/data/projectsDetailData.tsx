@@ -52,7 +52,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         slug: "header-ui-custom",
         title: "Header UI Component - E-commerce di cosmesi naturale",
         briefDescription: "Componente Header personalizzato sviluppato in React e Storybook, pensato per un e-commerce di cosmetici naturali con focus su UX, accessibilità, design responsivo e componenti riutilizzabili secondo l'Atomic Design.",
-        heroImage: "/images/projects/header-desktop-preview.png",
+        heroImage: "/images/projects/header-ui-project/header-desktop-preview.png",
 
         details: {
             role: "Frontend Developer (Individuale)",
@@ -102,7 +102,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         slug: "bool-shop",
         title: "BoolShop - E-commerce di giochi da tavolo",
         briefDescription: "E-commerce full-stack a tema fantasy per la vendita di giochi da tavolo, sviluppato in team di 5 persone con un focus specifico sulla user experience e l'identità visiva.",
-        heroImage: "/images/projects/boolshop-preview.png",
+        heroImage: "/images/projects/boolshop-project/boolshop-preview.png",
 
         details: {
             role: "Frontend Developer & UI/UX Contributor",
@@ -155,7 +155,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         slug: "cine-circle",
         title: "Cine Circle - Blog di film",
         briefDescription: "Web app Full Stack con Frontend e Backend separati, sviluppata come blog cinematografico dinamico dallo stile vintage. Il progetto consente l’inserimento e la gestione in tempo reale di film e recensioni, offrendo un’esperienza fluida e moderna.",
-        heroImage: "/images/projects/cine-circle-preview.png",
+        heroImage: "/images/projects/cine-circle-project/cine-circle-preview.png",
 
         details: {
             role: "Full Stack Developer (Individuale)",
