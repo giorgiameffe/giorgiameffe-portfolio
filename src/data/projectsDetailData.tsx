@@ -190,7 +190,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
 
         gallery: [
             {
-                mediaUrl: "URL dell'immagine",
+                mediaUrl: "/images/projects/cine-circle-project/cine-circle-preview.png",
                 type: "image",
                 caption: "Homepage del blog con layout vintage.",
             },

@@ -11,11 +11,30 @@ interface ProjectDetailGalleryProps {
     gallery: GalleryItem[]
 }
 
-const ProjectDetailGallery: React.FC<ProjectDetailGalleryProps> = () => {
+const ProjectDetailGallery: React.FC<ProjectDetailGalleryProps> = ({ gallery }) => {
 
     return (
 
-        <div>Sono la galleria della pagina dettaglio</div>
+        <section>
+
+            <h2 className="text-2xl font-bold mb-4 text-center">
+                Galleria & Demo
+            </h2>
+
+            {gallery.map((item, index) => (
+                <div key={index}>
+                    {item.type === "image" ? (
+                        <img src={item.mediaUrl} alt={item.caption} />
+                    ) : (
+                        <video>
+                            Sono un video
+                        </video>
+                    )}
+                    <p>{item.caption}</p>
+                </div>
+            ))}
+
+        </section>
     )
 }
 

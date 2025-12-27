@@ -6,7 +6,6 @@ import ProjectDetailGallery from "../components/ProjectDetailGallery";
 import { useParams } from "react-router-dom";
 import ProjectsDetail from "../data/projectsDetailData";
 
-
 const ProjectDetailsPage: React.FC = () => {
 
     const { slug } = useParams<{ slug: string }>();
@@ -36,7 +35,7 @@ const ProjectDetailsPage: React.FC = () => {
 
             <ProjectDetailContent
                 description={project.description} />
-            <ProjectDetailGallery />
+            <ProjectDetailGallery gallery={project.gallery} />
         </section>
     );
 };
