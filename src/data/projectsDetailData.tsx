@@ -135,9 +135,9 @@ const ProjectsDetail: ProjectsDetailData[] = [
 
         gallery: [
             {
-                mediaUrl: "URL dell'immagine",
+                mediaUrl: "/images/projects/boolshop-project/boolshop-preview.png",
                 type: "image",
-                caption: "Screenshot della homepage con design a tema fantasy.",
+                caption: "Homepage con design a tema fantasy.",
             },
             {
                 mediaUrl: "URL del video",
