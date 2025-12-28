@@ -140,10 +140,61 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 caption: "Homepage con design a tema fantasy.",
             },
             {
-                mediaUrl: "URL del video",
+                mediaUrl: "/images/projects/boolshop-project/boolshop-ultimiarrivi.png",
+                type: "image",
+                caption: "Homepage con design a tema fantasy.",
+            },
+            {
+                mediaUrl: "/images/projects/boolshop-project/boolshop-card.png",
+                type: "image",
+                caption: "Homepage con design a tema fantasy.",
+            },
+            {
+                mediaUrl: "/images/projects/boolshop-project/boolshop-catalogo.png",
+                type: "image",
+                caption: "Homepage con design a tema fantasy.",
+            },
+            {
+                mediaUrl: "/images/projects/boolshop-project/boolshop-card-lista.png",
+                type: "image",
+                caption: "Homepage con design a tema fantasy.",
+            },
+            {
+                mediaUrl: "/images/projects/boolshop-project/boolshop-card-dettaglio.png",
+                type: "image",
+                caption: "Homepage con design a tema fantasy.",
+            },
+            {
+                mediaUrl: "/images/projects/boolshop-project/boolshop-prodotti-correlati.png",
+                type: "image",
+                caption: "Homepage con design a tema fantasy.",
+            },
+            {
+                mediaUrl: "/images/projects/boolshop-project/boolshop-wishlist.png",
+                type: "image",
+                caption: "Homepage con design a tema fantasy.",
+            },
+            {
+                mediaUrl: "/images/projects/boolshop-project/boolshop-carrello.png",
+                type: "image",
+                caption: "Homepage con design a tema fantasy.",
+            },
+            {
+                mediaUrl: "/images/projects/boolshop-project/boolshop-checkout.png",
+                type: "image",
+                caption: "Homepage con design a tema fantasy.",
+            },
+            {
+                mediaUrl: "/images/projects/boolshop-project/boolshop-footer.png",
+                type: "image",
+                caption: "Homepage con design a tema fantasy.",
+            },
+
+            {
+                mediaUrl: "/images/projects/boolshop-project/BoolShop-desktop-video.mp4",
                 type: "video",
                 caption: "Demo di BoolShop: panoramica dell'interfaccia fantasy, navigazione tra i prodotti e visualizzazione delle sezioni wishlist, carrello e checkout.",
-            },
+            }
         ],
 
         links: {
