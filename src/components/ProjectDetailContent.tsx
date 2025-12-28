@@ -28,7 +28,7 @@ const ProjectDetailContent: React.FC<ContentProps> = ({ description }) => {
 
                 {/* Sezione sfide tecniche */}
                 <div className="lg:col-span-7">
-                    <h3 className="text-2xl font-bold mb-8 text-gray-900 dark:text-gray-100 text-center md:text-start">
+                    <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 text-center md:text-start">
                         Sfide tecniche personali
                     </h3>
                     <ul className="space-y-6">
