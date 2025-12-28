@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 // Tipo per ogni elemento della galleria (può essere un'immagine o un video)
 interface GalleryItem {
@@ -39,19 +40,19 @@ const ProjectDetailGallery: React.FC<ProjectDetailGalleryProps> = ({ gallery }) 
 
     return (
 
-        <section className="flex flex-col items-center max-w-3xl mx-auto">
+        <section className="flex flex-col items-center max-w-6xl mx-auto relative">
 
             <h2 className="font-bold text-2xl mb-4">
                 Galleria & Demo
             </h2>
 
             {/* Galleria - Immagine/Video */}
-            <div className="relative">
+            <div className="max-w-5xl">
 
                 {type === "image" ? (
-                    <img src={mediaUrl} alt={caption} className="rounded-lg shadow-lg" />
+                    <img src={mediaUrl} alt={caption} className="rounded-lg shadow-lg w-full" />
                 ) : (
-                    <video className="rounded-lg shadow-lg mx-auto" controls>
+                    <video className="rounded-lg shadow-lg mx-auto w-full" controls>
                         <source src={mediaUrl} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
@@ -67,22 +68,18 @@ const ProjectDetailGallery: React.FC<ProjectDetailGalleryProps> = ({ gallery }) 
             {/* Navigazione */}
             <div className="flex justify-between items-center mt-4 w-full">
 
-                <button onClick={prevItem} className="px-4 py-2">
-                    Precedente
+                {/* Frecce laterali */}
+                <button
+                    onClick={prevItem}
+                    className="absolute left-2 top-1/2 transform -translate-y-1/2 p-2 text-gray-500 text-xl"
+                >
+                    <FaArrowLeft />
                 </button>
-
-                <div className="flex gap-2">
-                    {gallery.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => setCurrentIndex(index)}
-                            className={`w-3 h-3 rounded-full ${index === currentIndex ? "bg-rose-500" : "bg-gray-400"}`}
-                        />
-                    ))}
-                </div>
-
-                <button onClick={nextItem} className="px-4 py-2">
-                    Successivo
+                <button
+                    onClick={nextItem}
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 text-gray-500 text-xl"
+                >
+                    <FaArrowRight />
                 </button>
 
             </div>
