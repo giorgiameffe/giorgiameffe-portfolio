@@ -28,14 +28,20 @@ const ProjectDetailsPage: React.FC = () => {
                 heroImage={project.heroImage}
             />
 
+            {/* Tecnologie usate */}
             <ProjectDetailInfoBar
                 details={project.details}
                 technologies={project.technologies}
             />
 
+            {/* Descrizione progetto */}
             <ProjectDetailContent
-                description={project.description} />
+                description={project.description}
+            />
+
+            {/* Galleria progetto */}
             <ProjectDetailGallery gallery={project.gallery} />
+
         </section>
     );
 };
