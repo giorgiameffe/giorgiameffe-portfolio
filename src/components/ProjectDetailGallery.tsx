@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 // Tipo per ogni elemento della galleria (può essere un'immagine o un video)
 interface GalleryItem {
@@ -85,16 +85,29 @@ const ProjectDetailGallery: React.FC<ProjectDetailGalleryProps> = ({ gallery }) 
                     onClick={prevItem}
                     className="absolute left-2 top-1/2 transform -translate-y-1/2 p-2 text-gray-500 text-xl"
                 >
-                    <FaArrowLeft />
+                    <FaChevronLeft />
                 </button>
                 <button
                     onClick={nextItem}
                     className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 text-gray-500 text-xl"
                 >
-                    <FaArrowRight />
+                    <FaChevronRight />
                 </button>
-
             </div>
+
+            {/* Indicatori (pallini) */}
+            <div className="flex gap-2">
+                {gallery.map((_, index) => (
+                    <button
+                        key={index}
+                        onClick={() => setCurrentIndex(index)}
+                        className={`w-3 h-3 rounded-full ${index === currentIndex ? "bg-rose-400 dark:bg-rose-500" : "bg-gray-300 dark:bg-gray-700"
+                            }`}
+                        aria-label={`Vai alla slide ${index + 1}`}
+                    />
+                ))}
+            </div>
+
         </section>
     );
 };
