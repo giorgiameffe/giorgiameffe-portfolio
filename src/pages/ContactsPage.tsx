@@ -83,21 +83,23 @@ const ContactsPage: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="block md:flex justify-center gap-6"
+                        className="block md:flex justify-center gap-4"
                     >
-                        <Link
-                            to="/projects"
-                            className="inline-block border-2 border-rose-400 text-rose-400 dark:border-rose-700 dark:text-rose-700 px-8 py-2 font-semibold 
-                    rounded-full transition cursor-pointer w-60 md:w-auto mb-2 md:mb-0"
-                        >
-                            Scopri i miei progetti
-                        </Link>
+
                         <Link
                             to="/"
                             className="inline-block border-2 border-rose-400 text-rose-400 dark:border-rose-700 dark:text-rose-700 px-8 py-2 font-semibold 
-                    rounded-full transition cursor-pointer w-60 md:w-auto"
+                            rounded-full transition cursor-pointer w-60 md:w-auto"
                         >
                             Torna alla home
+                        </Link>
+
+                        <Link
+                            to="/projects"
+                            className="inline-block bg-rose-400 dark:bg-rose-700 font-semibold text-white text-md px-8 py-2 shadow-md font-semibold 
+                            rounded-full transition cursor-pointer w-60 md:w-auto mb-2 md:mb-0"
+                        >
+                            Scopri i miei progetti
                         </Link>
                     </motion.div>
                 </motion.div>

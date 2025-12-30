@@ -5,6 +5,7 @@ import ProjectDetailContent from "../components/ProjectDetailContent";
 import ProjectDetailGallery from "../components/ProjectDetailGallery";
 import { useParams } from "react-router-dom";
 import ProjectsDetail from "../data/projectsDetailData";
+import { Link } from "react-router-dom";
 
 const ProjectDetailsPage: React.FC = () => {
 
@@ -45,8 +46,28 @@ const ProjectDetailsPage: React.FC = () => {
                 gallery={project.gallery}
             />
 
+            <div className="flex justify-center mt-8 mb-8 gap-4">
+                <Link
+                    to="/projects"
+                    className="border-2 border-rose-400 text-rose-400 dark:border-rose-700 dark:text-rose-700 px-8 py-2 font-semibold 
+                    rounded-full transition cursor-pointer"
+                >
+                    Torna ai progetti
+                </Link>
 
-        </section>
+                <a
+                    href={project.links.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-rose-400 dark:bg-rose-700 font-semibold text-white text-md px-8 py-2 rounded-full shadow-md"
+                >
+                    Vedi repository GitHub
+                </a>
+
+            </div>
+
+
+        </section >
     );
 };
 
