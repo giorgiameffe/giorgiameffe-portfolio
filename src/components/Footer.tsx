@@ -1,6 +1,5 @@
 import React from "react";
 import { FaEnvelope, FaHeart } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import SocialIcons from "./SocialIcons";
 
 const Footer: React.FC = () => {
@@ -14,12 +13,16 @@ const Footer: React.FC = () => {
 
                 <SocialIcons />
 
-                <Link
-                    to="/"
+                <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=giorgiameffe03@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-gray-900 dark:text-gray-100 hover:text-rose-400 transition"
                 >
                     <FaEnvelope className="text-2xl" />
-                </Link>
+                </a>
+
+
             </div>
 
             {/* Frase */}

@@ -63,9 +63,7 @@ const ProjectDetailsPage: React.FC = () => {
                 >
                     Vedi repository GitHub
                 </a>
-
             </div>
-
 
         </section >
     );
