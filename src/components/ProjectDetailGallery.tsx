@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 // Tipo per ogni elemento della galleria (può essere un'immagine o un video)
@@ -36,6 +36,10 @@ const ProjectDetailGallery: React.FC<ProjectDetailGalleryProps> = ({ gallery }) 
         }
     };
 
+    useEffect(() => {
+        setCurrentIndex(0);
+    }, [gallery]);
+
     const { mediaUrl, type, caption } = gallery[currentIndex];
 
     return (
@@ -50,11 +54,19 @@ const ProjectDetailGallery: React.FC<ProjectDetailGalleryProps> = ({ gallery }) 
             <div className="max-w-5xl">
 
                 {type === "image" ? (
-                    <img src={mediaUrl} alt={caption} className="rounded-lg shadow-lg w-full" />
+                    <img
+                        key={currentIndex}
+                        src={mediaUrl}
+                        alt={caption}
+                        className="rounded-lg shadow-lg w-full"
+                    />
                 ) : (
-                    <video className="rounded-lg shadow-lg mx-auto w-full" controls>
+                    <video
+                        key={currentIndex}
+                        className="rounded-lg shadow-lg mx-auto w-full"
+                        controls
+                    >
                         <source src={mediaUrl} type="video/mp4" />
-                        Your browser does not support the video tag.
                     </video>
                 )}
 

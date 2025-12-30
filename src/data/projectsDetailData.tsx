@@ -194,6 +194,11 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 mediaUrl: "/images/projects/boolshop-project/BoolShop-desktop-video.mp4",
                 type: "video",
                 caption: "Demo di BoolShop: panoramica dell'interfaccia fantasy, navigazione tra i prodotti e visualizzazione delle sezioni wishlist, carrello e checkout.",
+            },
+            {
+                mediaUrl: "/images/projects/boolshop-project/BoolShop-responsività.mp4",
+                type: "video",
+                caption: "Demo di BoolShop: panoramica dell'interfaccia fantasy, navigazione tra i prodotti e visualizzazione delle sezioni wishlist, carrello e checkout.",
             }
         ],
 

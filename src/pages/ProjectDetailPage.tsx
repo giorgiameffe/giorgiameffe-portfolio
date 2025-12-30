@@ -40,7 +40,11 @@ const ProjectDetailsPage: React.FC = () => {
             />
 
             {/* Galleria progetto */}
-            <ProjectDetailGallery gallery={project.gallery} />
+            <ProjectDetailGallery
+                key={project.slug}
+                gallery={project.gallery}
+            />
+
 
         </section>
     );
