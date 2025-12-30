@@ -251,6 +251,33 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 caption: "Homepage del blog con layout vintage.",
             },
             {
+                mediaUrl: "/images/projects/cine-circle-project/cine-circle-list.png",
+                type: "image",
+                caption: "Homepage del blog con layout vintage.",
+            },
+            {
+                mediaUrl: "/images/projects/cine-circle-project/cine-circle-detail.png",
+                type: "image",
+                caption: "Homepage del blog con layout vintage.",
+            },
+            {
+                mediaUrl: "/images/projects/cine-circle-project/cine-circle-add-movie.png",
+                type: "image",
+                caption: "Homepage del blog con layout vintage.",
+            },
+            {
+                mediaUrl: "/images/projects/cine-circle-project/cine-circle-review-form.png",
+                type: "image",
+                caption: "Homepage del blog con layout vintage.",
+            },
+            {
+                mediaUrl: "/images/projects/cine-circle-project/cine-circle-footer.png",
+                type: "image",
+                caption: "Homepage del blog con layout vintage.",
+            },
+
+
+            {
                 mediaUrl: "URL del video",
                 type: "video",
                 caption: "Demo di Cine Circle: tour dell'interfaccia vintage, navigazione tra i post e dimostrazione pratica dell'inserimento di nuovi film e recensioni.",
