@@ -53,12 +53,15 @@ const ContactsPage: React.FC = () => {
                     </div>
 
                     {/* Bottone CV */}
-                    <Link
-                        to="/"
-                        className="inline-block mt-4 bg-rose-400 dark:bg-rose-700 text-white px-8 py-2 font-semibold 
-                    rounded-full shadow-md transition cursor-pointer" >
+                    <a
+                        href="/Giorgia-CV.pdf"
+                        download
+                        className="mt-4 bg-rose-400 dark:bg-rose-700 text-white px-8 py-2 font-semibold 
+               rounded-full shadow-md transition cursor-pointer"
+                    >
                         Scarica il mio CV
-                    </Link>
+                    </a>
+
                 </motion.div>
 
                 <ContactForm />
