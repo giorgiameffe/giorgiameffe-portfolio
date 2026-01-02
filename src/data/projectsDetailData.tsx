@@ -126,7 +126,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
             {
                 mediaUrl: "/images/projects/header-ui-project/header-video.mp4",
                 type: "video",
-                caption: "Demo dell'header: mostra il passaggio dalla modalità light a dark e la transizione del menu mobile.",
+                caption: "Demo dell'header: mostra la documentazione su Storybook, il passaggio dalla modalità light a dark e la transizione del menu mobile.",
             }
         ],
 
