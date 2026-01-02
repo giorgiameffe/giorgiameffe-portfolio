@@ -66,21 +66,9 @@ const ProjectDetailContent: React.FC<ContentProps> = ({ description }) => {
                 {/* Sezione key learnings */}
                 <motion.div
                     className="lg:col-span-5"
-                    // Stato iniziale dell’elemento prima che entri in vista:
-                    // - opacity 0: invisibile
-                    // - y 20: leggermente spostato verso il basso
                     initial={{ opacity: 0, y: 20 }}
-                    // Stato dell’elemento quando entra nel viewport:
-                    // - opacity 1: completamente visibile
-                    // - y 0: torna nella posizione originale
                     whileInView={{ opacity: 1, y: 0 }}
-                    // Impostazioni del trigger:
-                    // - once: true → l’animazione parte solo la prima volta che l’elemento entra in vista
-                    // - amount: 0.3 → l’animazione si attiva quando il 30% dell’elemento è visibile
                     viewport={{ once: true, amount: 0.3 }}
-                    // Configurazione della transizione:
-                    // - duration 0.6s: durata dell’animazione
-                    // - ease "easeOut": velocità fluida che rallenta verso la fine
                     transition={{ duration: 0.6, ease: "easeOut" }}>
                     <div className="bg-gray-50 dark:bg-zinc-900/50 p-8 rounded-3xl border border-gray-100 dark:border-zinc-800 shadow-lg">
                         <h3 className="text-xl font-bold mb-4 flex items-center gap-2">

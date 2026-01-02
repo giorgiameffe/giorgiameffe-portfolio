@@ -6,6 +6,7 @@ import ProjectDetailGallery from "../components/ProjectDetailGallery";
 import { useParams } from "react-router-dom";
 import ProjectsDetail from "../data/projectsDetailData";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const ProjectDetailsPage: React.FC = () => {
 
@@ -46,7 +47,13 @@ const ProjectDetailsPage: React.FC = () => {
                 gallery={project.gallery}
             />
 
-            <div className="flex justify-center mt-8 mb-8 gap-4">
+            <motion.div
+                className="flex justify-center mt-8 mb-8 gap-4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+            >
                 <Link
                     to="/projects"
                     className="border-2 border-rose-400 text-rose-400 dark:border-rose-700 dark:text-rose-700 px-8 py-2 font-semibold 
@@ -63,7 +70,7 @@ const ProjectDetailsPage: React.FC = () => {
                 >
                     Vedi repository GitHub
                 </a>
-            </div>
+            </motion.div>
 
         </section >
     );
