@@ -55,7 +55,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         heroImage: "/images/projects/header-ui-project/header-desktop-light.png",
 
         details: {
-            role: "Frontend Developer (Individuale)",
+            role: "Frontend Developer & Component Designer (Individuale)",
             duration: "2 settimane (Agosto 2025 - Settembre 2025) con ritocchi successivi",
             status: "Completato",
             team: "Progetto individuale"
@@ -174,57 +174,57 @@ const ProjectsDetail: ProjectsDetailData[] = [
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-preview.png",
                 type: "image",
-                caption: "Homepage con design a tema fantasy.",
+                caption: "Sezione superiore della Homepage: logo, barra di navigazione e Hero Section con banner dinamico dedicato alle promozioni principali.",
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-ultimiarrivi.png",
                 type: "image",
-                caption: "Homepage con design a tema fantasy.",
+                caption: "Vetrina degli ultimi arrivi con card prodotto e indicazioni di eventuali sconti.",
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-card.png",
                 type: "image",
-                caption: "Homepage con design a tema fantasy.",
+                caption: "Visualizzazione dei prodotti a griglia con prezzi e sconti.",
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-catalogo.png",
                 type: "image",
-                caption: "Homepage con design a tema fantasy.",
+                caption: "Catalogo prodotti con filtri di ricerca e ordinamento.",
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-card-lista.png",
                 type: "image",
-                caption: "Homepage con design a tema fantasy.",
+                caption: "Visualizzazione dei prodotti in modalità elenco compatto.",
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-card-dettaglio.png",
                 type: "image",
-                caption: "Homepage con design a tema fantasy.",
+                caption: "Scheda prodotto con specifiche tecniche e tasto di acquisto.",
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-prodotti-correlati.png",
                 type: "image",
-                caption: "Homepage con design a tema fantasy.",
+                caption: "Sezione suggerimenti per prodotti simili o consigliati.",
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-wishlist.png",
                 type: "image",
-                caption: "Homepage con design a tema fantasy.",
+                caption: "Sezione Wishlist per visualizzare e aggiungere al carrello i prodotti salvati come preferiti.",
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-carrello.png",
                 type: "image",
-                caption: "Homepage con design a tema fantasy.",
+                caption: "Carrello laterale dinamico per la gestione rapida degli acquisti.",
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-checkout.png",
                 type: "image",
-                caption: "Homepage con design a tema fantasy.",
+                caption: "Riepilogo ordine e modulo per la finalizzazione del pagamento.",
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-footer.png",
                 type: "image",
-                caption: "Homepage con design a tema fantasy.",
+                caption: "Piè di pagina con info aziendali, link utili e social.",
             },
 
             {
@@ -235,7 +235,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
             {
                 mediaUrl: "/images/projects/boolshop-project/BoolShop-responsività.mp4",
                 type: "video",
-                caption: "Demo di BoolShop: panoramica dell'interfaccia fantasy, navigazione tra i prodotti e visualizzazione delle sezioni wishlist, carrello e checkout.",
+                caption: "Demo di BoolShop: esplorazione dell'interfaccia utente su tablet e mobile, evidenziando l'adattabilità del design e la fruibilità del sito su tutti i dispositivi."
             }
         ],
 
