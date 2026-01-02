@@ -278,7 +278,12 @@ const ProjectsDetail: ProjectsDetailData[] = [
 
 
             {
-                mediaUrl: "URL del video",
+                mediaUrl: "/images/projects/cine-circle-project/cine-circle-desktop-video.mp4",
+                type: "video",
+                caption: "Demo di Cine Circle: tour dell'interfaccia vintage, navigazione tra i post e dimostrazione pratica dell'inserimento di nuovi film e recensioni.",
+            },
+            {
+                mediaUrl: "/images/projects/cine-circle-project/cine-circle-responsività.mp4",
                 type: "video",
                 caption: "Demo di Cine Circle: tour dell'interfaccia vintage, navigazione tra i post e dimostrazione pratica dell'inserimento di nuovi film e recensioni.",
             }
