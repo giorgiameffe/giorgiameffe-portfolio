@@ -69,59 +69,59 @@ const ProjectsDetail: ProjectsDetailData[] = [
         ],
 
         description: {
-            scopeAndGoal: "L'obiettivo del progetto è stato quello di creare un header personalizzato per un e-commerce di cosmetici naturali, sviluppato con React e documentato tramite Storybook, per garantire componenti riutilizzabili, scalabili e accessibili. L'header doveva rispecchiare l'identità visiva del brand, comunicando calma e naturalezza, e includere una navigazione ottimale sia su desktop che su dispositivi mobili.",
+            scopeAndGoal: "L'obiettivo del progetto è stato quello di creare un header personalizzato per un e-commerce di cosmetici naturali, sviluppato con React e documentato tramite Storybook, per garantire componenti riutilizzabili, scalabili e accessibili. L'header doveva rispecchiare l'identità visiva del brand, comunicando calma e naturalezza, e includere una navigazione ottimale sia su desktop che su dispositivi mobili. Particolare attenzione è stata dedicata alla coerenza simbolica dell’interfaccia, includendo elementi grafici come la foglia nel logo per rafforzare il legame con i valori di naturalità, benessere ed ecosostenibilità del brand.",
             personalTechnicalChallenges: [
                 "Creazione di un sistema di navigazione reattivo che si adattasse facilmente a dispositivi di diverse dimensioni, passando da un menu orizzontale su desktop a un overlay verticale su mobile.",
                 "Implementazione della gestione della modalità light/dark utilizzando variabili CSS e media queries, per migliorare l'accessibilità visiva su diverse condizioni di illuminazione.",
                 "Sviluppo di componenti modulari seguendo il principio di Atomic Design, garantendo la riutilizzabilità e la manutenibilità del codice.",
                 "Integrazione con Storybook per documentare i componenti e garantire un'esperienza interattiva nella modifica e test dei componenti.",
-                "Assicurazione della compatibilità e accessibilità tramite l'uso di ARIA-labels e la gestione di focus-visible per una navigazione da tastiera ottimizzata."
+                "Assicurazione della compatibilità e accessibilità tramite l'uso di ARIA-labels e la gestione di focus-visible per una navigazione da tastiera ottimizzata.",
+                "Applicazione dei principi di Gestalt (vicinanza e somiglianza) per organizzare gli elementi dell’header, migliorando la leggibilità della navigazione e la comprensione immediata delle gerarchie informative.",
             ],
-            keyLearnings: "Questo progetto mi ha permesso di approfondire le tecniche di progettazione UI seguendo il modello Atomic Design, migliorando la gestione della responsività, dell'accessibilità e dell'interazione utente. Ho imparato a lavorare con Storybook per creare una documentazione interattiva e ho perfezionato la mia capacità di sviluppare componenti riutilizzabili e scalabili, concentrandomi su un design che fosse al tempo stesso funzionale ed esteticamente coerente."
+            keyLearnings: "Questo progetto mi ha permesso di approfondire la progettazione UI secondo il modello Atomic Design, migliorando la gestione di responsività, accessibilità e interazione utente. Ho consolidato l’uso di Storybook come strumento di documentazione interattiva e rafforzato la creazione di componenti riutilizzabili e scalabili. Un aspetto centrale dell’apprendimento è stato il lavoro sull’identità visiva, con una palette ispirata alla cosmesi naturale: verde per richiamare natura ed ecosostenibilità e viola per evidenziare gli stati di interazione, spesso associato al settore della cosmesi. Questo mi ha aiutata a comprendere come colore, micro-interazioni e simboli visivi contribuiscano a costruire un’esperienza coerente e riconoscibile."
         },
 
         gallery: [
             {
                 mediaUrl: "/images/projects/header-ui-project/header-desktop-light.png",
                 type: "image",
-                caption: "Screenshot dell'header con design naturale e modalità light.",
+                caption: "Header Desktop – Versione Light Mode",
             },
             {
                 mediaUrl: "/images/projects/header-ui-project/header-tablet-light.png",
                 type: "image",
-                caption: "Screenshot dell'header con design naturale e modalità light.",
+                caption: "Header Tablet – Versione Light Mode",
             },
             {
                 mediaUrl: "/images/projects/header-ui-project/header-large-mobile-light.png",
                 type: "image",
-                caption: "Screenshot dell'header con design naturale e modalità light.",
+                caption: "Header Large Mobile – Versione Light Mode",
             },
             {
                 mediaUrl: "/images/projects/header-ui-project/header-small-mobile-light.png",
                 type: "image",
-                caption: "Screenshot dell'header con design naturale e modalità light.",
+                caption: "Header Small Mobile – Versione Light Mode",
             },
             {
                 mediaUrl: "/images/projects/header-ui-project/header-desktop-dark.png",
                 type: "image",
-                caption: "Screenshot dell'header con design naturale e modalità light.",
+                caption: "Header Desktop – Versione Dark Mode",
             },
             {
                 mediaUrl: "/images/projects/header-ui-project/header-tablet-dark.png",
                 type: "image",
-                caption: "Screenshot dell'header con design naturale e modalità light.",
+                caption: "Header Tablet – Versione Dark Mode",
             },
             {
                 mediaUrl: "/images/projects/header-ui-project/header-large-mobile-dark.png",
                 type: "image",
-                caption: "Screenshot dell'header con design naturale e modalità light.",
+                caption: "Header Large Mobile – Versione Dark Mode",
             },
             {
                 mediaUrl: "/images/projects/header-ui-project/header-small-mobile-dark.png",
                 type: "image",
-                caption: "Screenshot dell'header con design naturale e modalità light.",
+                caption: "Header Small Mobile – Versione Dark Mode",
             },
-
 
             {
                 mediaUrl: "/images/projects/header-ui-project/header-video.mp4",
