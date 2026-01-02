@@ -52,7 +52,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         slug: "header-ui-custom",
         title: "Header UI Component - E-commerce di cosmesi naturale",
         briefDescription: "Componente Header personalizzato sviluppato in React e Storybook, pensato per un e-commerce di cosmetici naturali con focus su UX, accessibilità, design responsivo e componenti riutilizzabili secondo l'Atomic Design.",
-        heroImage: "/images/projects/header-ui-project/header-desktop-preview.png",
+        heroImage: "/images/projects/header-ui-project/header-desktop-light.png",
 
         details: {
             role: "Frontend Developer (Individuale)",
@@ -82,12 +82,49 @@ const ProjectsDetail: ProjectsDetailData[] = [
 
         gallery: [
             {
-                mediaUrl: "URL dell'immagine",
+                mediaUrl: "/images/projects/header-ui-project/header-desktop-light.png",
                 type: "image",
                 caption: "Screenshot dell'header con design naturale e modalità light.",
             },
             {
-                mediaUrl: "URL del video",
+                mediaUrl: "/images/projects/header-ui-project/header-tablet-light.png",
+                type: "image",
+                caption: "Screenshot dell'header con design naturale e modalità light.",
+            },
+            {
+                mediaUrl: "/images/projects/header-ui-project/header-large-mobile-light.png",
+                type: "image",
+                caption: "Screenshot dell'header con design naturale e modalità light.",
+            },
+            {
+                mediaUrl: "/images/projects/header-ui-project/header-small-mobile-light.png",
+                type: "image",
+                caption: "Screenshot dell'header con design naturale e modalità light.",
+            },
+            {
+                mediaUrl: "/images/projects/header-ui-project/header-desktop-dark.png",
+                type: "image",
+                caption: "Screenshot dell'header con design naturale e modalità light.",
+            },
+            {
+                mediaUrl: "/images/projects/header-ui-project/header-tablet-dark.png",
+                type: "image",
+                caption: "Screenshot dell'header con design naturale e modalità light.",
+            },
+            {
+                mediaUrl: "/images/projects/header-ui-project/header-large-mobile-dark.png",
+                type: "image",
+                caption: "Screenshot dell'header con design naturale e modalità light.",
+            },
+            {
+                mediaUrl: "/images/projects/header-ui-project/header-small-mobile-dark.png",
+                type: "image",
+                caption: "Screenshot dell'header con design naturale e modalità light.",
+            },
+
+
+            {
+                mediaUrl: "/images/projects/header-ui-project/header-video.mp4",
                 type: "video",
                 caption: "Demo dell'header: mostra il passaggio dalla modalità light a dark e la transizione del menu mobile.",
             }
