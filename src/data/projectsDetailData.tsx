@@ -285,35 +285,33 @@ const ProjectsDetail: ProjectsDetailData[] = [
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-preview.png",
                 type: "image",
-                caption: "Homepage del blog con layout vintage.",
+                caption: "Hero section della homepage con estetica vintage e invito all'azione centrale.",
             },
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-list.png",
                 type: "image",
-                caption: "Homepage del blog con layout vintage.",
+                caption: "Catalogo dinamico dei film con schede descrittive, votazioni medie e barra di ricerca.",
             },
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-detail.png",
                 type: "image",
-                caption: "Homepage del blog con layout vintage.",
+                caption: "Pagina di dettaglio del film con locandina, sinossi e sezione dedicata alle recensioni degli utenti.",
             },
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-add-movie.png",
                 type: "image",
-                caption: "Homepage del blog con layout vintage.",
+                caption: "Interfaccia del modulo per l'aggiunta di nuovi film con gestione del caricamento immagini.",
             },
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-review-form.png",
                 type: "image",
-                caption: "Homepage del blog con layout vintage.",
+                caption: "Modulo interattivo per l'inserimento di recensioni e votazioni in tempo reale.",
             },
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-footer.png",
                 type: "image",
-                caption: "Homepage del blog con layout vintage.",
+                caption: "Piè di pagina con informazioni della community, link di navigazione e contatti social.",
             },
-
-
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-desktop-video.mp4",
                 type: "video",
@@ -322,7 +320,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-responsività.mp4",
                 type: "video",
-                caption: "Demo di Cine Circle: tour dell'interfaccia vintage, navigazione tra i post e dimostrazione pratica dell'inserimento di nuovi film e recensioni.",
+                caption: "Demo di Cine Circle: esplorazione dell'interfaccia utente su tablet e mobile, evidenziando l'adattabilità del design su diversi dispositivi."
             }
         ],
 
