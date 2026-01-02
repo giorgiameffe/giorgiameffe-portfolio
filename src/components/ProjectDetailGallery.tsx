@@ -83,13 +83,15 @@ const ProjectDetailGallery: React.FC<ProjectDetailGalleryProps> = ({ gallery }) 
                 {/* Frecce laterali */}
                 <button
                     onClick={prevItem}
-                    className="absolute left-2 top-1/2 transform -translate-y-1/2 p-2 text-gray-500 text-xl"
+                    className="absolute left-[-1rem] md:left-[-1rem] top-1/2 -translate-y-1/2 p-2 bg-gray-100 rounded-full 
+                    text-rose-400 hover:text-rose-500 shadow-md hover:bg-white transition"
                 >
                     <FaChevronLeft />
                 </button>
                 <button
                     onClick={nextItem}
-                    className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 text-gray-500 text-xl"
+                    className="absolute right-[-1rem] md:righ-[-rem] top-1/2 -translate-y-1/2 p-2 bg-gray-100 rounded-full 
+                    text-rose-400 hover:text-rose-500 shadow-md hover:bg-white transition"
                 >
                     <FaChevronRight />
                 </button>
