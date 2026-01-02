@@ -30,7 +30,7 @@ const ProjectsPage: React.FC = () => {
                                      pt-4 pb-6 px-4 mb-2 md:mb-0 "
                         initial={{ opacity: 0, x: 50 }} // Inizio trasparente e spostato 50px a destra
                         animate={{ opacity: 1, x: 0 }} // Finale visibile e posizione normale
-                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }} // Delay 0.3s rispetto all'immagine
+                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }} // Delay 0.3s
                     >
                         Dove il codice prende <strong>vita</strong> e il design guida l'<strong>esperienza</strong>:
                         esplora i progetti in cui semplicità e cura dei dettagli incontrano la <strong>passione</strong> per la UX/UI.
