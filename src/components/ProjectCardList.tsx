@@ -27,18 +27,29 @@ const ProjectCardList: React.FC = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    // Funzione per gestire il passaggio alla card successiva (con ciclicità)
     function nextCard() {
+
         if (currentIndex < projects.length - cardsPerView) {
             setCurrentIndex(currentIndex + 1);
+        } else {
+            // Se siamo all'ultima card, torniamo alla prima
+            setCurrentIndex(0);
         }
     }
 
+    // Funzione per gestire il passaggio alla card precedente (con ciclicità)
     function prevCard() {
+
         if (currentIndex > 0) {
             setCurrentIndex(currentIndex - 1);
+        } else {
+            // Se siamo alla prima card, torniamo all'ultima
+            setCurrentIndex(projects.length - cardsPerView);
         }
     }
 
+    // Adattiamo il numero di progetti visibili in base all'indice e al numero di card per vista
     const visibleProjects = projects.slice(
         currentIndex,
         currentIndex + cardsPerView
@@ -48,7 +59,7 @@ const ProjectCardList: React.FC = () => {
 
         <section className="max-w-6xl mx-auto md:px-18 mb-8 relative">
             <motion.h1
-                className="font-extrabold text-4xl mt-5 mb-6 mt-10 text-center lg:ms-10"
+                className="font-extrabold text-3xl md:text-4xl mt-5 mb-6 mt-10 text-center lg:ms-10"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}

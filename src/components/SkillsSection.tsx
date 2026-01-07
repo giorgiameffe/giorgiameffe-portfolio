@@ -6,9 +6,9 @@ const SkillsSection: React.FC = () => {
 
     return (
 
-        <section className="max-w-6xl mx-auto mt-20 px-4">
+        <section className="max-w-6xl mx-auto mt-10 lg:mt-20 px-4">
             <motion.h2
-                className="font-bold text-2xl lg:text-3xl text-center lg:text-start mb-6"
+                className="font-bold text-2xl md:text-3xl text-center lg:text-start mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
@@ -26,7 +26,7 @@ const SkillsSection: React.FC = () => {
 
             {/* Hard Skills */}
             <h3
-                className="font-bold text-xl mb-3 text-center lg:text-start"
+                className="font-bold text-xl md:text-2xl mb-3 text-center lg:text-start"
             >
                 Hard Skills
             </h3>
@@ -54,7 +54,7 @@ const SkillsSection: React.FC = () => {
 
             {/* Soft Skills */}
             <h3
-                className="font-bold text-xl mb-3 text-center lg:text-start"
+                className="font-bold text-xl md:text-2xl mb-3 text-center lg:text-start"
             >
                 Soft Skills
             </h3>

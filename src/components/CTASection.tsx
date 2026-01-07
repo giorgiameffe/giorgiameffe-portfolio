@@ -77,7 +77,7 @@ const CTASection: React.FC = () => {
 
             {/* Contenuti sopra il canvas */}
             <motion.h2
-                className="text-4xl font-bold mb-4 text-gray-900 dark:text-gray-200 relative z-10"
+                className="text-2xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-gray-200 relative z-10"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -87,7 +87,7 @@ const CTASection: React.FC = () => {
             </motion.h2>
 
             <motion.div
-                className="text-lg leading-relaxed mb-8 text-gray-800 dark:text-gray-200 relative z-10"
+                className="text-md md:text-lg leading-relaxed mb-8 text-gray-800 dark:text-gray-200 relative z-10"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -106,7 +106,7 @@ const CTASection: React.FC = () => {
                 className="flex justify-center items-center"
             >
                 <Link to="/contacts" className="flex items-center gap-2 font-semibold text-white bg-rose-400 dark:bg-rose-700 
-                px-8 py-2 text-lg rounded-full transition-transform duration-300 hover:-translate-y-1 relative z-10">
+                px-8 py-2 text-md rounded-full transition-transform duration-300 hover:-translate-y-1 relative z-10">
                     Contattami
                 </Link>
             </motion.div>

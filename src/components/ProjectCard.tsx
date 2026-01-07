@@ -34,7 +34,7 @@ const ProjectCard = ({ project, featured }: ProjectCardProps) => {
 
             <div className="flex flex-col flex-1 justify-between">
                 <div>
-                    <h1 className="font-bold mb-2">{project.title}</h1>
+                    <h1 className="font-bold text-md mb-2">{project.title}</h1>
                     <div className="flex flex-wrap gap-2 mt-2">
                         {project.categories?.map((cat, index) => (
                             <span

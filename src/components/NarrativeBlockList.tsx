@@ -7,7 +7,7 @@ const NarrativeBlockList: React.FC = () => {
 
     return (
 
-        <div className="flex flex-col items-center mx-auto max-w-6xl gap-10">
+        <div className="flex flex-col items-center mx-auto max-w-6xl lg:gap-10">
             {NarrativeBlocks.map((block: NarrativeBlockData) => (
                 <NarrativeBlock
                     key={block.id}

@@ -92,7 +92,7 @@ const ContactsPage: React.FC = () => {
                         <Link
                             to="/"
                             className="inline-block border-2 border-rose-400 text-rose-400 dark:border-rose-700 dark:text-rose-700 px-8 py-2 font-semibold 
-                            rounded-full transition cursor-pointer w-60 md:w-auto"
+                            rounded-full transition cursor-pointer w-60 md:w-auto mb-4 md:mb-0"
                         >
                             Torna alla home
                         </Link>

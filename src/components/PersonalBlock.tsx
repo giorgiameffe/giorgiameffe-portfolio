@@ -33,7 +33,7 @@ const PersonalBlock: React.FC<PersonalBlockData> = ({
 
             {/* Colonna testo */}
             <div className="lg:w-1/2 px-4">
-                <h2 className="font-bold text-xl lg:text-2xl text-center lg:text-start mb-3 mt-4">
+                <h2 className="font-bold text-xl md:text-2xl text-center lg:text-start mb-3 mt-4">
                     {title}
                 </h2>
 
