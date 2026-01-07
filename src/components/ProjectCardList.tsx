@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import projects from "../data/projectsData";
 import { motion } from "framer-motion";
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
 const ProjectCardList: React.FC = () => {
 
@@ -12,6 +13,7 @@ const ProjectCardList: React.FC = () => {
     useEffect(() => {
 
         function handleResize() {
+
             if (window.innerWidth < 768) {
                 setCardsPerView(1); // mobile
             } else if (window.innerWidth < 1024) {
@@ -31,8 +33,10 @@ const ProjectCardList: React.FC = () => {
     function nextCard() {
 
         if (currentIndex < projects.length - cardsPerView) {
+
             setCurrentIndex(currentIndex + 1);
         } else {
+
             // Se siamo all'ultima card, torniamo alla prima
             setCurrentIndex(0);
         }
@@ -76,23 +80,27 @@ const ProjectCardList: React.FC = () => {
                     ))}
                 </div>
 
-                {/* Pulsanti carosello visibili solo su mobile/tablet */}
-                <button
-                    onClick={prevCard}
-                    disabled={currentIndex === 0}
-                    className="lg:hidden absolute top-1/2 left-2 -translate-y-1/2 bg-gray-200 p-2 rounded-full"
-                >
-                    ←
-                </button>
+                {/* Navigazione */}
+                <div className="flex justify-between items-center mt-4 w-full">
 
-                <button
-                    onClick={nextCard}
-                    disabled={currentIndex >= projects.length - cardsPerView}
-                    className="lg:hidden absolute top-1/2 right-2 -translate-y-1/2 bg-gray-200 p-2 rounded-full"
-                >
-                    →
-                </button>
+                    {/* Frecce laterali */}
+                    <button
+                        onClick={prevCard}
+                        className=" lg:hidden absolute left-2 md:left-4 top-1/2 -translate-y-1/2 p-2 bg-gray-100 rounded-full 
+                                    text-rose-400 hover:text-rose-500 shadow-md hover:bg-white transition"
+                    >
+                        <FaChevronLeft />
+                    </button>
+                    <button
+                        onClick={nextCard}
+                        className="lg:hidden absolute right-2 md:right-4 top-1/2 -translate-y-1/2 p-2 bg-gray-100 rounded-full 
+                                    text-rose-400 hover:text-rose-500 shadow-md hover:bg-white transition"
+                    >
+                        <FaChevronRight />
+                    </button>
+                </div>
             </div>
+
         </section>
     );
 };
