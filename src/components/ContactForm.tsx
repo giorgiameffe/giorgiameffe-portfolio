@@ -79,7 +79,7 @@ const ContactForm: React.FC = () => {
                         placeholder="Inserisci il tuo cognome"
                         required
                         className="w-full border border-gray-400 dark:border-gray-800 rounded-lg px-3 py-2 placeholder-gray-500 dark:placeholder-gray-400
-                        focus:outline-none focus:border-gray-500"
+                        focus:outline-none focus:border-rose-400"
                     />
                     <ValidationError prefix="Cognome" field="lastName" errors={state.errors} />
                 </div>
