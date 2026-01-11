@@ -155,7 +155,7 @@ const ContactForm: React.FC = () => {
                 <button
                     type="submit"
                     disabled={state.submitting}
-                    className="inline-block mt-4 bg-rose-400 dark:bg-rose-700 text-white px-8 py-2 font-semibold 
+                    className="inline-block mt-4 bg-rose-400 hover:bg-rose-500 dark:bg-rose-700 text-white px-8 py-2 font-semibold 
                     rounded-full shadow-md transition cursor-pointer w-full text-center"
                 >
                     {state.submitting ? "Invio..." : "Invia messaggio"}

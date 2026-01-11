@@ -48,7 +48,7 @@ const ProjectDetailsPage: React.FC = () => {
             />
 
             <motion.div
-                className="flex justify-center mt-8 mb-8 gap-4"
+                className="block md:flex justify-center mt-8 mb-8 gap-4"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -56,8 +56,8 @@ const ProjectDetailsPage: React.FC = () => {
             >
                 <Link
                     to="/projects"
-                    className="border-2 border-rose-400 text-rose-400 dark:border-rose-700 dark:text-rose-700 px-8 py-2 font-semibold 
-                    rounded-full transition cursor-pointer"
+                    className="inline-block border-2 border-rose-400 hover:border-rose-500 text-rose-400 hover:text-rose-500 dark:border-rose-700 
+                    dark:text-rose-700 px-8 py-2 font-semibold rounded-full transition cursor-pointer w-60 md:w-auto mb-4 md:mb-0"
                 >
                     Torna ai progetti
                 </Link>
@@ -66,7 +66,8 @@ const ProjectDetailsPage: React.FC = () => {
                     href={project.links.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-rose-400 dark:bg-rose-700 font-semibold text-white text-md px-8 py-2 rounded-full shadow-md"
+                    className="inline-block bg-rose-400 hover:bg-rose-500 dark:bg-rose-700 font-semibold text-white text-md px-8 py-2 shadow-md font-semibold 
+                    rounded-full transition cursor-pointer w-60 md:w-auto mb-2 md:mb-0"
                 >
                     Vedi repository GitHub
                 </a>

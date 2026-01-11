@@ -112,7 +112,7 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                 <p className="mt-2 text-base text-gray-900 dark:text-gray-200">{description}</p>
                 <Link
                     to="/projects"
-                    className="inline-block mt-4 bg-rose-400 dark:bg-rose-700 text-white px-8 py-2 font-semibold 
+                    className="inline-block mt-4 bg-rose-400 hover:bg-rose-500 dark:bg-rose-700 text-white px-8 py-2 font-semibold 
                     rounded-full shadow-md transition cursor-pointer mb-4 md:mb-0" >
                     Scopri i miei progetti
                 </Link>
@@ -145,8 +145,8 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
                     {/* LINK COMPLETO ALLA PAGINA ABOUT (Badge di Rinvio) */}
                     <Link
                         to="/about"
-                        className="flex items-center gap-1 px-3 py-0.5 rounded-full border-2 border-rose-400 text-rose-400 dark:border-rose-700 dark:text-rose-700 
-                        text-sm font-semibold mb-5 md:mb-0"
+                        className="flex items-center gap-1 px-3 py-0.5 rounded-full border-2 border-rose-400 hover:border-rose-500 text-rose-400 
+                        hover:text-rose-500 dark:border-rose-700 dark:text-rose-700 text-sm font-semibold mb-5 md:mb-0"
                     >
                         <span>Stack Completo</span>
                         <span className="flex items-center">

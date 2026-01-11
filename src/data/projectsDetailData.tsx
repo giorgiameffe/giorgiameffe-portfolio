@@ -69,7 +69,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         ],
 
         description: {
-            scopeAndGoal: "L'obiettivo del progetto è stato quello di creare un header personalizzato per un e-commerce di cosmetici naturali, sviluppato con React e documentato tramite Storybook, per garantire componenti riutilizzabili, scalabili e accessibili. L'header doveva rispecchiare l'identità visiva del brand, comunicando calma e naturalezza, e includere una navigazione ottimale sia su desktop che su dispositivi mobili. Particolare attenzione è stata dedicata alla coerenza simbolica dell’interfaccia, includendo elementi grafici come la foglia nel logo per rafforzare il legame con i valori di naturalità, benessere ed ecosostenibilità del brand.",
+            scopeAndGoal: "L'obiettivo del progetto è stato quello di creare un header personalizzato per un e-commerce di cosmetici naturali, sviluppato con React e documentato tramite Storybook, per garantire componenti riutilizzabili, scalabili e accessibili. L'header doveva rispecchiare l'identità visiva del brand, comunicando calma e naturalezza, e includere una navigazione ottimale sia su desktop che su dispositivi mobili.",
             personalTechnicalChallenges: [
                 "Creazione di un sistema di navigazione reattivo che si adattasse facilmente a dispositivi di diverse dimensioni, passando da un menu orizzontale su desktop a un overlay verticale su mobile.",
                 "Implementazione della gestione della modalità light/dark utilizzando variabili CSS e media queries, per migliorare l'accessibilità visiva su diverse condizioni di illuminazione.",
