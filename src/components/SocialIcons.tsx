@@ -11,7 +11,7 @@ const SocialIcons: React.FC = () => {
                 to="https://www.linkedin.com/in/giorgia-meffe-41b23b389"
                 target="_blank"
                 rel="noreferrer"
-                className="text-gray-900 dark:text-gray-100 hover:text-rose-400 transition"
+                className="text-gray-900 dark:text-gray-100 hover:text-rose-500 transition"
             >
                 <FaLinkedin className="text-2xl" />
 
@@ -21,7 +21,7 @@ const SocialIcons: React.FC = () => {
                 to="https://github.com/giorgiameffe"
                 target="_blank"
                 rel="noreferrer"
-                className="text-gray-900 dark:text-gray-100 hover:text-rose-400 transition"
+                className="text-gray-900 dark:text-gray-100 hover:text-rose-500 transition"
             >
                 <FaGithub className="text-2xl" />
 
