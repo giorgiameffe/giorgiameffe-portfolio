@@ -51,7 +51,7 @@ const ProjectCard = ({ project, featured }: ProjectCardProps) => {
                 <Link
                     to={`/projects/${project.slug}`}
                     className="flex justify-center bg-rose-400 hover:bg-rose-500 dark:bg-rose-700 font-semibold text-white text-md px-8 py-2 
-                    rounded-full shadow-md transition mt-4"
+                    rounded-full transition-colors duration-700 ease-out mt-4"
                 >
                     Scopri di più
                 </Link>

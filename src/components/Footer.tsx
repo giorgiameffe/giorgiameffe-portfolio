@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
                     href="https://mail.google.com/mail/?view=cm&fs=1&to=giorgiameffe03@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-900 dark:text-gray-100 hover:text-rose-500 transition"
+                    className="text-gray-900 dark:text-gray-100 hover:text-rose-500 transition-colors duration-700 ease-out"
                 >
                     <FaEnvelope className="text-2xl" />
                 </a>

@@ -57,7 +57,7 @@ const ContactsPage: React.FC = () => {
                         href="/Giorgia-CV.pdf"
                         download
                         className="mt-4 bg-rose-400 hover:bg-rose-500 dark:bg-rose-700 text-white px-8 py-2 font-semibold 
-               rounded-full shadow-md transition cursor-pointer"
+                        rounded-full transition-colors duration-700 ease-out cursor-pointer"
                     >
                         Scarica il mio CV
                     </a>
@@ -92,7 +92,7 @@ const ContactsPage: React.FC = () => {
                         <Link
                             to="/"
                             className="inline-block border-2 border-rose-400 hover:border-rose-500 text-rose-400 hover:text-rose-500 dark:border-rose-700 
-                            dark:text-rose-700 px-8 py-2 font-semibold rounded-full transition cursor-pointer w-60 md:w-auto mb-4 md:mb-0"
+                            dark:text-rose-700 px-8 py-2 font-semibold rounded-full transition-colors duration-700 ease-out cursor-pointer w-60 md:w-auto mb-4 md:mb-0"
                         >
                             Torna alla home
                         </Link>
@@ -100,7 +100,7 @@ const ContactsPage: React.FC = () => {
                         <Link
                             to="/projects"
                             className="inline-block bg-rose-400 hover:bg-rose-500 dark:bg-rose-700 font-semibold text-white text-md px-8 py-2 shadow-md font-semibold 
-                            rounded-full transition cursor-pointer w-60 md:w-auto mb-2 md:mb-0"
+                            rounded-full transition-colors duration-700 ease-out cursor-pointer w-60 md:w-auto mb-2 md:mb-0"
                         >
                             Scopri i miei progetti
                         </Link>
