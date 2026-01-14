@@ -47,12 +47,12 @@ const NarrativeBlock: React.FC<NarrativeBlockData> = ({
 
             {/* Colonna testo */}
             <div className="lg:w-1/2 px-4">
-                <h2 className="font-bold text-xl md:text-2xl text-center lg:text-start mb-3 mt-4">
+                <h2 className="font-bold text-xl md:text-2xl text-center lg:text-start mb-2 mt-3 lg:mt-0">
                     {title}
                 </h2>
 
                 <div
-                    className="leading-7 lg:leading-8 text-center lg:text-start"
+                    className="leading-7 lg:leading-7.5 text-center lg:text-start"
                 >
                     {content}
                 </div>

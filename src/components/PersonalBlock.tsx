@@ -16,7 +16,7 @@ const PersonalBlock: React.FC<PersonalBlockData> = ({
     return (
 
         <motion.section
-            className="mt-10 lg:mt-15 flex flex-col lg:flex-row items-start justify-center w-full max-w-6xl mx-auto"
+            className="mt-8 flex flex-col lg:flex-row items-start justify-center w-full max-w-6xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -33,12 +33,12 @@ const PersonalBlock: React.FC<PersonalBlockData> = ({
 
             {/* Colonna testo */}
             <div className="lg:w-1/2 px-4">
-                <h2 className="font-bold text-xl md:text-2xl text-center lg:text-start mb-3 mt-4">
+                <h2 className="font-bold text-xl md:text-2xl text-center lg:text-start mb-2 mt-3 lg:mt-0">
                     {title}
                 </h2>
 
                 <div
-                    className="leading-7 lg:leading-8 text-center lg:text-start"
+                    className="leading-7 lg:leading-7.5 text-center lg:text-start"
                 >
                     {content}
                 </div>

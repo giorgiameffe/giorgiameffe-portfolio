@@ -26,7 +26,7 @@ const AboutPage: React.FC = () => {
             <SkillsSection />
 
             <motion.h2
-                className="mt-15 font-extrabold text-2xl md:text-3xl lg:text-4xl text-center"
+                className="mt-8 font-extrabold text-2xl md:text-3xl lg:text-4xl text-center"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
