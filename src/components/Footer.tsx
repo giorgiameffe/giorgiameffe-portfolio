@@ -22,7 +22,6 @@ const Footer: React.FC = () => {
                     <FaEnvelope className="text-2xl" />
                 </a>
 
-
             </div>
 
             {/* Frase */}

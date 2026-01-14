@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Navbar from "./Navbar";
 import Logo from "./Logo";
-import { Sun, Moon, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 type HeaderProps = {
     currentTheme: 'light' | 'dark';
@@ -48,13 +49,12 @@ const Header = ({ currentTheme, onToggleTheme }: HeaderProps) => {
             {/* Toggle Dark Mode */}
             <button
                 onClick={onToggleTheme}
-                className="cursor-pointer text-xl p-2 rounded-full transition-colors duration-300 bg-gray-100 dark:bg-gray-700
-                text-gray-800 dark:text-yellow-400"
+                className="cursor-pointer text-xl p-2 rounded-full transition-colors duration-300"
                 aria-label="Dark Mode Toggle"
             >
                 {currentTheme === 'dark'
-                    ? <Sun className="text-white" />
-                    : <Moon className="text-black" />}
+                    ? <FaSun className="text-white" />
+                    : <FaMoon className="text-black" />}
             </button>
 
             {/* Menu mobile */}
