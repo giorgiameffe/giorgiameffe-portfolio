@@ -14,7 +14,7 @@ const ProjectsPage: React.FC = () => {
 
                 {/* Titolo animato con Framer Motion*/}
                 <motion.h1
-                    className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 dark:text-gray-200 mb-6 text-center"
+                    className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 dark:text-gray-200 mb-4 md:mb-8 text-center"
                     initial={{ opacity: 0, y: -30 }} // Inizio un po' più in alto
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
@@ -22,12 +22,11 @@ const ProjectsPage: React.FC = () => {
                     Dall’idea all’interfaccia: i miei progetti
                 </motion.h1>
 
-                <div className="max-w-2xl md:max-w-xl mx-auto text-center mb-12 md:flex md:justify-center md:items-center">
+                <div className="max-w-2xl md:max-w-xl mx-auto text-center md:flex md:justify-center md:items-center mb-6 md:mb-8">
 
                     {/* Testo animato con Framer Motion */}
                     <motion.p
-                        className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed relative 
-                                     pt-4 pb-6 px-4 mb-2 md:mb-0 "
+                        className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed relative md:mb-4"
                         initial={{ opacity: 0, x: 50 }} // Inizio trasparente e spostato 50px a destra
                         animate={{ opacity: 1, x: 0 }} // Finale visibile e posizione normale
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }} // Delay 0.3s

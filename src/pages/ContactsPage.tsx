@@ -15,7 +15,7 @@ const ContactsPage: React.FC = () => {
 
                 {/* Titolo con animazione */}
                 <motion.h1
-                    className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 dark:text-gray-200 mb-6 text-center"
+                    className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 dark:text-gray-200 text-center mb-4 md:mb-8"
                     initial={{ opacity: 0, y: -30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
@@ -24,10 +24,9 @@ const ContactsPage: React.FC = () => {
                 </motion.h1>
 
                 {/* Sottotitolo animato */}
-                <div className="max-w-2xl md:max-w-xl mx-auto text-center mb-6 md:flex md:justify-center md:items-center">
+                <div className="max-w-2xl md:max-w-xl mx-auto text-center md:flex md:justify-center md:items-center mb-6 md:mb-8">
                     <motion.p
-                        className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed relative 
-                       pt-4 pb-6 px-4 mb-2 md:mb-0"
+                        className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed relative"
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
