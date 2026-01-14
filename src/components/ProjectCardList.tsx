@@ -94,7 +94,7 @@ const ProjectCardList: React.FC = () => {
                 <button
                     onClick={prevCard}
                     className="lg:hidden absolute left-2 md:left-4 top-1/2 -translate-y-1/2 p-2 bg-gray-100 rounded-full 
-                     text-rose-400 hover:text-rose-500 shadow-md hover:bg-white transition"
+                    text-rose-400 dark:text-rose-700 dark:bg-gray-800 hover:text-rose-500 shadow-md hover:bg-white transition"
                 >
                     <FaChevronLeft />
                 </button>
@@ -102,7 +102,7 @@ const ProjectCardList: React.FC = () => {
                 <button
                     onClick={nextCard}
                     className="lg:hidden absolute right-2 md:right-4 top-1/2 -translate-y-1/2 p-2 bg-gray-100 rounded-full 
-                     text-rose-400 hover:text-rose-500 shadow-md hover:bg-white transition"
+                    text-rose-400 dark:text-rose-700 dark:bg-gray-800 hover:text-rose-500 shadow-md hover:bg-white transition"
                 >
                     <FaChevronRight />
                 </button>
