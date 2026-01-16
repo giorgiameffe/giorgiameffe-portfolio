@@ -36,7 +36,7 @@ const projects: Project[] = [
     {
         slug: "bool-shop",
         title: "BoolShop",
-        description: "Progetto Full Stack di gruppo sulla creazione di un e-commerce di giochi da tavolo",
+        description: "Progetto Full Stack di gruppo sulla creazione di un e-commerce di giochi da tavolo.",
         image: "/images/projects/boolshop-project/boolshop-preview.png",
         featured: true,
         categories: [
@@ -64,6 +64,20 @@ const projects: Project[] = [
             {
                 name: "Back-end",
                 color: "bg-green-200 text-green-950 dark:bg-green-950 dark:text-green-200"
+            }
+        ]
+    },
+
+    {
+        slug: "photo-blog-estate",
+        title: "Photo Blog - Estate '24",
+        description: "Applicazione web che simula una bacheca di sughero con foto polaroid.",
+        image: "/images/projects/photo-blog-project/photo-blog-estate.png",
+        featured: false,
+        categories: [
+            {
+                name: "Front-end",
+                color: "bg-indigo-200 text-indigo-950 dark:bg-indigo-950 dark:text-indigo-200"
             }
         ]
     },
