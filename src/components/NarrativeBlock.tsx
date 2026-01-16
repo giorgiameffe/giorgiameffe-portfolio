@@ -51,11 +51,11 @@ const NarrativeBlock: React.FC<NarrativeBlockData> = ({
                     {title}
                 </h2>
 
-                <div
+                <p
                     className="leading-7 lg:leading-7.5 text-center lg:text-start"
                 >
                     {content}
-                </div>
+                </p>
             </div>
         </motion.section>
     )

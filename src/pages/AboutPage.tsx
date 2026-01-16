@@ -14,7 +14,7 @@ const AboutPage: React.FC = () => {
 
             {/* Titolo animato con Framer Motion*/}
             <motion.h1
-                className="font-extrabold text-2xl md:text-3xl lg:text-4xl text-center"
+                className="font-extrabold text-2xl md:text-3xl lg:text-4xl text-center ml-3 mr-3"
                 initial={{ opacity: 0, y: -30 }} // Inizio un po' più in alto
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
@@ -47,10 +47,10 @@ const AboutPage: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="flex flex-col items-center justify-center py-20 px-4 min-h-[300px]"
+                className="flex flex-col items-center justify-center mt-16"
             >
                 <motion.p
-                    className="text-lg leading-relaxed mb-8 text-center lg:text-start text-gray-800 dark:text-gray-200 relative z-10"
+                    className="text-lg leading-relaxed mb-6 text-center lg:text-start text-gray-800 dark:text-gray-200 relative z-10"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -66,7 +66,7 @@ const AboutPage: React.FC = () => {
                     transition={{ duration: 0.6, delay: 0.6 }}
                 >
                     <Link to="/contacts" className="inline-flex items-center font-semibold text-white bg-rose-400 dark:bg-rose-700 
-                px-8 py-2 text-md rounded-full transition-colors duration-700 ease-out hover:bg-rose-500">
+                px-8 py-2 text-md rounded-full transition-colors duration-700 ease-out hover:bg-rose-500 mb-16">
                         Contattami
                     </Link>
                 </motion.div>
