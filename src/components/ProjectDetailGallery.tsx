@@ -71,7 +71,7 @@ const ProjectDetailGallery: React.FC<ProjectDetailGalleryProps> = ({ gallery }) 
                 )}
 
                 {/* Descrizione immagine/video */}
-                <p className="mt-4 text-center text-lg text-gray-700 dark:text-gray-300">
+                <p className="mt-4 text-center text-base text-gray-700 dark:text-gray-300 italic">
                     {caption}
                 </p>
 

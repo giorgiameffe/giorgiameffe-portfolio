@@ -337,8 +337,8 @@ const ProjectsDetail: ProjectsDetailData[] = [
         heroImage: "/images/projects/photo-blog-project/photo-blog-estate.png",
 
         details: {
-            role: "Frontend Developer (Individuale)",
-            duration: "1 settimana (Giugno 2024)",
+            role: "Frontend Developer",
+            duration: "3 giorni",
             status: "Completato",
             team: "Progetto individuale"
         },
@@ -353,7 +353,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         description: {
             scopeAndGoal: "L'obiettivo del progetto era creare una galleria fotografica interattiva ispirata a una bacheca fisica. La sfida principale consisteva nel popolare dinamicamente la pagina tramite una chiamata API esterna, garantendo al contempo un'esperienza utente coinvolgente attraverso animazioni CSS curate e un sistema di visualizzazione a schermo intero (overlay) per i singoli scatti.",
             personalTechnicalChallenges: [
-                "Integrazione di Axios per gestire chiamate asincrone verso un'API REST, con gestione dei caricamenti e degli errori tramite blocchi try/catch o .catch().",
+                "Integrazione di Axios per gestire chiamate asincrone verso un'API REST, con gestione dei caricamenti e degli errori.",
                 "Manipolazione dinamica del DOM per generare le card polaroid partendo dai dati ricevuti, mantenendo un codice pulito e modulare tramite funzioni dedicate.",
                 "Creazione di un sistema di overlay custom in JavaScript puro per visualizzare le immagini ingrandite, gestendo l'apertura/chiusura e lo stato del display.",
                 "Sviluppo di animazioni CSS avanzate: utilizzo di trasformazioni (rotate e scale) al passaggio del mouse per simulare il movimento delle foto sulla bacheca.",
