@@ -384,6 +384,16 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 caption: "Modalità Overlay: visualizzazione ingrandita dell'immagine con sfondo oscurato.",
             },
             {
+                mediaUrl: "/images/projects/photo-blog-project/photo-blog-tablet.png",
+                type: "image",
+                caption: "Design Responsivo – Tablet: adattamento del layout della bacheca per garantire una navigazione fluida e una disposizione armoniosa delle card su schermi medi.",
+            },
+            {
+                mediaUrl: "/images/projects/photo-blog-project/photo-blog-mobile.png",
+                type: "image",
+                caption: "Design Responsivo – Mobile: adattamento del layout della bacheca per garantire una navigazione fluida e una disposizione armoniosa delle card su schermi piccoli.",
+            },
+            {
                 mediaUrl: "/images/projects/photo-blog-project/photo-blog-video.mp4",
                 type: "video",
                 caption: "Demo interattiva: navigazione tra le card Polaroid che mostra la fluidità delle animazioni all'interazione dell'utente.",
