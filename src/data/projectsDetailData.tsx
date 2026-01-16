@@ -328,6 +328,71 @@ const ProjectsDetail: ProjectsDetailData[] = [
             github: "https://github.com/giorgiameffe/webapp-react",
             githubBackend: "https://github.com/giorgiameffe/webapp-express"
         }
+    },
+
+    {
+        slug: "photo-blog-estate",
+        title: "Photo Blog - Estate '24",
+        briefDescription: "Applicazione web dinamica che simula una bacheca di sughero con foto polaroid. Il progetto utilizza Axios per il recupero dati asincrono e offre un'interfaccia interattiva con effetti hover realistici e gestione di overlay.",
+        heroImage: "/images/projects/photo-blog-project/photo-blog-estate.png",
+
+        details: {
+            role: "Frontend Developer (Individuale)",
+            duration: "1 settimana (Giugno 2024)",
+            status: "Completato",
+            team: "Progetto individuale"
+        },
+
+        technologies: [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Axios"
+        ],
+
+        description: {
+            scopeAndGoal: "L'obiettivo del progetto era creare una galleria fotografica interattiva ispirata a una bacheca fisica. La sfida principale consisteva nel popolare dinamicamente la pagina tramite una chiamata API esterna, garantendo al contempo un'esperienza utente coinvolgente attraverso animazioni CSS curate e un sistema di visualizzazione a schermo intero (overlay) per i singoli scatti.",
+            personalTechnicalChallenges: [
+                "Integrazione di Axios per gestire chiamate asincrone verso un'API REST, con gestione dei caricamenti e degli errori tramite blocchi try/catch o .catch().",
+                "Manipolazione dinamica del DOM per generare le card polaroid partendo dai dati ricevuti, mantenendo un codice pulito e modulare tramite funzioni dedicate.",
+                "Creazione di un sistema di overlay custom in JavaScript puro per visualizzare le immagini ingrandite, gestendo l'apertura/chiusura e lo stato del display.",
+                "Sviluppo di animazioni CSS avanzate: utilizzo di trasformazioni (rotate e scale) al passaggio del mouse per simulare il movimento delle foto sulla bacheca.",
+                "Ottimizzazione del layout responsivo per diverse risoluzioni (Desktop, Tablet, Mobile) utilizzando calcoli dinamici (calc) e flexbox."
+            ],
+            keyLearnings: "Questo progetto ha consolidato la mia comprensione del ciclo di vita dei dati in un'applicazione frontend: dalla richiesta HTTP alla visualizzazione finale. Ho approfondito l'importanza dei dettagli nelle interazioni UI, imparando come piccole rotazioni casuali e ombreggiature possano trasformare una lista di immagini in un'esperienza visiva coerente. Inoltre, ho rafforzato la capacità di gestire elementi posizionati in modo assoluto e fisso (come i pin e l'overlay) all'interno di un layout fluido."
+        },
+
+        gallery: [
+            {
+                mediaUrl: "/images/projects/photo-blog-project/photo-blog-estate.png",
+                type: "image",
+                caption: "Vista principale della bacheca 'Estate 24' con il layout a griglia ispirato al sughero.",
+            },
+            {
+                mediaUrl: "/images/projects/photo-blog-project/photo-blog-card.png",
+                type: "image",
+                caption: "Griglia di card Polaroid con titolo, data e l'elemento grafico del pin.",
+            },
+            {
+                mediaUrl: "/images/projects/photo-blog-project/photo-blog-hover.png",
+                type: "image",
+                caption: "Effetto Hover: la foto si ingrandisce e ruota leggermente, simulando il distacco dalla bacheca.",
+            },
+            {
+                mediaUrl: "/images/projects/photo-blog-project/photo-blog-overlay.png",
+                type: "image",
+                caption: "Modalità Overlay: visualizzazione ingrandita dell'immagine con sfondo oscurato.",
+            },
+            {
+                mediaUrl: "/images/projects/photo-blog-project/photo-blog-video.mp4",
+                type: "video",
+                caption: "Demo interattiva: navigazione tra le card Polaroid che mostra la fluidità delle animazioni all'interazione dell'utente.",
+            }
+        ],
+
+        links: {
+            github: "https://github.com/tuo-username/photo-blog-repo"
+        }
     }
 ]
 
