@@ -21,7 +21,7 @@ const skillsData: SkillsSectionData = {
     hardSkills: [
         {
             title: "Front-End",
-            skills: ["HTML5", "CSS3", "JavaScript", "Typescript", "React", "Bootstrap"],
+            skills: ["HTML5", "CSS3", "JavaScript", "Typescript", "React", "Bootstrap", "Axios"],
             color: "bg-indigo-200 text-indigo-950 dark:bg-indigo-950 dark:text-indigo-200"
         },
         {
