@@ -39,7 +39,7 @@ const ProjectCard = ({ project, featured }: ProjectCardProps) => {
                         {project.categories?.map((cat, index) => (
                             <span
                                 key={index}
-                                className={`px-2 py-1 rounded-full text-sm font-semibold ${cat.color}`}
+                                className={`mb-2 px-2 py-1 rounded-full text-sm font-semibold ${cat.color}`}
                             >
                                 {cat.name}
                             </span>
