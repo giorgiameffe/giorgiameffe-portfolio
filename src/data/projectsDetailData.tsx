@@ -401,7 +401,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         ],
 
         links: {
-            github: "https://github.com/tuo-username/photo-blog-repo"
+            github: "https://github.com/giorgiameffe/js-photo-blog"
         }
     }
 ]
