@@ -7,7 +7,7 @@ export interface Project {
     title: string;
     description: string;
     image: string;
-    featured?: boolean;
+    featured: boolean;
     categories?: {
         name: "UI Design System" | "Front-end" | "Back-end";
         color: string;

@@ -13,6 +13,11 @@ const ProjectCardList: React.FC = () => {
     // (1 mobile, 2 tablet, 3 desktop)
     const [cardsPerView, setCardsPerView] = useState(3);
 
+    // Filtro per progetti featured
+    const featuredProjects = projects.filter(
+        project => project.featured === true
+    );
+
     // Calcola cardsPerView in base alla larghezza della finestra
     useEffect(() => {
         function handleResize() {
@@ -46,7 +51,7 @@ const ProjectCardList: React.FC = () => {
 
     // Funzione per andare avanti di una card
     function nextCard() {
-        if (currentIndex < projects.length - cardsPerView) {
+        if (currentIndex < featuredProjects.length - cardsPerView) {
             setCurrentIndex(currentIndex + 1);
         } else {
             // se siamo alla fine, torniamo all’inizio
@@ -60,12 +65,12 @@ const ProjectCardList: React.FC = () => {
             setCurrentIndex(currentIndex - 1);
         } else {
             // se siamo all’inizio, saltiamo all’ultima finestra valida
-            setCurrentIndex(projects.length - cardsPerView);
+            setCurrentIndex(featuredProjects.length - cardsPerView);
         }
     }
 
     // Selezioniamo solo le card che devono essere visibili
-    const visibleProjects = projects.slice(
+    const visibleProjects = featuredProjects.slice(
         currentIndex,
         currentIndex + cardsPerView
     );
