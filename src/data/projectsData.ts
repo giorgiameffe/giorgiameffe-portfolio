@@ -21,6 +21,19 @@ export interface Project {
 const projects: Project[] = [
 
     {
+        slug: "portfolio-personale",
+        title: "Portfolio Personale",
+        description: "Progetto individuale volto alla creazione di una vetrina digitale per esporre il mio percorso e i miei progetti.",
+        image: "/images/projects/portfolio-project/portfolio-hero.png",
+        featured: true,
+        categories: [
+            {
+                name: "Front-end",
+                color: "bg-indigo-200 text-indigo-950 dark:bg-indigo-950 dark:text-indigo-200"
+            }
+        ]
+    },
+    {
         slug: "header-ui-custom",
         title: "Header UI custom",
         description: "Progetto individuale sulla creazione di un componente Header UI custom per un sito di cosmetici naturali.",
