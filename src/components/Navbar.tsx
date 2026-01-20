@@ -16,7 +16,7 @@ const Navbar = ({ navItems, onClick }: NavbarProps) => {
     return (
 
         <nav>
-            <ul className={`flex flex-col items-center md:flex-row gap-4 md:gap-6`}>
+            <ul className={`flex flex-col items-center md:flex-row gap-4 md:gap-6 text-lg`}>
                 {navItems.map((item) => (
                     <li key={item.path}>
                         <NavLink
