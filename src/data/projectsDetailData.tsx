@@ -52,7 +52,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         slug: "portfolio-personale",
         title: "Portfolio Personale",
         briefDescription: "Il sito che stai navigando: una piattaforma progettata e sviluppata da zero per raccontare il mio percorso, i miei progetti e la mia evoluzione tecnica attraverso un'esperienza utente curata e moderna.",
-        heroImage: "/images/projects/portfolio/portfolio-hero.png",
+        heroImage: "/images/projects/portfolio-project/portfolio-hero.png",
 
         details: {
             role: "Frontend Developer",
@@ -74,7 +74,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
             personalTechnicalChallenges: [
                 "Scomposizione del layout in componenti modulari e riutilizzabili secondo la filosofia di React, garantendo un codice pulito, leggibile e facilmente manutenibile.",
                 "Gestione avanzata del design system tramite Tailwind CSS, curando minuziosamente la palette colori e le spaziature per riflettere un'identità visiva professionale e armoniosa.",
-                "Implementazione della modalità Dark/Light dinamica gestita tramite stato, permettendo all'utente di scegliere la preferenza visiva con una transizione fluida su tutti i componenti.",
+                "Implementazione della modalità Dark/Light dinamica con React Context API, permettendo all'utente di scegliere la preferenza visiva con una transizione fluida su tutti i componenti.",
                 "Integrazione per la prima volta di Framer Motion per gestire animazioni d'ingresso e micro-interazioni che rendono l'interfaccia viva e moderna senza appesantire il caricamento.",
                 "Configurazione della navigazione multi-pagina tramite React Router, gestendo rotte dinamiche.",
                 "Gestione completa del form di contatto tramite l'integrazione con Formspree per la ricezione e il processing dei messaggi direttamente lato client.",

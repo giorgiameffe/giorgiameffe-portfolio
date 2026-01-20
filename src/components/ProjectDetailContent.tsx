@@ -50,14 +50,10 @@ const ProjectDetailContent: React.FC<ContentProps> = ({ description }) => {
                     <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 text-center md:text-start">
                         Sfide tecniche personali
                     </h3>
-                    <ul className="space-y-6">
+                    <ul className="list-disc list-inside space-y-6 marker:text-rose-400 dark:text-rose-700">
                         {description.personalTechnicalChallenges.map((challenge, index) => (
-                            <li key={index} className="flex items-center gap-4">
-                                {/* Un piccolo pallino stilizzato */}
-                                <span className="mt-2.5 w-2 h-2 rounded-full bg-rose-400 shrink-0" />
-                                <p className="leading-relaxed">
-                                    {challenge}
-                                </p>
+                            <li key={index} className="leading-relaxed pl-2 text-gray-800 dark:text-gray-200">
+                                {challenge}
                             </li>
                         ))}
                     </ul>
@@ -86,3 +82,15 @@ const ProjectDetailContent: React.FC<ContentProps> = ({ description }) => {
 };
 
 export default ProjectDetailContent;
+
+//  <ul className="space-y-6">
+//                         {description.personalTechnicalChallenges.map((challenge, index) => (
+//                             <li key={index} className="flex items-center gap-4">
+//                                 {/* Un piccolo pallino stilizzato */}
+//                                 <span className="mt-2.5 w-2 h-2 rounded-full bg-rose-400 shrink-0" />
+//                                 <p className="leading-relaxed">
+//                                     {challenge}
+//                                 </p>
+//                             </li>
+//                         ))}
+//                     </ul>
