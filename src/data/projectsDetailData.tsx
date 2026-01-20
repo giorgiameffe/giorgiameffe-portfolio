@@ -85,22 +85,47 @@ const ProjectsDetail: ProjectsDetailData[] = [
 
         gallery: [
             {
-                mediaUrl: "/images/projects/portfolio/portfolio-hero.png",
+                mediaUrl: "/images/projects/portfolio-project/portfolio-hero.png",
                 type: "image",
                 caption: "Hero Section"
             },
             {
-                mediaUrl: "/images/projects/portfolio/portfolio-hero-dark.png",
+                mediaUrl: "/images/projects/portfolio-project/portfolio-hero-dark.png",
                 type: "image",
                 caption: "Dark Mode"
             },
             {
-                mediaUrl: "/images/projects/portfolio/portfolio-about-me.png",
+                mediaUrl: "/images/projects/portfolio-project/portfolio-featured-projects.png",
                 type: "image",
                 caption: ""
             },
             {
-                mediaUrl: "/images/projects/portfolio/portfolio-contacts.png",
+                mediaUrl: "/images/projects/portfolio-project/portfolio-project-details.png",
+                type: "image",
+                caption: ""
+            },
+            {
+                mediaUrl: "/images/projects/portfolio-project/portfolio-gallery-demo.png",
+                type: "image",
+                caption: ""
+            },
+            {
+                mediaUrl: "/images/projects/portfolio-project/portfolio-about-me.png",
+                type: "image",
+                caption: ""
+            },
+            {
+                mediaUrl: "/images/projects/portfolio-project/portfolio-about-skills.png",
+                type: "image",
+                caption: ""
+            },
+            {
+                mediaUrl: "/images/projects/portfolio-project/portfolio-about-margot.png",
+                type: "image",
+                caption: ""
+            },
+            {
+                mediaUrl: "/images/projects/portfolio-project/portfolio-contacts.png",
                 type: "image",
                 caption: ""
             }
