@@ -25,7 +25,7 @@ const projects: Project[] = [
         title: "Portfolio Personale",
         description: "Progetto individuale volto alla creazione di una vetrina digitale per esporre il mio percorso e i miei progetti.",
         image: "/images/projects/portfolio-project/portfolio-hero.png",
-        featured: true,
+        featured: false,
         categories: [
             {
                 name: "Front-end",
