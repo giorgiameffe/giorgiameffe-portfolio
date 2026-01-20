@@ -14,7 +14,7 @@ export interface ProjectsDetailData {
     details: {
         role: string;
         duration: string;
-        status: 'Completato' | 'In Corso' | 'In Manutenzione';
+        status: 'Completato' | 'In corso' | 'In Manutenzione';
         team: string;
     };
 
@@ -47,6 +47,69 @@ export interface ProjectsDetailData {
 // ==========================================================
 
 const ProjectsDetail: ProjectsDetailData[] = [
+
+    {
+        slug: "portfolio-personale",
+        title: "Portfolio Personale",
+        briefDescription: "Il sito che stai navigando: una piattaforma progettata e sviluppata da zero per raccontare il mio percorso, i miei progetti e la mia evoluzione tecnica attraverso un'esperienza utente curata e moderna.",
+        heroImage: "/images/projects/portfolio/portfolio-hero.png",
+
+        details: {
+            role: "Frontend Developer",
+            duration: "8 settimane (Ottobre 2025 - Dicembre 2025) con ritocchi successivi",
+            status: "In corso",
+            team: "Progetto individuale"
+        },
+
+        technologies: [
+            "React",
+            "Tailwind CSS",
+            "Typescript",
+            "Framer Motion",
+            "Vercel"
+        ],
+
+        description: {
+            scopeAndGoal: "Questo progetto non è solo una vetrina, ma un organismo dinamico concepito per evolversi insieme alla mia carriera. L'obiettivo centrale è stato creare un'esperienza utente fluida e interattiva, dove l'identità visiva e la performance convivono. Rappresenta il mio primo esempio concreto di applicazione dei principi di design, usabilità e architettura del codice in un contesto reale.",
+            personalTechnicalChallenges: [
+                "Scomposizione del layout in componenti modulari e riutilizzabili secondo la filosofia di React, garantendo un codice pulito, leggibile e facilmente manutenibile.",
+                "Gestione avanzata del design system tramite Tailwind CSS, curando minuziosamente la palette colori e le spaziature per riflettere un'identità visiva professionale e armoniosa.",
+                "Implementazione della modalità Dark/Light dinamica gestita tramite stato, permettendo all'utente di scegliere la preferenza visiva con una transizione fluida su tutti i componenti.",
+                "Integrazione per la prima volta di Framer Motion per gestire animazioni d'ingresso e micro-interazioni che rendono l'interfaccia viva e moderna senza appesantire il caricamento.",
+                "Configurazione della navigazione multi-pagina tramite React Router, gestendo rotte dinamiche.",
+                "Gestione completa del form di contatto tramite l'integrazione con Formspree per la ricezione e il processing dei messaggi direttamente lato client.",
+                "Esecuzione del primo deploy professionale su piattaforma Vercel, configurando correttamente l'ambiente di produzione."
+            ],
+            keyLearnings: "Questo progetto è stato il banco di prova fondamentale per bilanciare estetica e funzionalità. Mi ha permesso di affrontare per la prima volta l'intero ciclo di vita di un'app: dal design alla gestione delle rotte, fino alla messa in produzione su Vercel. Ho imparato che la qualità di un sito risiede nei dettagli invisibili, come l'accessibilità della Dark Mode e la fluidità delle animazioni, consolidando la mia capacità di consegnare un prodotto finito, funzionante e responsivo."
+        },
+
+        gallery: [
+            {
+                mediaUrl: "/images/projects/portfolio/portfolio-hero.png",
+                type: "image",
+                caption: "Hero Section"
+            },
+            {
+                mediaUrl: "/images/projects/portfolio/portfolio-hero-dark.png",
+                type: "image",
+                caption: "Dark Mode"
+            },
+            {
+                mediaUrl: "/images/projects/portfolio/portfolio-about-me.png",
+                type: "image",
+                caption: ""
+            },
+            {
+                mediaUrl: "/images/projects/portfolio/portfolio-contacts.png",
+                type: "image",
+                caption: ""
+            }
+        ],
+
+        links: {
+            github: "https://github.com/giorgiameffe/giorgiameffe-portfolio"
+        }
+    },
 
     {
         slug: "header-ui-custom",
