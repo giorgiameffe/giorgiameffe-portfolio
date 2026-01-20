@@ -42,7 +42,7 @@ const skillsData: SkillsSectionData = {
     ],
     softSkills: [
         {
-            title: "Organizzazione & Gestione",
+            title: "Organizzazione e Gestione",
             skills: ["Gestione del tempo", "Precisione e attenzione al dettaglio", "Pianificazione autonoma", "Problem solving"],
             color: "bg-orange-200 text-orange-950 dark:bg-orange-950 dark:text-orange-200"
         },

@@ -14,7 +14,7 @@ const SkillsSection: React.FC = () => {
                 transition={{ duration: 1, ease: "easeOut" }}
                 viewport={{ once: true }}
             >
-                Competenze tecniche & Soft Skills
+                Competenze tecniche e Soft Skills
             </motion.h2>
 
             <p
