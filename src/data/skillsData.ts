@@ -30,7 +30,7 @@ const skillsData: SkillsSectionData = {
             color: "bg-green-200 text-green-950 dark:bg-green-950 dark:text-green-200"
         },
         {
-            title: "UI & Component Design",
+            title: "UI - Component Design",
             skills: ["UX/UI base", "Atomic Design", "Storybook", "Accessibilità (WCAG/ARIA)", "Componenti riutilizzabili"],
             color: "bg-purple-200 text-purple-800 dark:bg-purple-950 dark:text-purple-200"
         },
