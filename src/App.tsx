@@ -8,6 +8,7 @@ import ContactsPage from './pages/ContactsPage';
 import DefaultLayout from './layouts/DefaultLayout';
 import GlobalContext from './contexts/GlobalContext';
 import { useState } from 'react';
+import ScrollToTop from './components/ScrollToTop';
 
 const App: React.FC = () => {
 
@@ -20,6 +21,7 @@ const App: React.FC = () => {
       setIsDark
     }}>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route element={<DefaultLayout />}>
             <Route path='/' element={<HomePage />} />
