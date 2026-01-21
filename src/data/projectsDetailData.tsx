@@ -133,6 +133,12 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 mediaUrl: "/images/projects/portfolio-project/portfolio-contacts.png",
                 type: "image",
                 caption: "Pagina Contatti: breve presentazione, link diretti a LinkedIn e GitHub, pulsante per il download del CV e form per l'invio di messaggi."
+            },
+
+            {
+                mediaUrl: "/images/projects/portfolio-project/portfolio-video-desktop.mp4",
+                type: "video",
+                caption: "Video Demo Desktop: panoramica dell'interfaccia utente del portfolio, con focus sulla navigazione fluida, transizioni dinamiche, visualizzazione delle sezioni principali, con un'illustrazione della modalità Dark Mode."
             }
         ],
 
@@ -148,7 +154,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         heroImage: "/images/projects/header-ui-project/header-desktop-light.png",
 
         details: {
-            role: "Frontend Developer & Component Designer (Individuale)",
+            role: "Frontend Developer & Component Designer",
             duration: "2 settimane (Agosto 2025 - Settembre 2025) con ritocchi successivi",
             status: "Completato",
             team: "Progetto individuale"
@@ -343,7 +349,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
         heroImage: "/images/projects/cine-circle-project/cine-circle-preview.png",
 
         details: {
-            role: "Full Stack Developer (Individuale)",
+            role: "Full Stack Developer",
             duration: "4 giorni (Maggio 2025)",
             status: "Completato",
             team: "Progetto individuale (Corso Boolean)"
