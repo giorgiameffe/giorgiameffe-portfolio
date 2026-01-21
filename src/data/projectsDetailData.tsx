@@ -70,15 +70,15 @@ const ProjectsDetail: ProjectsDetailData[] = [
         ],
 
         description: {
-            scopeAndGoal: "Questo progetto non è solo una vetrina, ma un organismo dinamico concepito per evolversi insieme alla mia carriera. L'obiettivo centrale è stato creare un'esperienza utente fluida e interattiva, dove l'identità visiva e la performance convivono. Rappresenta il mio primo esempio concreto di applicazione dei principi di design, usabilità e architettura del codice in un contesto reale.",
+            scopeAndGoal: "Questo sito è un progetto in continua evoluzione, pensato per crescere insieme al mio percorso professionale. L'obiettivo era creare un sito fluido, bello da vedere e facile da usare, mettendo in pratica tutto quello che ho imparato sui principi di design e sulla programmazione per realizzare un prodotto reale e curato.",
             personalTechnicalChallenges: [
                 "Scomposizione del layout in componenti modulari e riutilizzabili secondo la filosofia di React, garantendo un codice pulito, leggibile e facilmente manutenibile.",
-                "Gestione avanzata del design system tramite Tailwind CSS, curando minuziosamente la palette colori e le spaziature per riflettere un'identità visiva professionale e armoniosa.",
-                "Implementazione della modalità Dark/Light dinamica con React Context API, permettendo all'utente di scegliere la preferenza visiva con una transizione fluida su tutti i componenti.",
+                "Gestione avanzata dello stile tramite Tailwind CSS, curando minuziosamente la palette colori e le spaziature per riflettere un'identità visiva professionale e armoniosa.",
+                "Implementazione della modalità Dark/Light dinamica con React Context API, permettendo all'utente di scegliere la preferenza visiva.",
                 "Integrazione per la prima volta di Framer Motion per gestire animazioni d'ingresso e micro-interazioni che rendono l'interfaccia viva e moderna senza appesantire il caricamento.",
-                "Configurazione della navigazione multi-pagina tramite React Router, gestendo rotte dinamiche.",
+                "Configurazione della navigazione tramite React Router, gestendo rotte dinamiche.",
                 "Gestione completa del form di contatto tramite l'integrazione con Formspree per la ricezione e il processing dei messaggi direttamente lato client.",
-                "Esecuzione del primo deploy professionale su piattaforma Vercel, configurando correttamente l'ambiente di produzione."
+                "Esecuzione del primo deploy professionale su piattaforma Vercel."
             ],
             keyLearnings: "Questo progetto è stato il banco di prova fondamentale per bilanciare estetica e funzionalità. Mi ha permesso di affrontare per la prima volta l'intero ciclo di vita di un'app: dal design alla gestione delle rotte, fino alla messa in produzione su Vercel. Ho imparato che la qualità di un sito risiede nei dettagli invisibili, come l'accessibilità della Dark Mode e la fluidità delle animazioni, consolidando la mia capacità di consegnare un prodotto finito, funzionante e responsivo."
         },
