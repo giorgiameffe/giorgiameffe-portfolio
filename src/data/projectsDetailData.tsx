@@ -100,6 +100,11 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 caption: ""
             },
             {
+                mediaUrl: "/images/projects/portfolio-project/portfolio-projects.png",
+                type: "image",
+                caption: ""
+            },
+            {
                 mediaUrl: "/images/projects/portfolio-project/portfolio-project-details.png",
                 type: "image",
                 caption: ""
