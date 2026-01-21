@@ -63,7 +63,7 @@ const ProjectDetailInfoBar: React.FC<InfoBarProps> = ({
                     {technologies.map(t => (
                         <li
                             key={t}
-                            className={`${techColors[t] ?? "border-gray-400 text-gray-600"} px-2 py-1.5 border rounded-full text-sm text-center`}
+                            className={`${techColors[t] ?? "border-gray-800 text-gray-800 bg-gray-200 dark:border-gray-300 dark:text-gray-300 dark:bg-gray-700 "} px-2 py-1.5 border rounded-full text-sm text-center`}
                         >
                             {t}
                         </li>

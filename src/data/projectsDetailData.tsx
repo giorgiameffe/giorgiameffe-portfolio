@@ -56,7 +56,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
 
         details: {
             role: "Frontend Developer",
-            duration: "8 settimane (Ottobre 2025 - Dicembre 2025) con ritocchi successivi",
+            duration: "8 settimane (Ottobre 2025 - Dicembre 2025)",
             status: "In corso",
             team: "Progetto individuale"
         },
@@ -73,9 +73,9 @@ const ProjectsDetail: ProjectsDetailData[] = [
             scopeAndGoal: "Questo sito è un progetto in continua evoluzione, pensato per crescere insieme al mio percorso professionale. L'obiettivo era creare un sito fluido, bello da vedere e facile da usare, mettendo in pratica tutto quello che ho imparato sui principi di design e sulla programmazione per realizzare un prodotto reale e curato.",
             personalTechnicalChallenges: [
                 "Scomposizione del layout in componenti modulari e riutilizzabili secondo la filosofia di React, garantendo un codice pulito, leggibile e facilmente manutenibile.",
-                "Gestione avanzata dello stile tramite Tailwind CSS, curando minuziosamente la palette colori e le spaziature per riflettere un'identità visiva professionale e armoniosa.",
+                "Gestione avanzata dello stile tramite Tailwind CSS, curando la palette colori e le spaziature per riflettere un'identità visiva professionale e armoniosa.",
                 "Implementazione della modalità Dark/Light dinamica con React Context API, permettendo all'utente di scegliere la preferenza visiva.",
-                "Integrazione per la prima volta di Framer Motion per gestire animazioni d'ingresso e micro-interazioni che rendono l'interfaccia viva e moderna senza appesantire il caricamento.",
+                "Integrazione per la prima volta di Framer Motion per gestire animazioni d'ingresso e micro-interazioni che rendono l'interfaccia viva e moderna.",
                 "Configurazione della navigazione tramite React Router, gestendo rotte dinamiche.",
                 "Gestione completa del form di contatto tramite l'integrazione con Formspree per la ricezione e il processing dei messaggi direttamente lato client.",
                 "Esecuzione del primo deploy professionale su piattaforma Vercel."
