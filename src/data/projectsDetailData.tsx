@@ -267,68 +267,67 @@ const ProjectsDetail: ProjectsDetailData[] = [
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-preview.png",
                 type: "image",
-                caption: "Sezione superiore della Homepage: logo, barra di navigazione e Hero Section con banner dinamico dedicato alle promozioni principali.",
+                caption: "Homepage: sezione superiore con logo, barra di navigazione e Hero Section con banner dinamico dedicato alle promozioni principali."
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-ultimiarrivi.png",
                 type: "image",
-                caption: "Vetrina degli ultimi arrivi con card prodotto e indicazioni di eventuali sconti.",
+                caption: "Ultimi Arrivi: vetrina con card prodotto e indicazioni di eventuali sconti."
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-card.png",
                 type: "image",
-                caption: "Visualizzazione dei prodotti a griglia con prezzi e sconti.",
+                caption: "Visualizzazione Prodotto: griglia con prezzi e sconti evidenziati."
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-catalogo.png",
                 type: "image",
-                caption: "Catalogo prodotti con filtri di ricerca e ordinamento.",
+                caption: "Catalogo: panoramica dei prodotti con filtri di ricerca e ordinamento."
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-card-lista.png",
                 type: "image",
-                caption: "Visualizzazione dei prodotti in modalità elenco compatto.",
+                caption: "Modalità Elenco: visualizzazione dei prodotti in formato lista compatto."
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-card-dettaglio.png",
                 type: "image",
-                caption: "Scheda prodotto con specifiche tecniche e tasto di acquisto.",
+                caption: "Scheda Prodotto: dettaglio con specifiche tecniche e tasto di acquisto."
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-prodotti-correlati.png",
                 type: "image",
-                caption: "Sezione suggerimenti per prodotti simili o consigliati.",
+                caption: "Prodotti Correlati: sezione dedicata ai suggerimenti per prodotti simili o consigliati."
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-wishlist.png",
                 type: "image",
-                caption: "Sezione Wishlist per visualizzare e aggiungere al carrello i prodotti salvati come preferiti.",
+                caption: "Wishlist: sezione per visualizzare e aggiungere al carrello i prodotti salvati come preferiti."
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-carrello.png",
                 type: "image",
-                caption: "Carrello laterale dinamico per la gestione rapida degli acquisti.",
+                caption: "Carrello: menu laterale dinamico per la gestione rapida degli acquisti."
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-checkout.png",
                 type: "image",
-                caption: "Riepilogo ordine e modulo per la finalizzazione del pagamento.",
+                caption: "Checkout: riepilogo dell'ordine e modulo per la finalizzazione del pagamento."
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/boolshop-footer.png",
                 type: "image",
-                caption: "Piè di pagina con info aziendali, link utili e social.",
+                caption: "Footer: piè di pagina con info aziendali, link utili e social."
             },
-
             {
                 mediaUrl: "/images/projects/boolshop-project/BoolShop-desktop-video.mp4",
                 type: "video",
-                caption: "Demo di BoolShop: panoramica dell'interfaccia fantasy, navigazione tra i prodotti e visualizzazione delle sezioni wishlist, carrello e checkout.",
+                caption: "Video Demo Desktop: panoramica dell'interfaccia fantasy, navigazione tra i prodotti e visualizzazione delle sezioni wishlist, carrello e checkout."
             },
             {
                 mediaUrl: "/images/projects/boolshop-project/BoolShop-responsività.mp4",
                 type: "video",
-                caption: "Demo di BoolShop: esplorazione dell'interfaccia utente su tablet e mobile, evidenziando l'adattabilità del design e la fruibilità del sito su tutti i dispositivi."
+                caption: "Video Demo Responsività: esplorazione dell'interfaccia utente su tablet e mobile, evidenziando la fruibilità su tutti i dispositivi."
             }
         ],
 
@@ -378,42 +377,42 @@ const ProjectsDetail: ProjectsDetailData[] = [
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-preview.png",
                 type: "image",
-                caption: "Hero section della homepage con estetica vintage e invito all'azione centrale.",
+                caption: "Hero Section: sezione iniziale della homepage con estetica vintage e invito all'azione centrale."
             },
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-list.png",
                 type: "image",
-                caption: "Catalogo dinamico dei film con schede descrittive, votazioni medie e barra di ricerca.",
+                caption: "Catalogo Film: elenco con schede descrittive, votazioni medie e barra di ricerca."
             },
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-detail.png",
                 type: "image",
-                caption: "Pagina di dettaglio del film con locandina, sinossi e sezione dedicata alle recensioni degli utenti.",
+                caption: "Dettaglio Film: pagina con locandina, sinossi e sezione dedicata alle recensioni degli utenti."
             },
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-add-movie.png",
                 type: "image",
-                caption: "Interfaccia del modulo per l'aggiunta di nuovi film con gestione del caricamento immagini.",
+                caption: "Aggiunta Film: interfaccia del modulo per l'inserimento di nuovi contenuti con gestione del caricamento immagini."
             },
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-review-form.png",
                 type: "image",
-                caption: "Modulo interattivo per l'inserimento di recensioni e votazioni in tempo reale.",
+                caption: "Modulo Recensioni: interfaccia interattiva per l'inserimento di feedback e votazioni in tempo reale."
             },
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-footer.png",
                 type: "image",
-                caption: "Piè di pagina con informazioni della community, link di navigazione e contatti social.",
+                caption: "Footer: piè di pagina con informazioni della community, link di navigazione e contatti social."
             },
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-desktop-video.mp4",
                 type: "video",
-                caption: "Demo di Cine Circle: tour dell'interfaccia vintage, navigazione tra i post e dimostrazione pratica dell'inserimento di nuovi film e recensioni.",
+                caption: "Video Demo Desktop: tour dell'interfaccia vintage, navigazione tra i post e dimostrazione pratica dell'inserimento di nuovi film e recensioni."
             },
             {
                 mediaUrl: "/images/projects/cine-circle-project/cine-circle-responsività.mp4",
                 type: "video",
-                caption: "Demo di Cine Circle: esplorazione dell'interfaccia utente su tablet e mobile, evidenziando l'adattabilità del design su diversi dispositivi."
+                caption: "Video Demo Responsività: esplorazione dell'interfaccia utente su tablet e mobile, evidenziandone la fruibilità su diversi dispositivi."
             }
         ],
 
