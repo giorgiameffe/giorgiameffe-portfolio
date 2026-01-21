@@ -87,52 +87,52 @@ const ProjectsDetail: ProjectsDetailData[] = [
             {
                 mediaUrl: "/images/projects/portfolio-project/portfolio-hero.png",
                 type: "image",
-                caption: "Hero Section"
+                caption: "Hero Section: panoramica della sezione iniziale della Homepage con focus su tipografia e layout pulito in modalità Light."
             },
             {
                 mediaUrl: "/images/projects/portfolio-project/portfolio-hero-dark.png",
                 type: "image",
-                caption: "Dark Mode"
+                caption: "Interfaccia Dark Mode: esempio di adattamento cromatico per migliorare il comfort visivo notturno."
             },
             {
                 mediaUrl: "/images/projects/portfolio-project/portfolio-featured-projects.png",
                 type: "image",
-                caption: ""
+                caption: "Progetti in Evidenza: sezione della Homepage dedicata alla presentazione dei lavori principali."
             },
             {
                 mediaUrl: "/images/projects/portfolio-project/portfolio-projects.png",
                 type: "image",
-                caption: ""
+                caption: "Pagina Progetti: archivio completo dei lavori con badge per identificare immediatamente il tipo di progetto."
             },
             {
                 mediaUrl: "/images/projects/portfolio-project/portfolio-project-details.png",
                 type: "image",
-                caption: ""
+                caption: "Dettaglio Progetto: sezione iniziale con titolo, descrizione approfondita e anteprima visiva dell'interfaccia."
             },
             {
                 mediaUrl: "/images/projects/portfolio-project/portfolio-gallery-demo.png",
                 type: "image",
-                caption: ""
+                caption: "Galleria Interattiva: sistema di visualizzazione dei contenuti multimediali all'interno delle schede progetto."
             },
             {
                 mediaUrl: "/images/projects/portfolio-project/portfolio-about-me.png",
                 type: "image",
-                caption: ""
+                caption: "Sezione About: presentazione personale con focus sul percorso professionale e approccio al lavoro."
             },
             {
                 mediaUrl: "/images/projects/portfolio-project/portfolio-about-skills.png",
                 type: "image",
-                caption: ""
+                caption: "Competenze: sezione che evidenzia il mio Tech Stack (Hard Skills) e le attitudini relazionali e gestionali (Soft Skills)."
             },
             {
                 mediaUrl: "/images/projects/portfolio-project/portfolio-about-margot.png",
                 type: "image",
-                caption: ""
+                caption: "Sezione personale: un breve racconto dei miei interessi e della mia quotidianità insieme a Margot per aggiungere autenticità e un tocco umano al portfolio."
             },
             {
                 mediaUrl: "/images/projects/portfolio-project/portfolio-contacts.png",
                 type: "image",
-                caption: ""
+                caption: "Pagina Contatti: breve presentazione, link diretti a LinkedIn e GitHub, pulsante per il download del CV e form per l'invio di messaggi."
             }
         ],
 
