@@ -40,14 +40,14 @@ const ProjectCardList: React.FC = () => {
     // Quando cardsPerView cambia (es: mobile → desktop),
     // currentIndex potrebbe diventare invalido
     useEffect(() => {
-        const maxIndex = projects.length - cardsPerView;
+        const maxIndex = featuredProjects.length - cardsPerView;
 
         // Se currentIndex è troppo alto per il nuovo layout,
         // lo riportiamo a 0
         if (currentIndex > maxIndex) {
             setCurrentIndex(0);
         }
-    }, [cardsPerView, projects.length]);
+    }, [cardsPerView, featuredProjects.length]);
 
     // Funzione per andare avanti di una card
     function nextCard() {
