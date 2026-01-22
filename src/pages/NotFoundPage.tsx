@@ -21,7 +21,7 @@ const NotFoundPage: React.FC = () => {
                 </p>
 
                 <Link
-                    to="/projects"
+                    to="/"
                     className="inline-block bg-rose-400 hover:bg-rose-500 dark:bg-rose-700 font-semibold text-white text-md px-8 py-2 shadow-md font-semibold 
                             rounded-full transition-colors duration-700 ease-out cursor-pointer w-60 md:w-auto mb-2 md:mb-0"
                 >
