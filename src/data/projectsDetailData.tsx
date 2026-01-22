@@ -134,6 +134,11 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 type: "image",
                 caption: "Pagina Contatti: breve presentazione, link diretti a LinkedIn e GitHub, pulsante per il download del CV e form per l'invio di messaggi."
             },
+            {
+                mediaUrl: "/images/projects/portfolio-project/portfolio-404.png",
+                type: "image",
+                caption: "Pagina 404: illustrazione personalizzata di Margot, messaggio di errore amichevole e pulsante di ritorno rapido alla Home."
+            },
 
             {
                 mediaUrl: "/images/projects/portfolio-project/portfolio-video-desktop.mp4",
