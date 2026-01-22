@@ -139,6 +139,11 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 mediaUrl: "/images/projects/portfolio-project/portfolio-video-desktop.mp4",
                 type: "video",
                 caption: "Video Demo Desktop: panoramica dell'interfaccia utente del portfolio, con focus sulla navigazione fluida, transizioni dinamiche, visualizzazione delle sezioni principali, con un'illustrazione della modalità Dark Mode."
+            },
+            {
+                mediaUrl: "/images/projects/portfolio-project/portfolio-video-responsività.mp4",
+                type: "video",
+                caption: "Video Demo Responsività: esplorazione dell'interfaccia utente su tablet e mobile, evidenziando la fruibilità su tutti i dispositivi."
             }
         ],
 
