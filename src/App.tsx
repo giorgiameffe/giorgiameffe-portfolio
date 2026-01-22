@@ -5,6 +5,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import ProjectDetailPage from './pages/ProjectDetailPage';
 import AboutPage from './pages/AboutPage';
 import ContactsPage from './pages/ContactsPage';
+import NotFoundPage from './pages/NotFoundPage';
 import DefaultLayout from './layouts/DefaultLayout';
 import GlobalContext from './contexts/GlobalContext';
 import { useState } from 'react';
@@ -29,6 +30,7 @@ const App: React.FC = () => {
             <Route path='/projects/:slug' element={<ProjectDetailPage />} />
             <Route path='/about' element={<AboutPage />} />
             <Route path='/contacts' element={<ContactsPage />} />
+            <Route path='*' element={<NotFoundPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
