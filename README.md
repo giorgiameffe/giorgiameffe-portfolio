@@ -1,7 +1,6 @@
 # 🌸 Portfolio – Giorgia  
-*Junior Front-End Developer*
 
-Questo progetto è il mio **portfolio personale**, pensato per raccontare sia il mio percorso come **Junior Front-End Developer**, sia il mio approccio al design e all’esperienza utente.
+Questo progetto è il mio **portfolio personale**, pensato per raccontare sia il mio percorso nello sviluppo web, sia il mio approccio al design e all’esperienza utente.
 
 Credo nelle interfacce semplici, curate e funzionali, dove il codice non è solo tecnica, ma uno strumento per creare esperienze piacevoli e accessibili.
 
