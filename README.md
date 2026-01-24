@@ -61,11 +61,15 @@ Il sito supporta una **Light Mode** e una **Dark Mode**:
 - atmosfera luminosa e minimale  
 - sensazione di apertura e semplicità
 
+![Desktop Light Mode](./public/images/projects/portfolio-project/portfolio-hero.png)
+
 ### 🌙 Dark Mode
 
 - tonalità viola e blu più profonde  
 - esperienza visiva più immersiva
 - ideale per una navigazione serale  
+
+![Desktop Dark Mode](./public/images/projects/portfolio-project/portfolio-hero-dark.png)
 
 La **Dark Mode** è completamente integrata:
 - toggle sempre accessibile
@@ -104,7 +108,8 @@ Ogni movimento è pensato per essere naturale e funzionale.
 
 ## 📱 Responsive Design
 
-Il portfolio è completamente **responsive**, progettato per offrire un’esperienza ottimale su **desktop, tablet e mobile**.  
+Il portfolio è completamente **responsive**, progettato per offrire un’esperienza ottimale su **desktop, tablet e mobile**.           
+Il layout è stato progettato seguendo un approccio **mobile-first**, adattandosi progressivamente a schermi più grandi.          
 Ogni sezione si adatta automaticamente alle dimensioni dello schermo, mantenendo leggibilità, navigazione intuitiva e coerenza visiva.
 
 ### Screenshots Responsive
