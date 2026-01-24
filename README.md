@@ -102,6 +102,19 @@ Ogni movimento è pensato per essere naturale e funzionale.
 
 ---
 
+## 📱 Responsive Design
+
+Il portfolio è completamente **responsive**, progettato per offrire un’esperienza ottimale su **desktop, tablet e mobile**.  
+Ogni sezione si adatta automaticamente alle dimensioni dello schermo, mantenendo leggibilità, navigazione intuitiva e coerenza visiva.
+
+### Screenshots Responsive
+
+| Desktop | Tablet | Mobile |
+|---------|--------|--------|
+| ![Desktop Screenshot](./public/images/projects/portfolio-project/portfolio-hero.png) | ![Tablet Screenshot](./public/images/projects/portfolio-project/portfolio-tablet.png) | ![Mobile Screenshot](./public/images/projects/portfolio-project/portfolio-mobile.png) |
+
+---
+
 ## 🚀 Deploy
 
 Il progetto è deployato su **Vercel**, sfruttando:
