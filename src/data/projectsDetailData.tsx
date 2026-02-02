@@ -80,7 +80,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 "Gestione del form di contatto tramite l'integrazione con Formspree per la ricezione e il processing dei messaggi direttamente lato client.",
                 "Esecuzione del primo deploy professionale su piattaforma Vercel."
             ],
-            keyLearnings: "Questo progetto è stato il banco di prova fondamentale per bilanciare estetica e funzionalità. Mi ha permesso di affrontare per la prima volta l'intero ciclo di vita di un'app: dal design alla gestione delle rotte, fino alla messa in produzione su Vercel. Ho imparato che la qualità di un sito risiede nei dettagli invisibili, come l'accessibilità della Dark Mode e la fluidità delle animazioni, consolidando la mia capacità di consegnare un prodotto finito, funzionante e responsivo."
+            keyLearnings: "Questo progetto è stato il banco di prova fondamentale per bilanciare estetica e funzionalità. Mi ha permesso di affrontare per la prima volta l'intero ciclo di vita di un'app: dal design fino alla messa in produzione su Vercel. Ho imparato che la qualità di un sito risiede nei dettagli invisibili, come l'accessibilità della Dark Mode e la fluidità delle animazioni, consolidando la mia capacità di consegnare un prodotto finito, funzionante e responsivo."
         },
 
         gallery: [
@@ -187,7 +187,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 "Assicurazione della compatibilità e accessibilità tramite l'uso di ARIA-labels e la gestione di focus-visible per una navigazione da tastiera ottimizzata.",
                 "Applicazione dei principi di Gestalt (vicinanza e somiglianza) per organizzare gli elementi dell’header, migliorando la leggibilità della navigazione e la comprensione immediata delle gerarchie informative.",
             ],
-            keyLearnings: "Questo progetto mi ha permesso di approfondire la progettazione UI secondo il modello Atomic Design, migliorando la gestione di responsività, accessibilità e interazione utente. Ho consolidato l’uso di Storybook come strumento di documentazione interattiva e rafforzato la creazione di componenti riutilizzabili e scalabili. Un aspetto centrale dell’apprendimento è stato il lavoro sull’identità visiva, con una palette ispirata alla cosmesi naturale: verde per richiamare natura ed ecosostenibilità e viola per evidenziare gli stati di interazione, spesso associato al settore della cosmesi. Questo mi ha aiutata a comprendere come colore, micro-interazioni e simboli visivi contribuiscano a costruire un’esperienza coerente e riconoscibile."
+            keyLearnings: "Questo progetto mi ha permesso di approfondire la progettazione UI secondo il modello Atomic Design, migliorando la gestione di responsività, accessibilità e interazione utente. Ho consolidato l’uso di Storybook e rafforzato la creazione di componenti riutilizzabili e scalabili. Un aspetto centrale dell’apprendimento è stato il lavoro sull’identità visiva, con una palette ispirata alla cosmesi naturale: verde per richiamare natura ed ecosostenibilità e viola per evidenziare gli stati di interazione, spesso associato al settore della cosmesi. Questo mi ha aiutata a comprendere come colore, micro-interazioni e simboli visivi contribuiscano a costruire un’esperienza coerente e riconoscibile."
         },
 
         gallery: [
@@ -276,7 +276,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 "Definizione dell'identità visiva fantasy (palette, tipografia e grafica) applicata uniformemente a tutte le sezioni, inclusi i moduli di pagamento e riepilogo ordine."
             ],
 
-            keyLearnings: "Questo progetto ha permesso di consolidare le mie competenze in UI design e sviluppo frontend, in particolare nell'approfondimento delle logiche di navigazione, nella creazione di layout responsivi e nell'importanza della coerenza visiva per migliorare la fluidità e la qualità dell’interazione dell’utente."
+            keyLearnings: "Questo progetto ha consolidato le mie competenze nello sviluppo dell'interfaccia utente (UI) e nel frontend, in particolare nell'implementazione di layout responsivi tramite l'uso combinato di Bootstrap e CSS puro. Ho approfondito le logiche di navigazione con React Router e la creazione di interfacce dinamiche, comprendendo quanto la coerenza visiva e la gestione dei feedback in tempo reale siano fondamentali per migliorare la fluidità e la qualità dell’interazione utente."
         },
 
         gallery: [
@@ -386,7 +386,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 "Ottimizzazione della responsività tramite Bootstrap e CSS personalizzato per mantenere la leggibilità e lo stile vintage su ogni risoluzione."
             ],
 
-            keyLearnings: "Questo progetto mi ha permesso di approfondire lo sviluppo Full-Stack, dandomi l'opportunità di unire un frontend dinamico in React a un backend strutturato in Express e MySQL in un’unica esperienza coerente. La sfida principale, che ha rappresentato il mio più grande apprendimento, è stata bilanciare perfettamente la complessità tecnica delle operazioni lato server con una cura estetica meticolosa: ho imparato a costruire un prodotto dove la logica del codice e il design vintage convivono, garantendo un'interfaccia che non è solo funzionale e responsiva, ma capace di trasmettere un'identità visiva chiara e coinvolgente."
+            keyLearnings: "Questo progetto mi ha permesso di approfondire lo sviluppo Full-Stack, dandomi l'opportunità di unire un frontend dinamico in React a un backend strutturato in Express e MySQL in un’unica esperienza coerente. La sfida principale, che ha rappresentato il mio più grande apprendimento, è stata bilanciare la complessità tecnica delle operazioni lato server con una cura estetica meticolosa: ho imparato a costruire un prodotto dove la logica del codice e il design vintage convivono, garantendo un'interfaccia che non è solo funzionale e responsiva, ma capace di trasmettere un'identità visiva chiara e coinvolgente."
         },
 
         gallery: [
