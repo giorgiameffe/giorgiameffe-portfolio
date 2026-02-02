@@ -247,11 +247,11 @@ const ProjectsDetail: ProjectsDetailData[] = [
     {
         slug: "bool-shop",
         title: "BoolShop - E-commerce di giochi da tavolo",
-        briefDescription: "E-commerce full-stack a tema fantasy per la vendita di giochi da tavolo, sviluppato in team di 5 persone con un focus specifico sulla user experience e l'identità visiva.",
+        briefDescription: "E-commerce full-stack di giochi da tavolo dove la funzionalità tecnica incontra un'estetica fantasy immersiva. Progettato in team, mette al centro la fluidità della navigazione e un'interfaccia utente curata e responsiva.",
         heroImage: "/images/projects/boolshop-project/boolshop-preview.png",
 
         details: {
-            role: "Frontend Developer & UI/UX Contributor",
+            role: "Frontend Developer & UI Contributor",
             duration: "2 settimane (Maggio 2025 - Giugno 2025)",
             status: "Completato",
             team: "Progetto di gruppo finale di Boolean"
