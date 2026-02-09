@@ -1,16 +1,49 @@
 import React from "react";
 import { useForm, ValidationError } from '@formspree/react';
+import { useState, useEffect } from "react";
 
 const ContactForm: React.FC = () => {
 
     // Inizializzazione Formspree con Form ID personale
     const [state, handleSubmit] = useForm("xdkqpakp");
 
+    // Stato locale per mostrare/nascondere l'overlay di successo
+    // Serve per evitare il reload della pagina (che resetta la dark mode)
+    const [showSuccess, setShowSuccess] = useState(false);
+
+    const [formData, setFormData] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        object: "",
+        message: ""
+    });
+
+    useEffect(() => {
+        if (state.succeeded) {
+            setFormData({
+                firstName: "",
+                lastName: "",
+                email: "",
+                object: "",
+                message: ""
+            });
+        }
+    }, [state.succeeded]);
+
+    // Quando Formspree segnala l'invio riuscito, mostriamo l'overlay
+    useEffect(() => {
+        if (state.succeeded) {
+            setShowSuccess(true);
+        }
+    }, [state.succeeded]);
+
     return (
 
         <div className="relative md:max-w-2xl lg:max-w-3xl mx-auto mb-15">
+
             {/* SUCCESS OVERLAY */}
-            {state.succeeded && (
+            {showSuccess && (
                 <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
                     <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 max-w-sm w-full text-center shadow-xl animate-fadeIn">
 
@@ -25,14 +58,18 @@ const ContactForm: React.FC = () => {
                         </p>
 
                         <button
-                            onClick={() => window.location.reload()}
-                            className="bg-rose-400 dark:bg-rose-700 text-white font-semibold px-6 py-2 rounded-full w-full transition
-                            focus:outline-none focus:border-rose-400">
+                            // Chiude solo l'overlay senza ricaricare la pagina
+                            // In questo modo il Context della dark mode resta attivo
+                            onClick={() => setShowSuccess(false)}
+                            className="bg-rose-400 hover:bg-rose-500 dark:bg-rose-700 text-white font-semibold px-6 py-2 rounded-full w-full transition
+                            focus:outline-none focus:border-rose-400 cursor-pointer">
                             Chiudi
                         </button>
                     </div>
                 </div>
             )}
+
+            {/* Mostriamo il form solo se il messaggio non è stato inviato */}
 
             <form
                 onSubmit={handleSubmit}
@@ -53,10 +90,14 @@ const ContactForm: React.FC = () => {
                         type="text"
                         id="firstName"
                         name="firstName"
+                        value={formData.firstName}
                         placeholder="Inserisci il tuo nome"
                         required
                         className="w-full border border-gray-400 dark:border-gray-800 rounded-lg px-3 py-2 placeholder-gray-500 dark:placeholder-gray-400
-                        focus:outline-none focus:border-rose-400"
+                            focus:outline-none focus:border-rose-400"
+                        onChange={(e) =>
+                            setFormData({ ...formData, firstName: e.target.value })
+                        }
                     />
                     <ValidationError prefix="Nome" field="firstName" errors={state.errors} />
                 </div>
@@ -76,10 +117,14 @@ const ContactForm: React.FC = () => {
                         type="text"
                         id="lastName"
                         name="lastName"
+                        value={formData.lastName}
                         placeholder="Inserisci il tuo cognome"
                         required
                         className="w-full border border-gray-400 dark:border-gray-800 rounded-lg px-3 py-2 placeholder-gray-500 dark:placeholder-gray-400
-                        focus:outline-none focus:border-rose-400"
+                            focus:outline-none focus:border-rose-400"
+                        onChange={(e) =>
+                            setFormData({ ...formData, lastName: e.target.value })
+                        }
                     />
                     <ValidationError prefix="Cognome" field="lastName" errors={state.errors} />
                 </div>
@@ -99,10 +144,14 @@ const ContactForm: React.FC = () => {
                         type="email"
                         id="email"
                         name="email"
+                        value={formData.email}
                         placeholder="Inserisci la tua email"
                         required
                         className="w-full border border-gray-400 dark:border-gray-800 rounded-lg px-3 py-2 placeholder-gray-500 dark:placeholder-gray-400
-                        focus:outline-none focus:border-rose-400"
+                            focus:outline-none focus:border-rose-400"
+                        onChange={(e) =>
+                            setFormData({ ...formData, email: e.target.value })
+                        }
                     />
                     <ValidationError prefix="Email" field="email" errors={state.errors} />
                 </div>
@@ -122,10 +171,14 @@ const ContactForm: React.FC = () => {
                         type="text"
                         id="object"
                         name="object"
+                        value={formData.object}
                         placeholder="Inserisci oggetto del messaggio"
                         required
                         className="w-full border border-gray-400 dark:border-gray-800 rounded-lg px-3 py-2 placeholder-gray-500 dark:placeholder-gray-400
-                        focus:outline-none focus:border-rose-400"
+                            focus:outline-none focus:border-rose-400"
+                        onChange={(e) =>
+                            setFormData({ ...formData, object: e.target.value })
+                        }
                     />
                     <ValidationError prefix="Oggetto" field="object" errors={state.errors} />
                 </div>
@@ -144,10 +197,14 @@ const ContactForm: React.FC = () => {
                     <textarea
                         id="message"
                         name="message"
+                        value={formData.message}
                         placeholder="Scrivi qui il tuo messaggio..."
                         required
                         className="w-full border border-gray-400 dark:border-gray-800 rounded-lg px-3 py-2 h-32 placeholder-gray-500 dark:placeholder-gray-400
-                        focus:outline-none focus:border-rose-400"
+                            focus:outline-none focus:border-rose-400"
+                        onChange={(e) =>
+                            setFormData({ ...formData, message: e.target.value })
+                        }
                     />
                     <ValidationError prefix="Messaggio" field="message" errors={state.errors} />
                 </div>
@@ -156,12 +213,11 @@ const ContactForm: React.FC = () => {
                     type="submit"
                     disabled={state.submitting}
                     className="inline-block mt-4 bg-rose-400 hover:bg-rose-500 dark:bg-rose-700 text-white px-8 py-2 font-semibold 
-                    rounded-full transition-colors duration-700 ease-out cursor-pointer w-full text-center"
+                        rounded-full transition-colors duration-700 ease-out cursor-pointer w-full text-center"
                 >
                     {state.submitting ? "Invio..." : "Invia messaggio"}
                 </button>
             </form>
-
         </div>
     );
 }
