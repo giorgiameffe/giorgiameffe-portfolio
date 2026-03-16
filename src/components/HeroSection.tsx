@@ -109,7 +109,7 @@ const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
             <div className="max-w-md relative z-10">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">{title}</h1>
                 <h2 className="mt-2 text-lg md:text-xl text-gray-900 dark:text-gray-200 font-medium">{subtitle}</h2>
-                <p className="mt-2 text-base text-gray-900 dark:text-gray-200">{description}</p>
+                <p className="mt-2 text-base lg:text-lg text-gray-900 dark:text-gray-200">{description}</p>
                 <Link
                     to="/projects"
                     className="inline-block mt-4 bg-rose-400 hover:bg-rose-500 dark:bg-rose-700 text-white px-8 py-2 font-semibold 
