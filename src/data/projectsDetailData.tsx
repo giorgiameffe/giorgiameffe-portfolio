@@ -192,6 +192,46 @@ const ProjectsDetail: ProjectsDetailData[] = [
 
         gallery: [
             {
+                mediaUrl: "/images/projects/header-ui-project/colors-palette.png",
+                type: "image",
+                caption: "Palette colori Natural Luxury: verde per l'identità ecosostenibile e viola per evidenziare interazioni e stati attivi.",
+            },
+            {
+                mediaUrl: "/images/projects/header-ui-project/spacing.png",
+                type: "image",
+                caption: "Design Tokens: gestione dello spacing fluido tramite funzioni clamp() per un layout armonioso su ogni viewport.",
+            },
+            {
+                mediaUrl: "/images/projects/header-ui-project/typography.png",
+                type: "image",
+                caption: "Gerarchia Tipografica: Definizione di pesi e stili per massimizzare la leggibilità e l'identità visiva del brand.",
+            },
+            {
+                mediaUrl: "/images/projects/header-ui-project/icon-stories.png",
+                type: "image",
+                caption: "Componente Icon: visualizzazione di icone tramite FontAwesome con supporto nativo per l'accessibilità (aria-label).",
+            },
+            {
+                mediaUrl: "/images/projects/header-ui-project/logo-stories.png",
+                type: "image",
+                caption: "Componente Logo: visualizzazione del brand EcoÉclat con supporto per testo personalizzato, garantendo coerenza visiva e identità.",
+            },
+            {
+                mediaUrl: "/images/projects/header-ui-project/navlink-stories.png",
+                type: "image",
+                caption: "Componente NavLink: elemento atomico di navigazione con gestione degli stati e supporto per icone e accessibilità.",
+            },
+            {
+                mediaUrl: "/images/projects/header-ui-project/navbar-stories.png",
+                type: "image",
+                caption: "Componente Navbar: struttura molecolare che organizza i link di navigazione e gestisce il comportamento responsive dell'intero menu.",
+            },
+            {
+                mediaUrl: "/images/projects/header-ui-project/header-stories.png",
+                type: "image",
+                caption: "Componente Organismo Header: include Logo e due Navbar indipendenti (sinistra e destra).",
+            },
+            {
                 mediaUrl: "/images/projects/header-ui-project/header-desktop-light.png",
                 type: "image",
                 caption: "Header Desktop – Versione Light Mode",
