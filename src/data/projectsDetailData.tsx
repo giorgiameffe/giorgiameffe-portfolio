@@ -237,41 +237,20 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 caption: "Header Desktop – Versione Light Mode",
             },
             {
+                mediaUrl: "/images/projects/header-ui-project/header-desktop-dark.png",
+                type: "image",
+                caption: "Header Desktop – Versione Dark Mode",
+            },
+            {
                 mediaUrl: "/images/projects/header-ui-project/header-tablet-light.png",
                 type: "image",
                 caption: "Header Tablet – Versione Light Mode",
-            },
-            {
-                mediaUrl: "/images/projects/header-ui-project/header-large-mobile-light.png",
-                type: "image",
-                caption: "Header Large Mobile – Versione Light Mode",
             },
             {
                 mediaUrl: "/images/projects/header-ui-project/header-small-mobile-light.png",
                 type: "image",
                 caption: "Header Small Mobile – Versione Light Mode",
             },
-            {
-                mediaUrl: "/images/projects/header-ui-project/header-desktop-dark.png",
-                type: "image",
-                caption: "Header Desktop – Versione Dark Mode",
-            },
-            {
-                mediaUrl: "/images/projects/header-ui-project/header-tablet-dark.png",
-                type: "image",
-                caption: "Header Tablet – Versione Dark Mode",
-            },
-            {
-                mediaUrl: "/images/projects/header-ui-project/header-large-mobile-dark.png",
-                type: "image",
-                caption: "Header Large Mobile – Versione Dark Mode",
-            },
-            {
-                mediaUrl: "/images/projects/header-ui-project/header-small-mobile-dark.png",
-                type: "image",
-                caption: "Header Small Mobile – Versione Dark Mode",
-            },
-
             {
                 mediaUrl: "/images/projects/header-ui-project/header-video.mp4",
                 type: "video",
