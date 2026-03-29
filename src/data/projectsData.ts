@@ -36,7 +36,7 @@ const projects: Project[] = [
     {
         slug: "header-ui-custom",
         title: "Header UI custom",
-        description: "Progetto individuale sulla creazione di un componente Header UI custom per un sito di cosmetici naturali.",
+        description: "Sviluppo di un Header responsive e modulare per un e-commerce di cosmetica naturale.",
         image: "/images/projects/header-ui-project/header-preview.png",
         featured: true,
         categories: [

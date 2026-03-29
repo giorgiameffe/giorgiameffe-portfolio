@@ -46,7 +46,7 @@ const ProjectDetailGallery: React.FC<ProjectDetailGalleryProps> = ({ gallery }) 
 
         <section className="flex flex-col items-center max-w-6xl mx-auto relative">
 
-            <h2 className="font-bold text-2xl mb-4">
+            <h2 className="font-bold text-2xl md:text-3xl mb-4">
                 Galleria e Demo
             </h2>
 

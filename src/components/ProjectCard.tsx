@@ -16,7 +16,7 @@ const ProjectCard = ({ project, featured }: ProjectCardProps) => {
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
             whileHover={{ scale: 1.03 }}
-            className={`p-4 border border-gray-300 dark:border-gray-800 rounded-xl ${featured ? "w-72 h-96" : "w-full h-96"}
+            className={`p-4 border border-gray-300 dark:border-gray-800 rounded-xl ${featured ? "w-72 h-[26rem]" : "w-full h-[25rem]"}
             flex flex-col shadow-sm hover:shadow-lg transition-shadow mt-4 mb-4`}
         >
             <Link to={`/projects/${project.slug}`}>
@@ -34,7 +34,7 @@ const ProjectCard = ({ project, featured }: ProjectCardProps) => {
             <div className="flex flex-col flex-1 min-h-0">
                 <div className="flex-grow">
 
-                    <h1 className="font-bold text-md mb-1">{project.title}</h1>
+                    <h1 className="font-bold text-lg mb-1">{project.title}</h1>
                     <div className="flex flex-wrap gap-2 mt-1 mb-2">
                         {project.categories?.map((cat, index) => (
                             <span
@@ -46,7 +46,7 @@ const ProjectCard = ({ project, featured }: ProjectCardProps) => {
                         ))}
                     </div>
 
-                    <p className={`text-sm ${featured ? "line-clamp-3" : "line-clamp-4"}`}>
+                    <p className={`text-md md:text-md ${featured ? "line-clamp-4" : "line-clamp-5"}`}>
                         {project.description}
                     </p>
                 </div>
