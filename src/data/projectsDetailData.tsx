@@ -119,7 +119,7 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 caption: "Componente Card (Dark): validazione dei contrasti e dell'estetica premium in modalità scura, garantendo un'atmosfera immersiva e sofisticata."
             },
             {
-                mediaUrl: "/images/projects/candle-cards-project/citrus-card-stories.png",
+                mediaUrl: "/images/projects/candle-cards-project/discounted-card-stories.png",
                 type: "image",
                 caption: "Logica Promo: visualizzazione dinamica del prezzo sbarrato e del badge di sconto percentuale (-20%) per prodotti in offerta."
             },
