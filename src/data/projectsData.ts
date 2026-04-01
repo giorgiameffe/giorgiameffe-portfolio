@@ -21,6 +21,20 @@ export interface Project {
 const projects: Project[] = [
 
     {
+        slug: "candle-cards",
+        title: "Candle Cards Design System",
+        description: "Sistema di UI Card per e-commerce di candele con gestione dinamica delle varianti.",
+        image: "/images/projects/candle-cards-project/cards-preview.png",
+        featured: true,
+        categories: [
+            {
+                name: "UI Design System",
+                color: "bg-purple-200 text-purple-800 dark:bg-purple-950 dark:text-purple-200"
+            }
+        ]
+    },
+
+    {
         slug: "portfolio-personale",
         title: "Portfolio Personale",
         description: "Progetto individuale volto alla creazione di una vetrina digitale per esporre il mio percorso e i miei progetti.",
@@ -35,10 +49,10 @@ const projects: Project[] = [
     },
     {
         slug: "header-ui-custom",
-        title: "Header UI custom",
+        title: "Custom Header UI System",
         description: "Sviluppo di un Header responsive e modulare per un e-commerce di cosmetica naturale.",
         image: "/images/projects/header-ui-project/header-preview.png",
-        featured: true,
+        featured: false,
         categories: [
             {
                 name: "UI Design System",
