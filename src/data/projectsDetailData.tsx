@@ -69,10 +69,17 @@ const ProjectsDetail: ProjectsDetailData[] = [
         ],
 
         description: {
-            scopeAndGoal: "...",
+            scopeAndGoal: "L'obiettivo del progetto è stato lo sviluppo di un Design System atomico per un e-commerce di candele artigianali, focalizzato sulla modularità e sulla coerenza visiva. Il sistema è stato progettato per gestire dinamicamente diverse categorie di prodotto (floreale, agrumata, dolce) e stati commerciali (novità, sconto, esaurito), garantendo un'esperienza d'acquisto fluida e accessibile su ogni dispositivo.",
             personalTechnicalChallenges: [
+
+                "Atomic Design & Storybook: sviluppo di componenti modulari (Atomi e Molecole) documentati integralmente su Storybook per garantire massima riutilizzabilità, scalabilità e testabilità isolata.",
+                "Esperienza Emozionale (Image Swap): implementazione di un sistema di 'Image Swap' fluido al passaggio del mouse, che rivela le materie prime della fragranza creando un ponte visivo tra prodotto e ingredienti naturali.",
+                "Ingegneria del Colore (OKLCH & Dark Mode): gestione avanzata del colore tramite spazio OKLCH e funzione light-dark(), assicurando una percezione della luminosità uniforme e una transizione raffinata tra Light e Dark mode.",
+                "Fluid Design & Accessibilità: utilizzo della funzione CSS clamp() per layout e tipografia adattivi, con ottimizzazione della navigazione da tastiera tramite un sistema di focus outline-offset non invasivo.",
+                "Logica Business & Stati: gestione dinamica degli stati 'Sold Out' (opacità ridotta, stato disabled) e 'Discount', mantenendo la gerarchia visiva e l'integrità del catalogo senza rompere la griglia."
             ],
-            keyLearnings: "..."
+
+            keyLearnings: "Questo progetto mi ha permesso di approfondire la progettazione UI secondo il modello Atomic Design, concentrandomi sulla creazione di una molecola come la Candle Card. Ho consolidato l'uso di Storybook per documentare non solo l'estetica, ma anche le diverse logiche di business come gli stati 'Discount' e 'Sold Out'. Un aspetto centrale dell’apprendimento è stato il lavoro sull’identità visiva: ho scelto una base bianco/nero per comunicare pulizia, minimalismo ed eleganza, lasciando ai badge il compito di guidare l'utente. Ho imparato a gestire il colore tramite lo spazio OKLCH, assicurando che ogni fragranza (rosa, arancio, ambra) mantenesse una luminosità uniforme e accessibile. Questo mi ha aiutata a comprendere come l'equilibrio tra micro-interazioni (come l'Image Swap) e una gerarchia visiva rigorosa contribuiscano a costruire un’esperienza d'acquisto premium, coerente e altamente riconoscibile."
         },
 
         gallery: [
