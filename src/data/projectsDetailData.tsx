@@ -86,12 +86,17 @@ const ProjectsDetail: ProjectsDetailData[] = [
             {
                 mediaUrl: "/images/projects/candle-cards-project/colors-stories.png",
                 type: "image",
-                caption: "Design Tokens: gestione dei colori semantici per fragranze e stati logici."
+                caption: "Design Tokens: Gestione dei colori semantici per fragranze e stati logici."
             },
             {
                 mediaUrl: "/images/projects/candle-cards-project/spacing-stories.png",
                 type: "image",
-                caption: "Design Tokens: gestione dello spacing fluido tramite funzioni clamp() per un layout armonioso su ogni viewport."
+                caption: "Design Tokens: Gestione dello spacing fluido tramite funzioni clamp() per un layout armonioso su ogni viewport."
+            },
+            {
+                mediaUrl: "/images/projects/candle-cards-project/typography-stories.png",
+                type: "image",
+                caption: "Gerarchia Tipografica: Definizione di pesi e stili per massimizzare la leggibilità e l'identità visiva del brand."
             },
         ],
 
