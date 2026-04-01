@@ -86,18 +86,53 @@ const ProjectsDetail: ProjectsDetailData[] = [
             {
                 mediaUrl: "/images/projects/candle-cards-project/colors-stories.png",
                 type: "image",
-                caption: "Design Tokens: Gestione dei colori semantici per fragranze e stati logici."
+                caption: "Design Tokens: gestione dei colori semantici per fragranze e stati logici."
             },
             {
                 mediaUrl: "/images/projects/candle-cards-project/spacing-stories.png",
                 type: "image",
-                caption: "Design Tokens: Gestione dello spacing fluido tramite funzioni clamp() per un layout armonioso su ogni viewport."
+                caption: "Design Tokens: gestione dello spacing fluido tramite funzioni clamp() per un layout armonioso su ogni viewport."
             },
             {
                 mediaUrl: "/images/projects/candle-cards-project/typography-stories.png",
                 type: "image",
-                caption: "Gerarchia Tipografica: Definizione di pesi e stili per massimizzare la leggibilità e l'identità visiva del brand."
+                caption: "Gerarchia Tipografica: definizione di pesi e stili per massimizzare la leggibilità e l'identità visiva del brand."
             },
+            {
+                mediaUrl: "/images/projects/candle-cards-project/badge-stories.png",
+                type: "image",
+                caption: "Componente Badge: visualizzazione dinamica di fragranze e stati commerciali tramite props, garantendo una distinzione visiva immediata tra le tipologie di prodotto."
+            },
+            {
+                mediaUrl: "/images/projects/candle-cards-project/button-stories.png",
+                type: "image",
+                caption: "Componente Button: elemento di interazione primario configurabile in tre dimensioni (small, medium, large), per adattarsi a diverse densità di layout."
+            },
+            {
+                mediaUrl: "/images/projects/candle-cards-project/cards-stories.png",
+                type: "image",
+                caption: "Componente Card: testing della resa visiva in modalità Light, con supporto per diverse categorie cromatiche basate sulla variante fragranza selezionata."
+            },
+            {
+                mediaUrl: "/images/projects/candle-cards-project/cards-dark-stories.png",
+                type: "image",
+                caption: "Componente Card (Dark): validazione dei contrasti e dell'estetica premium in modalità scura, garantendo un'atmosfera immersiva e sofisticata."
+            },
+            {
+                mediaUrl: "/images/projects/candle-cards-project/citrus-card-stories.png",
+                type: "image",
+                caption: "Logica Promo: visualizzazione dinamica del prezzo sbarrato e del badge di sconto percentuale (-20%) per prodotti in offerta."
+            },
+            {
+                mediaUrl: "/images/projects/candle-cards-project/new-card-stories.png",
+                type: "image",
+                caption: "Visual Highlighting: utilizzo strategico del badge semantico 'Novità' per la differenziazione dei nuovi inserimenti a catalogo."
+            },
+            {
+                mediaUrl: "/images/projects/candle-cards-project/soldOut-card-stories.png",
+                type: "image",
+                caption: "Gestione Inventory: visualizzazione trasparente dello stato 'Esaurito' tramite badge dedicato e variazione cromatica dei componenti."
+            }
         ],
 
         links: {
