@@ -49,6 +49,46 @@ export interface ProjectsDetailData {
 const ProjectsDetail: ProjectsDetailData[] = [
 
     {
+        slug: "candle-cards",
+        title: "Card UI Component - E-commerce di candele artigianali",
+        briefDescription: "Componente Card personalizzato e sviluppato in React e Storybook, pensato per un e-commerce di candele artigianali con focus su UX, accessibilità, design responsivo e componenti riutilizzabili secondo l'Atomic Design.",
+        heroImage: "/images/projects/candle-cards-project/cards-preview.png",
+
+        details: {
+            role: "Frontend Developer & Component Designer",
+            duration: "10 giorni (Febbraio 2026 - Marzo 2026)",
+            status: "Completato",
+            team: "Progetto individuale"
+        },
+
+        technologies: [
+            "React",
+            "Typescript",
+            "Storybook",
+            "CSS3",
+        ],
+
+        description: {
+            scopeAndGoal: "...",
+            personalTechnicalChallenges: [
+            ],
+            keyLearnings: "..."
+        },
+
+        gallery: [
+            {
+                mediaUrl: "/images/projects/candle-cards-project/colors-stories.png",
+                type: "image",
+                caption: ""
+            },
+        ],
+
+        links: {
+            github: "https://github.com/giorgiameffe/candle-cards-design-system"
+        }
+    },
+
+    {
         slug: "portfolio-personale",
         title: "Portfolio Personale",
         briefDescription: "Il sito che stai navigando: una piattaforma progettata e sviluppata da zero per raccontare il mio percorso, i miei progetti e la mia evoluzione tecnica attraverso un'esperienza utente curata e moderna.",
