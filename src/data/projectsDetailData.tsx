@@ -86,7 +86,12 @@ const ProjectsDetail: ProjectsDetailData[] = [
             {
                 mediaUrl: "/images/projects/candle-cards-project/colors-stories.png",
                 type: "image",
-                caption: ""
+                caption: "Design Tokens: gestione dei colori semantici per fragranze e stati logici."
+            },
+            {
+                mediaUrl: "/images/projects/candle-cards-project/spacing-stories.png",
+                type: "image",
+                caption: "Design Tokens: gestione dello spacing fluido tramite funzioni clamp() per un layout armonioso su ogni viewport."
             },
         ],
 
