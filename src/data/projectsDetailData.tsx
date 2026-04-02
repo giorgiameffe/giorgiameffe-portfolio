@@ -132,6 +132,12 @@ const ProjectsDetail: ProjectsDetailData[] = [
                 mediaUrl: "/images/projects/candle-cards-project/soldOut-card-stories.png",
                 type: "image",
                 caption: "Gestione Inventory: visualizzazione trasparente dello stato 'Esaurito' tramite badge dedicato e variazione cromatica dei componenti."
+            },
+
+            {
+                mediaUrl: "/images/projects/candle-cards-project/candle-project-video.mp4",
+                type: "video",
+                caption: "Demo della Candle Card: mostra la documentazione su Storybook, il passaggio dalla modalità light a dark e la sua resposività su tutti i dispositivi."
             }
         ],
 
